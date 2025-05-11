@@ -3,15 +3,15 @@ import { createThemeContract, createGlobalTheme } from '@vanilla-extract/css'
 export const vars = createThemeContract({
   color: {
     /*brand*/
-    brandPrimary: null,
-    brandPrimaryLight: null,
-    brandPrimaryWhite: null,
-    brandPrimaryDark: null,
+    primary: null,
+    primaryLight: null,
+    primaryWhite: null,
+    primaryDark: null,
     /*background*/
-    bgSubtitle: null,
-    bgDefault: null,
-    bgGray: null,
-    bgGrayLight: null,
+    subtitle: null,
+    default: null,
+    gray: null,
+    grayLight: null,
     /*etc*/
     btnEvent: null,
     /*grayscale*/
@@ -39,15 +39,15 @@ createGlobalTheme(':root', vars, {
   },
   color: {
     /*brand*/
-    brandPrimary: '#FF2F6E',
-    brandPrimaryLight: '#FFACBB',
-    brandPrimaryWhite: '#FFEFF2',
-    brandPrimaryDark: '#8E002B',
+    primary: '#FF2F6E',
+    primaryLight: '#FFACBB',
+    primaryWhite: '#FFEFF2',
+    primaryDark: '#8E002B',
     /*background*/
-    bgSubtitle: '#F8F8F8',
-    bgDefault: '#FFFFFF',
-    bgGray: '#CCCDCF',
-    bgGrayLight: '#EEEEEE',
+    subtitle: '#F8F8F8',
+    default: '#FFFFFF',
+    gray: '#CCCDCF',
+    grayLight: '#EEEEEE',
     /*etc*/
     btnEvent: '#00A0FE',
     /*grayscale*/
