@@ -39,14 +39,11 @@ createGlobalTheme(':root', vars, {
     brandPrimaryLight: '#FFACBB',
     brandPrimaryWhite: '#FFEFF2',
     brandPrimaryDark: '#8E002B',
-
     bgSubtitle: '#F8F8F8',
     bgDefault: '#FFFFFF',
     bgGray: '#CCCDCF',
     bgGrayLight: '#EEEEEE',
-
     btnEvent: '#00A0FE',
-
     gray1: '#E7E7E7',
     gray2: '#E1E1E1',
     gray3: '#D2D2D2',
@@ -55,7 +52,6 @@ createGlobalTheme(':root', vars, {
     gray6: '#5F5F5F',
     gray7: '#222222',
     gray8: '#101010',
-
     borderLight: '#F5F5F5',
     borderMedium: '#EBEBEB',
     borderSubtitle: '#B6B6B6',
