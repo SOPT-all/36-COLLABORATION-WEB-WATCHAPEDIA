@@ -1,6 +1,11 @@
-import { style } from "@vanilla-extract/css";
+import { vars } from '@/styles/theme.css'
+import { style } from '@vanilla-extract/css'
 
 export const container = style({
   padding: 10,
-  color: "red",
-});
+  color: 'red',
+})
+
+export const brandText = style({
+  color: vars.color.brandPrimary,
+})
