@@ -5,10 +5,13 @@ export const container = style({
   color: 'blue',
 })
 
-export const color = createGlobalTheme(':root', {
+export const fontFamily = createGlobalTheme(':root', {
   font: {
     body: 'Pretendard, sans-serif',
   },
+})
+
+export const color = createGlobalTheme(':root', {
   brand: {
     primary: '#FF2F6E',
     primaryLight: '#FFACBB',
