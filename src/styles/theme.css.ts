@@ -34,16 +34,23 @@ export const vars = createThemeContract({
 })
 
 createGlobalTheme(':root', vars, {
+  font: {
+    body: 'Pretendard, sans-serif',
+  },
   color: {
+    /*brand*/
     brandPrimary: '#FF2F6E',
     brandPrimaryLight: '#FFACBB',
     brandPrimaryWhite: '#FFEFF2',
     brandPrimaryDark: '#8E002B',
+    /*background*/
     bgSubtitle: '#F8F8F8',
     bgDefault: '#FFFFFF',
     bgGray: '#CCCDCF',
     bgGrayLight: '#EEEEEE',
+    /*etc*/
     btnEvent: '#00A0FE',
+    /*grayscale*/
     gray1: '#E7E7E7',
     gray2: '#E1E1E1',
     gray3: '#D2D2D2',
@@ -52,11 +59,9 @@ createGlobalTheme(':root', vars, {
     gray6: '#5F5F5F',
     gray7: '#222222',
     gray8: '#101010',
+    /*border*/
     borderLight: '#F5F5F5',
     borderMedium: '#EBEBEB',
     borderSubtitle: '#B6B6B6',
-  },
-  font: {
-    body: 'Pretendard, sans-serif',
   },
 })
