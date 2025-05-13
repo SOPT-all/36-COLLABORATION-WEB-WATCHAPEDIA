@@ -5,7 +5,6 @@ import { recipe } from '@vanilla-extract/recipes';
 export const toggleWrapper = style({
   width: 130,
   height: 28,
-  backgroundColor: 'black',
 })
 
 export const toggleContainer = style({
