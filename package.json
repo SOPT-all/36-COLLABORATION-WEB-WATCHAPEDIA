@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svgr": "svgr ./public/icons --typescript --out-dir ./src/app/asset/svg"
+    "svgr": "svgr ./public/icons --typescript --out-dir ./src/asset/svg"
   },
   "dependencies": {
     "@svgr/core": "^8.1.0",
