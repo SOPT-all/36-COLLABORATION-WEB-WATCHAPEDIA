@@ -16,6 +16,10 @@ interface RankTagProps {
   state: MovieState
 }
 
+interface TextTagProps {
+  text: string
+}
+
 export const RankTag = ({ rank, state }: RankTagProps) => {
   const stateIcon = () => {
     switch (state) {
@@ -34,4 +38,8 @@ export const RankTag = ({ rank, state }: RankTagProps) => {
       {stateIcon()}
     </div>
   )
+}
+
+export const TextTag = ({ text }: TextTagProps) => {
+  return <div className={clsx(tag, font.body_sb_13)}>{text}</div>
 }
