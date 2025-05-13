@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { container, font } from '@/app/styles.css'
 import Bottom from "@/shared/components/Bottom/Bottom"
 
@@ -10,4 +11,11 @@ export default function Home() {
       </main>
     </div>
   )
+=======
+import { PATH } from '@/shared/constants/path'
+import { redirect } from 'next/navigation'
+
+export default function Home() {
+  redirect(PATH.HOME)
+>>>>>>> main
 }
