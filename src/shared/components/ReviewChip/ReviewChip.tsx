@@ -1,7 +1,7 @@
 import clsx from 'clsx'
-import { reviewChip } from './styles.css'
 import { font } from '@/app/styles.css'
 import { ButtonHTMLAttributes } from 'react'
+import { reviewChip } from './ReviewChip.css'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string
