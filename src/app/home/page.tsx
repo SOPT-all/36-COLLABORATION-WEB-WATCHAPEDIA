@@ -1,5 +1,9 @@
+import Bottom from "@/shared/components/Bottom/Bottom"
+
 const Home = () => {
-  return <div>view 1 HOME</div>
+  return <div>
+    <Bottom />
+  </div>
 }
 
 export default Home
