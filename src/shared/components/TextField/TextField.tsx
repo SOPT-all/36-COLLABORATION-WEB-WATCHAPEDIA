@@ -6,7 +6,7 @@ import { font } from '@/app/styles.css'
 interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
 
 const TextField = ({ ...props }: Props) => {
-  return <textarea className={clsx(textField)} {...props} />
+  return <textarea className={clsx(textField, font.subtitle_r_14)} {...props} />
 }
 
 export default TextField
