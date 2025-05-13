@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from 'react'
-import { button } from './styles.css'
 import { font } from '@/app/styles.css'
 import clsx from 'clsx'
+import { button } from './Button.css'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string
