@@ -1,0 +1,7 @@
+export { default as IcHome } from './IcHome'
+export { default as IcHomeDefault } from './IcHomeDefault'
+export { default as IcNotice } from './IcNotice'
+export { default as IcNoticeActive } from './IcNoticeActive'
+export { default as IcProfile } from './IcProfile'
+export { default as IcRate } from './IcRate'
+export { default as IcSearch } from './IcSearch'
