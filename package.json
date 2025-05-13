@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/core": "^8.1.0",
     "@vanilla-extract/css": "^1.17.1",
     "next": "15.3.2",
     "react": "^19.0.0",
@@ -16,6 +17,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
