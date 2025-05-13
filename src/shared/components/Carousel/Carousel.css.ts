@@ -1,24 +1,28 @@
 import { style } from '@vanilla-extract/css'
+import { font } from '@/app/styles.css'
 
 export const card = style({
   position: 'relative',
-  borderRadius: '12px',
+  borderRadius: '4px',
   overflow: 'hidden',
   width: '345px',
   height: '320px',
 })
 
-export const label = style({
-  position: 'absolute',
-  top: '12px',
-  left: '12px',
-  backgroundColor: 'black',
-  color: 'white',
-  fontSize: '12px',
-  padding: '4px 8px',
-  borderRadius: '4px',
-  zIndex: 2,
-})
+export const label = style([
+  font.body_sb_13,
+  {
+    position: 'absolute',
+    top: '13px',
+    left: '13px',
+    backgroundColor: 'black',
+    color: 'white',
+    fontSize: '12px',
+    padding: '6px 8px',
+    borderRadius: '4px',
+    zIndex: 2,
+  },
+])
 
 export const image = style({
   width: '100%',
@@ -30,25 +34,26 @@ export const overlay = style({
   position: 'absolute',
   bottom: 0,
   width: '100%',
-  padding: '16px',
+  padding: '17px 13px',
   color: 'white',
   background: 'linear-gradient(transparent, rgba(0, 0, 0, 0.8))',
 })
 
-export const tag = style({
-  fontSize: '12px',
-  opacity: 0.8,
-  marginBottom: '4px',
-})
+export const tag = style([
+  font.label_r_12,
+  {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '2px',
+    marginBottom: '12px',
+  },
+])
 
-export const title = style({
-  fontWeight: 'bold',
-  fontSize: '16px',
-  margin: 0,
-})
+export const title = style([font.title_sb_20])
 
-export const subtitle = style({
-  fontSize: '14px',
-  marginTop: '4px',
-  opacity: 0.9,
-})
+export const subtitle = style([
+  font.subtitle_r_14,
+  {
+    marginTop: '4px',
+  },
+])

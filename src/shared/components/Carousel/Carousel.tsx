@@ -36,7 +36,17 @@ const Carousel = () => {
               priority
             />
             <div className={styles.overlay}>
-              <div className={styles.tag}>🔴 {card.tag}</div>
+              <div className={styles.tag}>
+                <Image
+                  src="/images/banner/img-watcha-circle.png"
+                  alt="watcha 원형 아이콘"
+                  width={18}
+                  height={18}
+                  unoptimized
+                />
+
+                {card.tag}
+              </div>
               <h3 className={styles.title}>{card.title}</h3>
               <p className={styles.subtitle}>{card.subtitle}</p>
             </div>
