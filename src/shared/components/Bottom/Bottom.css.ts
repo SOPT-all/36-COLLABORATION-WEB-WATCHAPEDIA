@@ -27,6 +27,7 @@ export const tabItem = style([
 export const tabIcon = style({
   width: "24px",
   height: "24px",
-  marginBottom: "1px",
-  display: "block",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 });
