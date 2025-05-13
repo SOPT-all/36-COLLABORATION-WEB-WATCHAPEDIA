@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import Image from 'next/image'
-import * as styles from '@/shared/Carousel.css' // 위에서 만든 스타일 임포트
+import * as styles from '@/shared/components/Carousel/Carousel.css' // 위에서 만든 스타일 임포트
 
 const Carousel = () => {
   const cards = [

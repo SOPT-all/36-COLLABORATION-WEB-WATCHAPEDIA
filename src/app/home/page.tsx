@@ -1,4 +1,4 @@
-import Carousel from '@/shared/Carousel'
+import Carousel from '@/shared/components/Carousel/Carousel'
 
 const Home = () => {
   return (
