@@ -1,10 +1,18 @@
 import { TextareaHTMLAttributes } from 'react'
-import { textField } from './TextField.css'
+import * as styles from './TextField.css'
 
-interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
+interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
+  value: string
+}
 
-const TextField = ({ ...props }: Props) => {
-  return <textarea className={textField} {...props} />
+const TextField = ({ value, ...props }: Props) => {
+  return (
+    <textarea
+      value={value}
+      className={styles.textField}
+      {...props}
+    />
+  )
 }
 
 export default TextField
