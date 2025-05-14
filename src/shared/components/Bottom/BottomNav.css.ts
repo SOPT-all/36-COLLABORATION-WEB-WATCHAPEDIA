@@ -1,4 +1,3 @@
-// src/shared/components/Bottom/Bottom.css.ts
 import { font,color } from "@/app/styles.css";
 import { style } from "@vanilla-extract/css";
 
@@ -13,15 +12,12 @@ export const tabBar = style({
 export const tabItem = style([
     font.label_m_10,
     {
-
         flex: 1,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         cursor: "pointer",
     }
-    
-
 ]);
 
 export const tabIcon = style({

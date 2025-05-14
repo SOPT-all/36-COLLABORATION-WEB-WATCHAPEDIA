@@ -1,8 +1,8 @@
-import Bottom from "@/shared/components/Bottom/Bottom"
+import BottomNav from "@/shared/components/Bottom/BottomNav"
 
 const Home = () => {
   return <div>
-    <Bottom />
+    <BottomNav />
   </div>
 }
 
