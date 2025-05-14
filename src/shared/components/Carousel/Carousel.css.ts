@@ -1,5 +1,12 @@
-import { style } from '@vanilla-extract/css'
+import { globalStyle, style } from '@vanilla-extract/css'
 import { font } from '@/app/styles.css'
+
+export const container = style({
+  width: '100%',
+  maxWidth: '375px',
+  margin: '0 auto',
+  position: 'relative',
+})
 
 export const card = style({
   position: 'relative',
@@ -57,3 +64,28 @@ export const subtitle = style([
     marginTop: '4px',
   },
 ])
+
+export const navButton = style({
+  color: 'white',
+  opacity: 0,
+  transition: 'opacity 0.3s ease',
+})
+
+// hover 시에만 나타나도록
+globalStyle(`${container}:hover .swiper-button-prev`, {
+  opacity: 1,
+})
+
+globalStyle(`${container}:hover .swiper-button-next`, {
+  opacity: 1,
+})
+
+// 화살표 아이콘 스타일 덮어쓰기
+globalStyle('.swiper-button-prev::after, .swiper-button-next::after', {
+  fontSize: '16px',
+  color: 'gray',
+})
+
+globalStyle('.swiper-button-disabled', {
+  display: 'none',
+})
