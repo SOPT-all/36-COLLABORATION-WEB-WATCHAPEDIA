@@ -1,12 +1,12 @@
-import { style } from "@vanilla-extract/css";
-import { color } from "@/app/styles.css";
-import { recipe } from "@vanilla-extract/recipes";
+import { style } from '@vanilla-extract/css'
+import { color } from '@/app/styles.css'
+import { recipe } from '@vanilla-extract/recipes'
 
 export const spoilerToggleWrapper = style({
   width: 42,
   height: 25,
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
 })
 
 export const spoilerToggleBar = recipe({
@@ -14,14 +14,16 @@ export const spoilerToggleBar = recipe({
     width: 42,
     height: 19,
     borderRadius: 999,
-    position: 'relative'
+    position: 'relative',
+    cursor: 'pointer',
+    border: 'none',
   },
   variants: {
     active: {
-      true: {backgroundColor: color.brand.primaryLight},
-      false: {backgroundColor: color.gray.gray1},
+      true: { backgroundColor: color.brand.primaryLight },
+      false: { backgroundColor: color.gray.gray1 },
     },
-  }
+  },
 })
 
 export const spoilerToggleButton = recipe({
@@ -34,12 +36,11 @@ export const spoilerToggleButton = recipe({
     position: 'absolute',
     transition: 'left 0.3s ease',
     top: -3,
-    cursor: 'pointer'
   },
   variants: {
     active: {
-      true: {left: 17},
-      false: {left: 0},
-    }
-  }
+      true: { left: 17 },
+      false: { left: 0 },
+    },
+  },
 })
