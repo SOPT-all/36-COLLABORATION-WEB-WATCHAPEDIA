@@ -7,7 +7,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ text, ...props }: Props) => {
   return (
-    <button className={styles.button} {...props}>
+    <button type="button" className={styles.button} {...props}>
       {text}
     </button>
   )
