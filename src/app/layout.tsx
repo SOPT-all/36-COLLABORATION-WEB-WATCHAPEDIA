@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '@/styles/global.css'
+import '@/app/styles.css.ts'
 
 export const metadata: Metadata = {
   title: '왓챠피디아',
