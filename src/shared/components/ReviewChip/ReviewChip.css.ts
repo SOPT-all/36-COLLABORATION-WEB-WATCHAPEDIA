@@ -1,4 +1,4 @@
-import { color } from '@/app/styles.css'
+import { color, font } from '@/app/styles.css'
 import { recipe } from '@vanilla-extract/recipes'
 
 export const reviewChip = recipe({
@@ -26,15 +26,21 @@ export const reviewChip = recipe({
 
   variants: {
     isSelected: {
-      false: {
-        color: color.gray.gray6,
-      },
-      true: {
-        backgroundColor: color.brand.primaryWhite,
-        color: color.brand.primary,
-        border: '1px solid',
-        borderColor: color.brand.primary,
-      },
+      false: [
+        font.label_r_12,
+        {
+          color: color.gray.gray6,
+        },
+      ],
+      true: [
+        font.label_m_12,
+        {
+          backgroundColor: color.brand.primaryWhite,
+          color: color.brand.primary,
+          border: '1px solid',
+          borderColor: color.brand.primary,
+        },
+      ],
     },
   },
 })
