@@ -1,4 +1,4 @@
-import { tag } from './Tag.css'
+import * as styles from './Tag.css'
 
 interface TagProps {
   text: string
@@ -7,5 +7,5 @@ interface TagProps {
 }
 
 export const Tag = ({ text, color = 'black', size = 'lg' }: TagProps) => {
-  return <div className={tag({ color, size })}>{text}</div>
+  return <div className={styles.tag({ color, size })}>{text}</div>
 }
