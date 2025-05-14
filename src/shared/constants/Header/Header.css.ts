@@ -1,20 +1,19 @@
-import { style } from '@vanilla-extract/css';
-import { color, font } from '@/app/styles.css';
+import { style } from '@vanilla-extract/css'
+import { color, font } from '@/app/styles.css'
 
 export const headerWrap = style({
-  width: '100%',
-});
-
+  maxWidth: '375px',
+})
 
 export const topRow = style({
   display: 'flex',
-  height:"60px",
+  height: '60px',
   alignItems: 'center',
   justifyContent: 'flex-start',
-  backgroundColor: '#F8F8F8',
+  backgroundColor: color.background.subtitle,
   gap: '21px',
-  padding:"0px 0px 0px 15px"
-});
+  padding: '0px 0px 0px 15px',
+})
 
 export const toggleBg = style({
   display: 'flex',
@@ -22,7 +21,7 @@ export const toggleBg = style({
   background: '#fff',
   borderRadius: '999px',
   gap: 0,
-});
+})
 
 export const toggle = style([
   font.title_sb_14,
@@ -35,8 +34,8 @@ export const toggle = style([
     cursor: 'pointer',
     transition: 'background 0.2s, color 0.2s',
     margin: 0,
-  }
-]);
+  },
+])
 
 export const toggleActive = style([
   font.title_sb_14,
@@ -49,16 +48,16 @@ export const toggleActive = style([
     cursor: 'pointer',
     transition: 'background 0.2s, color 0.2s',
     margin: 0,
-  }
-]);
+  },
+])
 
 export const tabNav = style({
   display: 'flex',
-  gap:'15px',
-  marginLeft:'15px',
-  marginTop:'10px',
-  marginBottom:'6px'
-});
+  gap: '15px',
+  marginLeft: '15px',
+  marginTop: '10px',
+  marginBottom: '6px',
+})
 
 export const tab = style([
   font.subtitle_m_17,
@@ -70,8 +69,8 @@ export const tab = style([
     cursor: 'pointer',
     position: 'relative',
     transition: 'color 0.2s',
-  }
-]);
+  },
+])
 
 export const tabActive = style([
   font.subtitle_m_17,
@@ -91,5 +90,5 @@ export const tabActive = style([
       position: 'absolute',
       bottom: '-6px',
     },
-  }
-]);
+  },
+])
