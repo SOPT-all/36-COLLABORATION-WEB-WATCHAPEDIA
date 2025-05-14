@@ -1,4 +1,4 @@
-import { createGlobalTheme, style } from '@vanilla-extract/css'
+import { createGlobalTheme, globalStyle, style } from '@vanilla-extract/css'
 
 export const container = style({
   padding: 10,
@@ -204,3 +204,7 @@ export const font = {
     lineHeight: '36px',
   }),
 }
+
+globalStyle(':root', {
+  fontFamily: fontFamily.font.body,
+})
