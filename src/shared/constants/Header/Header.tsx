@@ -1,60 +1,35 @@
-'use client'
+"use client"
 
-import Image from 'next/image'
-import { useState } from 'react'
-import * as styles from './Header.css'
-
-const WATCHA_HOME_TABS = [
-  '기획전',
-  '아티클',
-  '인터뷰',
-  '큐레이션',
-  '콘텐츠소식',
-]
-const MAGAZINE_TABS = ['영화', '시리즈', '책', '웹툰']
+import { useState } from 'react';
+import * as styles from './Header.css';
+import HomeToggle from '@/shared/components/HomeToggle/HomeToggle';
+import Image from 'next/image';
+import { HEADER_TABS, TOGGLE_OPTIONS, type ToggleType } from './Tab'
 
 const Header = () => {
-  const [selectedToggle, setSelectedToggle] = useState<'왓챠홈' | '매거진'>(
-    '왓챠홈',
-  )
-  const tabs = selectedToggle === '왓챠홈' ? WATCHA_HOME_TABS : MAGAZINE_TABS
-  const [selectedTab, setSelectedTab] = useState(tabs[0])
+  const [selectedToggle, setSelectedToggle] = useState<ToggleType>(TOGGLE_OPTIONS.WATCHA_HOME);
+  
+  // Header.ts에서 정의한 HEADER_TABS 사용
+  const tabs = HEADER_TABS[selectedToggle];
+  
+  // selectedTab 타입을 string으로 변경
+  const [selectedTab, setSelectedTab] = useState<string>(tabs[0]);
 
-  const handleToggle = (toggle: '왓챠홈' | '매거진') => {
-    setSelectedToggle(toggle)
-    setSelectedTab(toggle === '왓챠홈' ? WATCHA_HOME_TABS[0] : MAGAZINE_TABS[0])
-  }
+  const handleToggle = (toggle: ToggleType) => {
+    setSelectedToggle(toggle);
+    // 토글 변경 시 해당 탭의 첫 번째 항목으로 설정
+    const newTabs = HEADER_TABS[toggle];
+    setSelectedTab(newTabs[0]);
+  };
 
   return (
     <header className={styles.headerWrap}>
       <div className={styles.topRow}>
-        <Image
-          src={require('@/assets/img/watchapedia.png')}
-          alt="watchapedia logo"
-          width={86}
-          height={30}
-        />
-        <div className={styles.toggleBg}>
-          <button
-            className={
-              selectedToggle === '왓챠홈' ? styles.toggleActive : styles.toggle
-            }
-            onClick={() => handleToggle('왓챠홈')}
-          >
-            왓챠홈
-          </button>
-          <button
-            className={
-              selectedToggle === '매거진' ? styles.toggleActive : styles.toggle
-            }
-            onClick={() => handleToggle('매거진')}
-          >
-            매거진
-          </button>
-        </div>
+        <Image src={require('@/assets/img/watchapedia.png')} alt="watchapedia logo" width={86} height={32} />
+        <HomeToggle selected={selectedToggle} onToggle={handleToggle} />
       </div>
       <nav className={styles.tabNav}>
-        {tabs.map((tab) => (
+        {tabs.map(tab => (
           <button
             key={tab}
             className={selectedTab === tab ? styles.tabActive : styles.tab}
@@ -65,7 +40,7 @@ const Header = () => {
         ))}
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
