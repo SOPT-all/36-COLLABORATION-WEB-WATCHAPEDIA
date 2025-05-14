@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react'
-import { button } from './Button.css'
+import * as styles from './Button.css'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string
@@ -7,7 +7,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ text, ...props }: Props) => {
   return (
-    <button className={button} {...props}>
+    <button className={styles.button} {...props}>
       {text}
     </button>
   )
