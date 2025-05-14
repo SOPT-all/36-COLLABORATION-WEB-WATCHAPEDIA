@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css'
 import { color, font } from '@/app/styles.css'
+import { recipe } from '@vanilla-extract/recipes'
 
 export const headerWrap = style({
   maxWidth: '375px',
@@ -59,18 +60,41 @@ export const tabNav = style({
   marginBottom: '6px',
 })
 
-export const tab = style([
-  font.subtitle_m_17,
-  {
-    background: 'none',
-    border: 'none',
-    color: color.gray.gray5,
-    padding: '0',
-    cursor: 'pointer',
-    position: 'relative',
-    transition: 'color 0.2s',
+export const tab = recipe({
+  base: [
+    font.subtitle_sb_17,
+    {
+      background: 'none',
+      border: 'none',
+      padding: '0',
+      cursor: 'pointer',
+      position: 'relative',
+      transition: 'color 0.2s',
+    }
+  ],
+  variants: {
+    active: {
+      true: {
+        color: color.gray.gray8,
+        '::after': {
+          content: '',
+          display: 'block',
+          width: '100%',
+          height: '2px',
+          background: color.gray.gray8,
+          position: 'absolute',
+          bottom: '-3px',
+        },
+      },
+      false: {
+        color: color.gray.gray5,
+      }
+    }
   },
-])
+  defaultVariants: {
+    active: false,
+  }
+});
 
 export const tabActive = style([
   font.subtitle_m_17,

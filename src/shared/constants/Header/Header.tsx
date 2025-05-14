@@ -27,7 +27,7 @@ const Header = () => {
         {tabs.map(tab => (
           <button
             key={tab}
-            className={selectedTab === tab ? styles.tabActive : styles.tab}
+            className={styles.tab({active: selectedTab === tab})}
             onClick={() => setSelectedTab(tab)}
           >
             {tab}
