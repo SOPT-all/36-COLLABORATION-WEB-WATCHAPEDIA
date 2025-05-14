@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes } from 'react'
-import { reviewChip } from './ReviewChip.css'
+import * as styles from './ReviewChip.css'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string
@@ -8,7 +8,11 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const ReviewChip = ({ text, isSelected = false, ...props }: Props) => {
   return (
-    <button className={reviewChip({ isSelected })} {...props}>
+    <button
+      type="button"
+      className={styles.reviewChip({ isSelected })}
+      {...props}
+    >
       {text}
     </button>
   )
