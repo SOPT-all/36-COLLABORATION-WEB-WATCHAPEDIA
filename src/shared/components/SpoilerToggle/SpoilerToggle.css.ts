@@ -2,14 +2,14 @@ import { style } from "@vanilla-extract/css";
 import { color } from "@/app/styles.css";
 import { recipe } from "@vanilla-extract/recipes";
 
-export const SpoilerToggleWrapper = style({
+export const spoilerToggleWrapper = style({
   width: 42,
   height: 25,
   display: 'flex',
   alignItems: 'center'
 })
 
-export const SpoilerToggleBar = recipe({
+export const spoilerToggleBar = recipe({
   base: {
     width: 42,
     height: 19,
@@ -24,7 +24,7 @@ export const SpoilerToggleBar = recipe({
   }
 })
 
-export const SpoilerToggleButton = recipe({
+export const spoilerToggleButton = recipe({
   base: {
     width: 23,
     height: 23,

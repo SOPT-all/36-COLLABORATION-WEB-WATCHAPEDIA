@@ -9,10 +9,10 @@ const SpoilerToggle = () => {
     setIsSelected(!isSelected);
   }
   return (
-    <div className={style.SpoilerToggleWrapper}>
-      <div className={style.SpoilerToggleBar({active: isSelected})}>
+    <div className={style.spoilerToggleWrapper}>
+      <div className={style.spoilerToggleBar({active: isSelected})}>
         <div 
-          className={style.SpoilerToggleButton({active: isSelected})}
+          className={style.spoilerToggleButton({active: isSelected})}
           onClick={handleSpoilerToggleClick}>
         </div>
       </div>
