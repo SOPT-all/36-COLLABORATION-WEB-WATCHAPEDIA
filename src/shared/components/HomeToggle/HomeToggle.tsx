@@ -21,22 +21,22 @@ const HomeToggle = () => {
   return (
     <div className={style.toggleWrapper}>
       <div className={style.toggleContainer}>
-        <p
+        <button
           className={style.toggleText({
             active: selected === TOGGLE_OPTIONS.WATCHA_HOME,
           })}
           onClick={() => handleToggle(TOGGLE_OPTIONS.WATCHA_HOME)}
         >
           {TOGGLE_OPTIONS.WATCHA_HOME}
-        </p>
-        <p
+        </button>
+        <button
           className={style.toggleText({
             active: selected === TOGGLE_OPTIONS.MAGAZINE,
           })}
           onClick={() => handleToggle(TOGGLE_OPTIONS.MAGAZINE)}
         >
           {TOGGLE_OPTIONS.MAGAZINE}
-        </p>
+        </button>
         <div
           className={style.toggleButton({
             active: selected === TOGGLE_OPTIONS.WATCHA_HOME,

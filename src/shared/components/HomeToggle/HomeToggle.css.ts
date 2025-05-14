@@ -21,6 +21,12 @@ export const toggleContainer = style({
 })
 
 export const toggleText = recipe({
+  base: {
+    backgroundColor: 'transparent',
+    border: 'none',
+    padding: 0,
+    cursor: 'pointer',
+  },
   variants: {
     active: {
       true: [
