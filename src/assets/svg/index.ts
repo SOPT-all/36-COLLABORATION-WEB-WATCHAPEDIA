@@ -1,2 +1,5 @@
 export { default as Star } from './Star'
 export { default as IcSearch } from './IcSearch'
+export { default as RankDown } from './RankDown'
+export { default as RankSame } from './RankSame'
+export { default as RankUp } from './RankUp'
