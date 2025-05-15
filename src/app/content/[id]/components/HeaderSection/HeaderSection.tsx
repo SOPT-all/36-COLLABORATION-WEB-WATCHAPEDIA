@@ -20,7 +20,7 @@ const HeaderSection = ({
       <div className={styles.HeaderSectionHeaderContainer}>
         <h3 className={styles.HeaderSectionTitle}>
           {title}
-          <span className={styles.HeaderSectionCount}>{count}</span>
+          {!!count && <span className={styles.HeaderSectionCount}>{count}</span>}
         </h3>
         {moreButton && (
           <button type="button" className={styles.HeaderSectionMoreButton}>
