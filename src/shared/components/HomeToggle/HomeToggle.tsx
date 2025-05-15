@@ -1,19 +1,15 @@
 'use client'
 import { useState, MouseEvent } from 'react'
 import * as style from './HomeToggle.css'
+import { TOGGLE_OPTIONS, type ToggleType } from '@/shared/constants/Header/Tab'
 
-const HomeToggle = () => {
-  const TOGGLE_OPTIONS = {
-    WATCHA_HOME: '왓챠홈',
-    MAGAZINE: '매거진',
-  }
 
-  const [selected, setSelected] = useState<string>(TOGGLE_OPTIONS.WATCHA_HOME)
+interface HomeToggleProps {
+  selected: ToggleType
+  handleToggle: (value: ToggleType) => void
+}
 
-  const handleToggle = (value: string) => {
-    setSelected(value)
-  }
-
+const HomeToggle = ({ selected, handleToggle }: HomeToggleProps) => {
   const handleStopClick = (e: MouseEvent<HTMLDivElement>) => {
     e.stopPropagation()
   }
