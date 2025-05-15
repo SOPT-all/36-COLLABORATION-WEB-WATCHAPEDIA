@@ -4,6 +4,7 @@ interface HeaderSectionProps {
   title: string
   count?: string | number
   moreButton?: boolean
+  gap?: 'sm' | 'lg'
   children: React.ReactNode
 }
 
@@ -11,10 +12,11 @@ const HeaderSection = ({
   title,
   count,
   moreButton = false,
+  gap = 'sm',
   children,
 }: HeaderSectionProps) => {
   return (
-    <section className={styles.HeaderSectionContainer}>
+    <section className={styles.HeaderSectionContainer({ gap })}>
       <div className={styles.HeaderSectionHeaderContainer}>
         <h3 className={styles.HeaderSectionTitle}>
           {title}

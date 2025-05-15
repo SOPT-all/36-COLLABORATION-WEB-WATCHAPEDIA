@@ -1,10 +1,15 @@
 import { color, font } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
+import { recipe } from '@vanilla-extract/recipes'
 
-export const HeaderSectionContainer = style({
-  gap: 12,
-  display: 'flex',
-  flexDirection: 'column',
+export const HeaderSectionContainer = recipe({
+  base: { display: 'flex', flexDirection: 'column' },
+  variants: {
+    gap: {
+      sm: { gap: '12px' },
+      lg: { gap: '20px' },
+    },
+  },
 })
 
 export const HeaderSectionHeaderContainer = style({
