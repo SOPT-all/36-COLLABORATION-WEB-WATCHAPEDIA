@@ -7,7 +7,8 @@ const Home = () => {
       view 1 HOME
       <>
         <Carousel />
-        <Ad />
+        <Ad type="conclave" />
+        <Ad type="callenge" />
       </>
     </div>
   )
