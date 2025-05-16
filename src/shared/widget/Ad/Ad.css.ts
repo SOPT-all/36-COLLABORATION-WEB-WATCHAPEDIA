@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css'
 import { font, color } from '@/app/styles.css'
+
 export const adWrap = style([
   {
     maxWidth: '345px',
@@ -10,15 +11,14 @@ export const adWrap = style([
 ])
 
 export const adTextWrap = style({
-  maxWidth: '204px', // ✅ 최대 너비 제한
+  maxWidth: '204px',
   display: 'flex',
   flexDirection: 'column',
-  wordBreak: 'keep-all', // ✅ 자연스러운 줄바꿈
+  wordBreak: 'keep-all',
 })
 
 export const contentWrap = style([
   {
-    minWidth: 0,
     padding: '17.5px 13px',
     display: 'flex',
     alignItems: 'center',
