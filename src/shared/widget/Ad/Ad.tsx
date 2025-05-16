@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import * as styles from '@/shared/widget/Ad/Ad.css'
+import * as styles from '@/shared/widget/ad/Ad.css'
 import Button from '@/shared/components/Button/Button'
 import { adContentMap } from './AdContent'
 
