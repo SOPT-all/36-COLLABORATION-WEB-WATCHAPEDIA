@@ -1,7 +1,7 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper/modules'
+import { Navigation, Autoplay } from 'swiper/modules'
 import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -29,14 +29,17 @@ const Carousel = () => {
   return (
     <div className={styles.container}>
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }}
         slidesPerView={1}
         spaceBetween={10}
-        loop={false}
+        loop={true}
+        autoplay={{
+          delay: 3000,
+        }}
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
