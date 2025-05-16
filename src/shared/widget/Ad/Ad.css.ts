@@ -44,6 +44,11 @@ export const adCaption = style([
   },
 ])
 
+export const adImage = style({
+  borderTopLeftRadius: '6px',
+  borderTopRightRadius: '6px',
+})
+
 export const bottomCaptionWrap = style([
   {
     marginTop: '10px',
