@@ -1,7 +1,8 @@
-import SvgOttsWatcha from '@/assets/svg/OttsWatcha'
-import SvgOttWavve from '@/assets/svg/OttWavve'
 import * as styles from './InfoContent.css'
 import { DetailItem } from '@/shared/types/detail'
+import Image from 'next/image'
+import watchaImg from '/public/images/watcha.png'
+import wavveImg from '/public/images/wavve.png'
 
 type InfoContentProps = Pick<
   DetailItem,
@@ -41,8 +42,20 @@ const InfoContent = ({
       <div className={styles.infoOttsContainer}>
         <p>감상 가능한 곳</p>
         <div className={styles.infoOtts}>
-          <SvgOttsWatcha widths={68} height={68} />
-          <SvgOttWavve widths={68} height={68} />
+          <Image
+            className={styles.infoOttsImage}
+            src={watchaImg}
+            alt="왓챠"
+            width={68}
+            height={68}
+          />
+          <Image
+            className={styles.infoOttsImage}
+            src={wavveImg}
+            alt="웨이브"
+            width={68}
+            height={68}
+          />
         </div>
       </div>
     </div>

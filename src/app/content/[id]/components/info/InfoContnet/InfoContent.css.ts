@@ -47,3 +47,7 @@ export const infoOtts = style({
   display: 'flex',
   gap: 8,
 })
+
+export const infoOttsImage = style({
+  borderRadius: '50%',
+})
