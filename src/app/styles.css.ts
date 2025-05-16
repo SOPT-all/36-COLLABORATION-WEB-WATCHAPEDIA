@@ -207,4 +207,7 @@ export const font = {
 
 globalStyle(':root', {
   fontFamily: fontFamily.font.body,
+  width: 375,
+  height: 667,
+  margin: '0 auto',
 })
