@@ -10,19 +10,19 @@ const Carousel = () => {
   const cards = [
     {
       id: 1,
-      category: '영화',
+      category: '웹툰',
       tag: '큐레이션',
-      title: '내 배우의 필모그래피만 모았다',
-      subtitle: '다미많이 좋이라면 덕질은 여기서',
+      title: '청춘 키워드에 꽂힌 내게 온 추천',
+      subtitle: '지금 딱 읽기 좋은 청춘 웹툰 추천',
       image: '/images/banner/img-main-banner-1.png',
     },
     {
-      id: 2,
-      category: 'TV',
+      id: 3,
+      category: '영화',
       tag: '큐레이션',
       title: '내 배우의 필모그래피만 모았다',
-      subtitle: '다미많이 좋이라면 덕질은 여기서',
-      image: '/images/banner/img-main-banner-2.png',
+      subtitle: '다미앓이 중이라면 덕질은 여기서',
+      image: '/images/banner/img-main-banner-3.png',
     },
   ]
 
@@ -44,7 +44,6 @@ const Carousel = () => {
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
             <div className={styles.card}>
-              {/* 양 옆 화살표 */}
               <div className={`swiper-button-prev ${styles.navButton}`} />
               <div className={`swiper-button-next ${styles.navButton}`} />
               <div className={styles.label}>{card.category}</div>
