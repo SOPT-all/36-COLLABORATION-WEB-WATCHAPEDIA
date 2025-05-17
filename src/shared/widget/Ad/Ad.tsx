@@ -24,7 +24,7 @@ const Ad = ({ type }: AdProps) => {
       />
       <div className={styles.contentWrap}>
         <div className={styles.adTextWrap}>
-          <h1 className={styles.adTitle}>{adContent.title}</h1>
+          <p className={styles.adTitle}>{adContent.title}</p>
           <p className={styles.adCaption}>{adContent.caption}</p>
           <div className={styles.bottomCaptionWrap}>
             <Image
