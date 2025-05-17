@@ -14,14 +14,21 @@ const TrendingComment = () => {
     comments: 3,
   }
 
+  const stars = Array.from({ length: 5 }, (_, index) =>
+    index < comment.rating ? (
+      <IcStar key={index} />
+    ) : (
+      <IcStarEmpty key={index} />
+    ),
+  )
+
   return (
     <div className={styles.commentCard}>
       {/* 유저 정보 */}
       <div className={styles.userInfo}>
         <IcProfileCircle />
         <p className={styles.userName}>{comment.user}</p>
-        <IcStar />
-        <IcStarEmpty />
+        <div className={styles.starList}>{stars}</div>
       </div>
 
       {/* 영화 + 내용 */}

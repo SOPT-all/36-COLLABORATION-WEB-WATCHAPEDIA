@@ -23,6 +23,11 @@ export const userName = style([
   },
 ])
 
+export const starList = style({
+  display: 'flex',
+  marginLeft: 'auto',
+})
+
 export const movieInfo = style({
   display: 'flex',
   gap: '8px',
