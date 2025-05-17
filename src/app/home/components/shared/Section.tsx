@@ -1,4 +1,5 @@
 import SectionHeader from './SectionHeader'
+import * as styles from '@/app/home/components/shared/Section.css'
 
 interface SectionProps {
   title: string
@@ -20,7 +21,7 @@ const Section = ({
         showRight={showRight}
         showNotice={showNotice}
       />
-      <div style={{ marginTop: '12px' }}>{children}</div>
+      <div className={styles.sectionContent}>{children}</div>
     </div>
   )
 }

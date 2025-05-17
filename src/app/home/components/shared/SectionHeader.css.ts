@@ -6,7 +6,7 @@ export const sectionWrap = style([
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '0 15px', // 추후 전체 컨테이너에 적용
+    padding: '0 15px',
   },
 ])
 

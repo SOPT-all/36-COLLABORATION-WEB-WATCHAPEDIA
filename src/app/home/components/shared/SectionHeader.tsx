@@ -1,4 +1,3 @@
-'use client'
 import * as styles from '@/app/home/components/shared/SectionHeader.css'
 import { IcInfo, IcRight } from '@/assets/svg'
 
