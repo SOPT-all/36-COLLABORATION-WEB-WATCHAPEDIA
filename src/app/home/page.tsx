@@ -2,6 +2,7 @@ import Carousel from '@/shared/components/Carousel/Carousel'
 import Header from '@/shared/constants/Header/Header'
 import * as styles from '@/app/home/Home.css'
 import SectionHeader from './components/shared/SectionHeader'
+import Bottom from '@/shared/components/Bottom/BottomNav'
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
           <SectionHeader text="시리즈 공개 예정작" showRight />
           <SectionHeader text="박스 오피스 순위" />
         </div>
+        <Bottom />
       </>
     </div>
   )
