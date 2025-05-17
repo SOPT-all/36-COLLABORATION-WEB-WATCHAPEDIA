@@ -39,6 +39,9 @@ export const color = createGlobalTheme(':root', {
     borderMedium: '#EBEBEB',
     borderSubtitle: '#B6B6B6',
   },
+  icon: {
+    gray: '#808080',
+  },
 })
 
 const createFontStyle = ({

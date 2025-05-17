@@ -1,5 +1,7 @@
+export { default as IcComment } from './IcComment'
 export { default as IcHome } from './IcHome'
 export { default as IcHomeDefault } from './IcHomeDefault'
+export { default as IcLike } from './IcLike'
 export { default as IcNotice } from './IcNotice'
 export { default as IcNoticeActive } from './IcNoticeActive'
 export { default as IcProfile } from './IcProfile'

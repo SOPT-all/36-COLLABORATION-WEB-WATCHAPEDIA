@@ -1,5 +1,11 @@
 import * as styles from '@/app/home/components/TrendingComment/TrendingComment.css'
-import { IcProfileCircle, IcStar, IcStarEmpty } from '@/assets/svg'
+import {
+  IcComment,
+  IcLike,
+  IcProfileCircle,
+  IcStar,
+  IcStarEmpty,
+} from '@/assets/svg'
 import Image from 'next/image'
 
 const TrendingComment = () => {
@@ -42,6 +48,18 @@ const TrendingComment = () => {
         <div className={styles.movieText}>
           <p className={styles.movieTitle}>{comment.movieTitle}</p>
           <p className={styles.movieReview}>{comment.content}</p>
+        </div>
+      </div>
+
+      {/* 좋아요, 댓글 수 */}
+      <div className={styles.commentFooter}>
+        <div className={styles.iconGroup}>
+          <IcLike />
+          <span>{comment.likes}</span>
+        </div>
+        <div className={styles.iconGroup}>
+          <IcComment />
+          <span>{comment.comments}</span>
         </div>
       </div>
     </div>

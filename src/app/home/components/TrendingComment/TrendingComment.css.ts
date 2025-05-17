@@ -46,3 +46,20 @@ export const movieReview = style([
     color: color.gray.gray6,
   },
 ])
+
+export const commentFooter = style({
+  display: 'flex',
+  borderTop: '1px solid #eee',
+  paddingTop: '12px',
+  gap: '9px',
+})
+
+export const iconGroup = style([
+  font.title_m_14,
+  {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '3px',
+    color: color.icon.gray,
+  },
+])
