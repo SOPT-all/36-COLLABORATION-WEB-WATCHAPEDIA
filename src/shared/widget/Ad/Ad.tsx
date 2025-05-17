@@ -23,11 +23,12 @@ export const adContentMap = {
 } as const
 
 const Ad = ({ type }: AdProps) => {
-  const adContent = adContentMap[type]
+  const { image, title, caption, bottomCaption } = adContentMap[type]
+
   return (
     <div className={styles.adWrap}>
       <Image
-        src={adContent.image}
+        src={image}
         className={styles.adImage}
         alt={`${type} 광고 이미지`}
         width={345}
@@ -37,8 +38,8 @@ const Ad = ({ type }: AdProps) => {
       />
       <div className={styles.contentWrap}>
         <div className={styles.adTextWrap}>
-          <p className={styles.adTitle}>{adContent.title}</p>
-          <p className={styles.adCaption}>{adContent.caption}</p>
+          <p className={styles.adTitle}>{title}</p>
+          <p className={styles.adCaption}>{caption}</p>
           <div className={styles.bottomCaptionWrap}>
             <Image
               src="/images/ad/img-watchapedia-sm.png"
@@ -47,7 +48,7 @@ const Ad = ({ type }: AdProps) => {
               height={17}
               quality={100}
             />
-            <p className={styles.bottomCaption}>{adContent.bottomCaption}</p>
+            <p className={styles.bottomCaption}>{bottomCaption}</p>
           </div>
         </div>
         <Button
