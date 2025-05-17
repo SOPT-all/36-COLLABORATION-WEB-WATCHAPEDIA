@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import * as styles from '@/app/home/components/Event/Event.css'
+import { IcRight } from '@/assets/svg'
 const Event = () => {
   return (
     <div className={styles.eventCard}>
@@ -10,7 +11,10 @@ const Event = () => {
         height={160}
         className={styles.eventImage}
       />
-      <div className={styles.eventBottom}>&lt;파과&gt; 시사회 이벤트</div>
+      <div className={styles.eventBottom}>
+        <p>&lt;파과&gt; 시사회 이벤트</p>
+        <IcRight stroke="#FFF" />
+      </div>
     </div>
   )
 }

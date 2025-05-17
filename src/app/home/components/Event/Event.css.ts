@@ -23,5 +23,8 @@ export const eventBottom = style([
     backgroundColor: '#00A0FE',
     borderBottomLeftRadius: '6px',
     borderBottomRightRadius: '6px',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 ])
