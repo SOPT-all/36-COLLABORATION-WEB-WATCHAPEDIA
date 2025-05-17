@@ -1,4 +1,5 @@
 import Carousel from '@/shared/components/Carousel/Carousel'
+import TrendingComment from './components/TrendingComment/TrendingComment'
 
 const Home = () => {
   return (
@@ -6,6 +7,7 @@ const Home = () => {
       view 1 HOME
       <>
         <Carousel />
+        <TrendingComment />
       </>
     </div>
   )
