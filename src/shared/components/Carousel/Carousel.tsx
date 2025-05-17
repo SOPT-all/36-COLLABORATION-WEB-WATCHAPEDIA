@@ -14,7 +14,7 @@ const Carousel = () => {
       tag: '큐레이션',
       title: '청춘 키워드에 꽂힌 내게 온 추천',
       subtitle: '지금 딱 읽기 좋은 청춘 웹툰 추천',
-      image: '/images/banner/img-main-banner-1.png',
+      image: '/images/banner/img_main_banner_1.png',
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const Carousel = () => {
       tag: '큐레이션',
       title: '내 배우의 필모그래피만 모았다',
       subtitle: '다미앓이 중이라면 덕질은 여기서',
-      image: '/images/banner/img-main-banner-3.png',
+      image: '/images/banner/img_main_banner_3.png',
     },
   ]
 
