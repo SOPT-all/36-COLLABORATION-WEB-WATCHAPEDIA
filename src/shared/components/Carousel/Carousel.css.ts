@@ -5,6 +5,7 @@ export const container = style({
   width: '100%',
   maxWidth: '375px',
   position: 'relative',
+  marginTop: '18px',
 })
 
 export const card = style({
