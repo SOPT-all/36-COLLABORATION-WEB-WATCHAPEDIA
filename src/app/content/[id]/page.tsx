@@ -1,5 +1,11 @@
+import InfoSection from "./sections/info/InfoSection"
+
 const Content = () => {
-  return <div>view 2 content</div>
+  return (
+    <>
+      <InfoSection />
+    </>
+  )
 }
 
 export default Content
