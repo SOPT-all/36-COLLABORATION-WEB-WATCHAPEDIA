@@ -4,16 +4,17 @@ import Image from 'next/image'
 import watchaImg from '/public/images/watcha.png'
 import wavveImg from '/public/images/wavve.png'
 
-type InfoContentProps = Pick<
-  DetailItem,
-  | 'title'
-  | 'engTitle'
-  | 'releaseYear'
-  | 'runningTime'
-  | 'genres'
-  | 'ageLimit'
-  | 'country'
->
+interface Props
+  extends Pick<
+    DetailItem,
+    | 'title'
+    | 'engTitle'
+    | 'releaseYear'
+    | 'runningTime'
+    | 'genres'
+    | 'ageLimit'
+    | 'country'
+  > {}
 
 const InfoContent = ({
   title,
@@ -23,7 +24,7 @@ const InfoContent = ({
   genres,
   ageLimit,
   country,
-}: InfoContentProps) => {
+}: Props) => {
   return (
     <div className={styles.infoContainer}>
       <h1 className={styles.infoTitle}>{title}</h1>
