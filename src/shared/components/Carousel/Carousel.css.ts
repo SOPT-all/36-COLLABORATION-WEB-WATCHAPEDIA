@@ -4,8 +4,9 @@ import { font } from '@/app/styles.css'
 export const container = style({
   width: '100%',
   maxWidth: '375px',
-  margin: '0 auto',
   position: 'relative',
+  marginTop: '18px',
+  marginBottom: '25px',
 })
 
 export const card = style({
@@ -88,4 +89,12 @@ globalStyle('.swiper-button-prev::after, .swiper-button-next::after', {
 
 globalStyle('.swiper-button-disabled', {
   display: 'none',
+})
+
+globalStyle('.swiper-slide ', {
+  width: '345px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: '0px',
 })
