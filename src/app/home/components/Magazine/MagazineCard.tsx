@@ -1,11 +1,18 @@
 import Image from 'next/image'
 import * as styles from '@/app/home/components/Magazine/MagazineCard.css'
 
-const MagazineCard = () => {
+interface MagazineCardProps {
+  image: string
+  tag: string
+  title: string
+  subtitle: string
+}
+
+const MagazineCard = ({ image, tag, title, subtitle }: MagazineCardProps) => {
   return (
     <div>
       <Image
-        src="/images/view1/img_magazine.png"
+        src={image}
         alt="매거진 이미지"
         width={345}
         height={194}
@@ -21,12 +28,10 @@ const MagazineCard = () => {
             unoptimized
             className={styles.magazinelabelIcon}
           />
-          <p>콘텐츠 소식</p>
+          <p>{tag}</p>
         </div>
-        <p className={styles.magazineTitle}>
-          '콜바넴' 감독 신작 &lt;퀴어&gt;, 6월에 옵니다
-        </p>
-        <p className={styles.magazineCaption}>4월 3주차 주요 콘텐츠 소식 </p>
+        <p className={styles.magazineTitle}>{title}</p>
+        <p className={styles.magazineCaption}>{subtitle}</p>
       </div>
     </div>
   )

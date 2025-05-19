@@ -43,7 +43,12 @@ const MagazineCarousel = () => {
       >
         {cards.map((card) => (
           <SwiperSlide key={card.id}>
-            <MagazineCard />
+            <MagazineCard
+              image={card.image}
+              tag={card.tag}
+              title={card.title}
+              subtitle={card.subtitle}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
