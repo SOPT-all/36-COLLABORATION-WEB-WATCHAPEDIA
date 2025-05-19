@@ -17,7 +17,7 @@ const GraphTextContent = () => {
             <div className={styles.graphStar}><IcGraphStar/></div>
             <p className={styles.averageText}>{STAR_GRAPH_DATA.averageRating}</p>
           </div>
-          <p className={styles.explainCountText}>{STAR_GRAPH_DATA.reviewCount}</p>
+          <p className={styles.explainCountText}>&nbsp;({STAR_GRAPH_DATA.reviewCount})</p>
         </div>
       </div>
   );
