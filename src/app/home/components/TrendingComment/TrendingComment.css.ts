@@ -49,7 +49,7 @@ export const movieReview = style([
 
 export const commentFooter = style({
   display: 'flex',
-  borderTop: '1px solid #eee',
+  borderTop: `1px solid ${color.gray.gray1}`,
   paddingTop: '12px',
   gap: '9px',
 })
