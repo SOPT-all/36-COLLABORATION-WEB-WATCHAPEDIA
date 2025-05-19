@@ -4,58 +4,162 @@ import { recipe } from '@vanilla-extract/recipes'
 import { exportTraceState } from 'next/dist/trace'
 
 export const cardWrap = style({
-    width: '110px',
-    height:'222px',
+  width: '110px',
+  height: '230px',
 })
 
 export const posterWrap = style({
-    position: 'relative',
-    display: 'flex',
-    width: '110px',
-    height: '158px',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexShrink: 0,
-    borderRadius: '10px',
+  position: 'relative',
+  display: 'flex',
+  width: '110px',
+  height: '158px',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flexShrink: 0,
+  borderRadius: '10px',
+  overflow: 'hidden',
 })
 
 export const posterImg = style({
-    width: '110px',
-    height: '158px',
-    borderRadius: '10px',
+  width: '110px',
+  height: '158px',
+  objectFit: 'cover',
+  display: 'block',
 })
 
 export const watchaBadge = style({
-    zIndex: 2,
-    borderRadius:999,
-    position: 'absolute',
-    top: '3px',
-    right: '3px',
+  zIndex: 2,
+  borderRadius: 999,
+  position: 'absolute',
+  top: '3px',
+  right: '3px'
 })
 
-export const infoWrap = style({
-    width: '110px',
+export const dDayBadge = style([
+  font.body_sb_13,{
+    position: 'absolute',
+    top: '8px',
+    left: '8px',
+    backgroundColor:color.gray.gray8,
+    color: color.gray.gray1,
+    borderRadius: '6px',
+    padding: '2px 8px',
+    zIndex: 2,
+  }
+]
+  
+)
+
+export const rankBadge = style([
+  font.body_sb_13,{
+    position: 'absolute',
+    bottom: '8px',
+    left: '8px',
+    color: '#fff',
+    borderRadius: '6px',
+    padding: '3px 8px',
+    zIndex: 2,
+    backgroundColor:color.gray.gray8
+  } 
+]);
+
+export const actionWrap = style([
+  font.title_sb_14,
+  {
+    width:"110px",
+    position: 'absolute',
+    bottom: 0,
     display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    gap: '4px',
-    marginTop:"4px"
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  padding: '6px 8px',
+  zIndex: 2,
+  background: color.gray.gray7
+
+  },
+])
+
+export const addButton = style({
+  background: 'none',
+  border: 'none',
+  color: '#fff',
+  fontSize: '22px',
+  fontWeight: 700,
+  cursor: 'pointer',
+  width: '24px',
+  height: '24px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+})
+
+export const count = style([
+  font.title_sb_14,
+  {
+    color: '#fff',
+  },
+])
+
+export const infoWrap = style({
+  width: '110px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  gap: '4px',
+  marginTop: '4px',
 })
 
 export const title = style([
-    font.title_m_14,{
-        color: '#000',
-    }
+  font.title_m_14,
+  {
+    color: '#000',
+  },
 ])
 
-export const score= style([
-    font.label_r_12,{
-        color: color.brand.primary    }
+export const score = style([
+  font.label_r_12,
+  {
+    color: color.brand.primary,
+  },
 ])
 
 export const tags = style({
-    display: 'flex',
-    flexDirection: 'row',
-    gap: '4px',
+  display: 'flex',
+  flexDirection: 'row',
+  gap: '4px',
 })
+
+export const subInfo = style({
+  display: 'flex',
+  alignItems: 'center',
+  gap: '6px',
+  marginTop: '2px',
+})
+
+export const label = style({
+  background: '#000',
+  color: color.brand.primary,
+  borderRadius: '50%',
+  width: '24px',
+  height: '24px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: 700,
+  fontSize: '16px',
+})
+
+export const date = style([
+  font.subtitle_m_13,{
+    fontWeight:"500",
+    color:color.brand.primary,
+    display:"flex",
+  }
+])
+
+export const watcha = style({
+  color: "black"
+
+})
+

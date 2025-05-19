@@ -1,8 +1,10 @@
-import MovieCard from "@/shared/widget/MovieCard/MovieCard"
+"use client"
+
+import MovieCardList from "@/shared/widget/MovieCard/MovieCardList"
 
 const Home = () => {
   return (
-    <MovieCard  />
+    <><MovieCardList types={["dDay"]} /><MovieCardList types={["rank"]} /><MovieCardList types={["boxoffice"]} /><MovieCardList types={["series"]} /></>
   )
 }
 
