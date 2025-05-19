@@ -1,5 +1,5 @@
 import * as styles from './Magazine.css'
-import MagazineField from "./MagazineField/MagazineField";
+import MagazineField from "./MagazineField/MagazineField"
 
 const magazineData = [
   {
@@ -13,20 +13,20 @@ const magazineData = [
     title: '느낌 좋은 배우 홍경의 영화 취향',
     content: '사실 홍경은 진짜 유명한 씨네필임...',
     image: '/images/view2/magazine_2.png',
-  }
+  },
 ]
 
 const Magazine = () => {
   return (
     <>
       {magazineData.map((magazine, index)=> (
-        <section className={styles.magazineWrapper}>
+        <div className={styles.magazineWrapper}>
           <MagazineField key={index} magazine={magazine}/>
           <div className={styles.grayLine}/>
-        </section>
+        </div>
       ))}
     </>
-  );
-};
+  )
+}
 
 export default Magazine;
