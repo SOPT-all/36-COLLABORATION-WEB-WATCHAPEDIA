@@ -1,6 +1,6 @@
 import { detail } from '@/mocks'
 import Image from 'next/image'
-import InfoContent from '../../components/info/InfoContnet/InfoContent'
+import InfoContent from '../../components/info/InfoContent/InfoContent'
 import InfoHeader from '../../components/info/InfoHeader/InfoHeader'
 import * as styles from './InfoSection.css'
 
@@ -17,7 +17,7 @@ const InfoSection = () => {
   } = detail
 
   return (
-    <section>
+    <section className={styles.infoContainer}>
       <Image
         src={posterImage}
         alt={`${title} 사진`}
