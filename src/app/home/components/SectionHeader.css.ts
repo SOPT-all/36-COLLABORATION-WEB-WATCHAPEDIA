@@ -7,6 +7,7 @@ export const sectionWrap = style([
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: '0 15px',
+    marginBottom: '12px',
   },
 ])
 

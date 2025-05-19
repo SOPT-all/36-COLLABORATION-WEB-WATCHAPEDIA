@@ -3,6 +3,8 @@ import * as styles from '@/app/home/Home.css'
 import Bottom from '@/shared/components/Bottom/BottomNav'
 import Section from './components/Section'
 import Header from '@/shared/components/Header/Header'
+import TrendingComment from './components/TrendingComment/TrendingComment'
+import Event from './components/Event/Event'
 
 const Home = () => {
   return (
@@ -21,10 +23,10 @@ const Home = () => {
             <div></div>
           </Section>
           <Section title="지금 뜨는 코멘트" showRight>
-            <div></div>
+            <TrendingComment />
           </Section>
           <Section title="이벤트" showRight>
-            <div></div>
+            <Event />
           </Section>
           <Section title="시리즈 공개 예정작" showRight>
             <div></div>
