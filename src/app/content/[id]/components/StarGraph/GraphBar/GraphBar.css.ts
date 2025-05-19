@@ -1,6 +1,6 @@
-import { color, font } from "@/app/styles.css";
-import { style } from "@vanilla-extract/css";
-import { recipe } from "@vanilla-extract/recipes";
+import { color, font } from "@/app/styles.css"
+import { style } from "@vanilla-extract/css"
+import { recipe } from "@vanilla-extract/recipes"
 
 export const starGraphWrapper = style({
   height: 81,
@@ -26,9 +26,9 @@ export const scoreLabel = recipe({
       },
       false: {
         color: color.gray.gray4
-      }
-    }
-  }
+      },
+    },
+  },
 })
 
 export const graphBar = recipe({
@@ -43,7 +43,7 @@ export const graphBar = recipe({
       },
       false: {
         backgroundColor: color.brand.primaryLight
-      }
-    }
-  }
+      },
+    },
+  },
 })

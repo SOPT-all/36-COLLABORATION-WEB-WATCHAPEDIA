@@ -1,6 +1,5 @@
 import * as styles from './StarGraph.css'
-import React from 'react';
-import GraphBar from './GraphBar/GraphBar';
+import GraphBar from '../StarGraph/GraphBar/GraphBar'
 import GraphTextContent from './GraphTextContent/GraphTextContent';
 
 const StarGraph = () => {

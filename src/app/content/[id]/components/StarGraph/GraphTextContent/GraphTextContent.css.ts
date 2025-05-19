@@ -1,5 +1,5 @@
-import { color, font } from "@/app/styles.css"
-import { style } from "@vanilla-extract/css"
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
 
 export const starGraphTextWrapper = style({
   display: 'flex',
@@ -20,7 +20,7 @@ export const averageText = style([
   font.subtitle_m_18,
   {
     color: color.gray.gray6,
-  }
+  },
 ])
 
 export const graphStar = style({
@@ -32,7 +32,7 @@ export const explainText = style([
   font.label_r_12,
   {
     color: color.gray.gray6,
-  }
+  },
 ])
 
 export const explainCountText = style([
@@ -41,6 +41,6 @@ export const explainCountText = style([
     color: color.gray.gray6,
     display: 'flex',
     alignItems: 'flex-end',
-    paddingBottom: '3px'
-  }
+    paddingBottom: '3px',
+  },
 ])
