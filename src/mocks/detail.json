@@ -1,0 +1,31 @@
+
+{
+  "id": 1,
+  "title": "펀치 드렁크 러브",
+  "engTitle": "Punch-Drunk Love",
+  "genres": ["코미디", "드라마", "로맨스", "스릴러", "로맨틱 코미디"],
+  "releaseYear": 2002,
+  "runningTime": 95,
+  "ageLimit": 15,
+  "score": 3.7,
+  "detail": "행 마일리지를...",
+  "posterImage": "/images/info_top.png",
+  "mainImage":   "/images/info_top.png",
+  "country": "미국",
+  "artists": [
+    {
+      "role": "DIRECTOR",
+      "name": "폴 토머스 앤더슨"
+    },
+    {
+      "role": "ACTOR",
+      "name": "아담 샌들러",
+      "character": "배리"
+    },
+    {
+      "role": "ACTOR",
+      "name": "에밀리 왓슨",
+      "character": "레나"
+    }
+  ]
+}
