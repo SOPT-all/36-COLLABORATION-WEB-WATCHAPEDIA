@@ -1,9 +1,8 @@
 import Carousel from '@/shared/components/Carousel/Carousel'
-import Header from '@/shared/constants/Header/Header'
 import * as styles from '@/app/home/Home.css'
-import SectionHeader from './components/shared/SectionHeader'
 import Bottom from '@/shared/components/Bottom/BottomNav'
 import Section from './components/shared/Section'
+import Header from '@/shared/components/Header/Header'
 
 const Home = () => {
   return (
