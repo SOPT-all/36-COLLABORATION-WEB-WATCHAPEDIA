@@ -15,14 +15,14 @@ const Section = ({
   showNotice = false,
 }: SectionProps) => {
   return (
-    <div>
+    <>
       <SectionHeader
         text={title}
         showRight={showRight}
         showNotice={showNotice}
       />
       <div className={styles.sectionContent}>{children}</div>
-    </div>
+    </>
   )
 }
 
