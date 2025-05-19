@@ -6,23 +6,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import * as styles from '@/app/home/components/Magazine/MagazineCarousel.css'
 import MagazineCard from './MagazineCard'
-
-const cards = [
-  {
-    id: 1,
-    image: '/images/view1/img_magazine.png',
-    tag: '콘텐츠 소식',
-    title: "'콜바넴' 감독 신작 <퀴어>, 6월에 옵니다",
-    subtitle: '4월 3주차 주요 콘텐츠 소식',
-  },
-  {
-    id: 2,
-    image: '/images/view1/img_magazine.png',
-    tag: '콘텐츠 소식',
-    title: "'콜바넴' 감독 신작 <퀴어>, 6월에 옵니다",
-    subtitle: '4월 3주차 주요 콘텐츠 소식',
-  },
-]
+import { magazine } from '@/mocks'
 
 const MagazineCarousel = () => {
   return (
@@ -41,7 +25,7 @@ const MagazineCarousel = () => {
           disableOnInteraction: false,
         }}
       >
-        {cards.map((card) => (
+        {magazine.map((card) => (
           <SwiperSlide key={card.id}>
             <MagazineCard
               image={card.image}
