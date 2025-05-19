@@ -1,5 +1,4 @@
 import * as styles from '@/app/home/components/TrendingComment/TrendingComment.css'
-import { trendingComment } from '@/assets/mocks'
 import {
   IcComment,
   IcLike,
@@ -7,6 +6,7 @@ import {
   IcStar,
   IcStarEmpty,
 } from '@/assets/svg'
+import { trendingComment } from '@/mocks'
 import Image from 'next/image'
 
 const TrendingComment = () => {
