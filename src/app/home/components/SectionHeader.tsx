@@ -1,4 +1,4 @@
-import * as styles from '@/app/home/components/shared/SectionHeader.css'
+import * as styles from '@/app/home/components/SectionHeader.css'
 import { IcInfo, IcRight } from '@/assets/svg'
 
 interface SectionHeaderProps {

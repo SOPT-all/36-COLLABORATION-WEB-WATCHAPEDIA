@@ -1,5 +1,5 @@
 import SectionHeader from './SectionHeader'
-import * as styles from '@/app/home/components/shared/Section.css'
+import * as styles from '@/app/home/components/Section.css'
 
 interface SectionProps {
   title: string
