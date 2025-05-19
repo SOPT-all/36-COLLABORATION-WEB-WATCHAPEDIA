@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import * as styles from '@/app/home/components/Magazine/MagazineCard.css'
 
-const Magazine = () => {
+const MagazineCard = () => {
   return (
     <div>
       <Image
@@ -32,4 +32,4 @@ const Magazine = () => {
   )
 }
 
-export default Magazine
+export default MagazineCard
