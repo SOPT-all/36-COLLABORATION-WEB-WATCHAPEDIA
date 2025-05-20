@@ -4,9 +4,9 @@ import { moviePresets } from "./MovieMock";
 import Badge from './_components/Badge';
 import Action from './_components/Action';
 import SubInfo from './_components/SubInfo';
-import Star from './_components/Star';
 import MovieCardTags from './_components/MovieCardTags';
-import { MovieCardPreset } from './MovieCard.types';
+import { IcWatchaWhite } from "@/assets/svg";
+
 
 interface MovieCardProps {
   type: keyof typeof moviePresets;
@@ -23,6 +23,11 @@ const MovieCard = ({ type }: MovieCardProps) => {
           alt={data.title} 
           className={styles.posterImg} 
         />
+        {data.type === 'rank' && (
+          <div className={styles.watchaIcon}>
+            <IcWatchaWhite />
+          </div>
+        )}
         <Badge data={data} />
         {(data.type === 'dDay' || data.type === 'boxoffice' || data.type === 'series') && (
           <Action isWishedCount={data.isWishedCount} />

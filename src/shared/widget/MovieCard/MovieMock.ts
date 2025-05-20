@@ -15,8 +15,8 @@ export const moviePresets: Record<string, MovieCardPreset> = {
     movieType: "MOVIE",
     isWishedCount: 456,
     imagePath: "/img/poster.png",
+    releaseYear: "2024-01-01",
     title: "극장 영화",
-    releaseYear: "2024-05-01",
     type: "boxoffice"
   },
   series: {
