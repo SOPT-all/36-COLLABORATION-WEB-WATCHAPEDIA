@@ -1,125 +1,33 @@
 "use client"
-
-import React, { createContext, useContext } from "react";
 import * as styles from './MovieCard.css'
-import { moviePresets, MovieCardType, MovieCardPreset } from "./MovieMock";
-import { IcPlus, IcStar, IcWatchaBlack,  } from "@/assets/svg";
-import { Tag } from "@/shared/components/Tag/Tag";
+import { moviePresets } from "./MovieMock";
+import Poster from './_components/Poster';
+import Badge from './_components/Badge';
+import Action from './_components/Action';
+import SubInfo from './_components/SubInfo';
+import Star from './_components/Star';
+import MovieCardTags from './_components/MovieCardTags';
 
 interface MovieCardProps {
-  type: MovieCardType;
+  type: keyof typeof moviePresets;
 }
 
 const MovieCard = ({ type }: MovieCardProps) => {
-  const data: MovieCardPreset = moviePresets[type];
+  const data = moviePresets[type];
 
   return (
     <div className={styles.cardWrap}>
       <div className={styles.posterWrap}>
         <img src={data.poster} alt={data.title} className={styles.posterImg} />
-        {typeof data.label === "function" && (
-          <div className={styles.watchaBadge}>
-            {React.createElement(data.label, { width: 24, height: 24 })}
-          </div>
-        )}
-        {data.badge && (
-          <div className={(data.type === "dDay" || data.type === "series") ? styles.dDayBadge : styles.rankBadge}>
-            {data.badge}
-          </div>
-        )}
-        {data.count !== undefined && (
-          <div className={styles.actionWrap}>
-            <div className={styles.addButton}><IcPlus /></div>
-            <span className={styles.count}>{data.count.toLocaleString()}</span>
-          </div>
-        )}
+        <Badge type={data.type} badge={data.badge} label={data.label} />
+        <Action count={data.count} />
       </div>
       <div className={styles.title}>{data.title}</div>
-      {(typeof data.label === "string" || data.date) && (
-        <div className={styles.subInfo}>
-          {typeof data.label === "string" && (
-            <span className={styles.label}>{data.label}</span>
-          )}
-          {data.date && (
-            <span className={styles.date}>
-              {data.type === "dDay" && <IcWatchaBlack />}
-              {data.type === "series" && <IcWatchaBlack />}
-              {data.type === "boxoffice" && <span className={styles.label}></span>}
-              {data.date}
-            </span>
-          )}
-        </div>
-      )}
-      {data.star && (
-        <div className={styles.starWrap}>
-          <span className={styles.starLabel}>예상</span>
-          <IcStar />
-          <span className={styles.starLabel}>{data.star}</span>
-        </div>
-      )}
-      {data.tags && (
-        <div className={styles.tags}>
-          {data.tags[0] && <Tag text={data.tags[0]} color="blue" size="sm" />}
-          {data.tags[1] && <Tag text={data.tags[1]} color="orange" size="sm" />}
-        </div>
-      )}
+      <SubInfo data={data} />
+      {data.star && <Star star={data.star} />}
+      {data.tags && <MovieCardTags tags={[...data.tags]} />}
     </div>
   );
-};
-
-// Poster
-MovieCard.Poster = function Poster({ src, alt }: { src: string; alt: string }) {
-  return (
-    <div className={styles.posterWrap}>
-      <img src={src} alt={alt} className={styles.posterImg} />
-    </div>
-  );
-};
-
-// Badge
-MovieCard.Badge = function Badge({ type, children }: { type: "dDay" | "rank"; children: React.ReactNode }) {
-  return (
-    <div className={type === "dDay" ? styles.dDayBadge : styles.rankBadge}>
-      {children}
-    </div>
-  );
-};
-
-// 버튼
-MovieCard.Action = function Action({ children }: { children: React.ReactNode }) {
-  return <div className={styles.actionWrap}>{children}</div>;
-};
-MovieCard.AddButton = function AddButton() {
-  return <button className={styles.addButton}><IcPlus width= {13} height= {13} /></button>;
-};
-MovieCard.Count = function Count({ children }: { children: React.ReactNode }) {
-  return <span className={styles.count}>{children}</span>;
-};
-
-// Title
-MovieCard.Title = function Title({ children }: { children: React.ReactNode }) {
-  return <div className={styles.title}>{children}</div>;
-};
-
-// SubInfo (ex: W, 날짜)
-MovieCard.SubInfo = function SubInfo({ children }: { children: React.ReactNode }) {
-  return <div className={styles.subInfo}>{children}</div>;
-};
-MovieCard.Label = function Label({ children }: { children: React.ReactNode }) {
-  return <span className={styles.label}>{children}</span>;
-};
-MovieCard.Date = function Date({ children }: { children: React.ReactNode }) {
-  return <span className={styles.date}>{children}</span>;
-};
-MovieCard.Star= function Star({children}: {children: React.ReactNode}){
-  return <div className={styles.starWrap}>
-    <div className={styles.star}>예상 <IcStar /> {}
-    </div>
-  </div>
-};
-// Tags
-MovieCard.Tags = function Tags({ children }: { children: React.ReactNode }) {
-  return <div className={styles.tags}>{children}</div>;
 };
 
 export default MovieCard;

@@ -65,16 +65,16 @@ export const rankBadge = style([
 export const actionWrap = style([
   font.title_sb_14,
   {
-    width:"90%",
     position: 'absolute',
+    width:"85%",
+    left: 0,
     bottom: 0,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-  padding: '6px 8px',
-  zIndex: 2,
-  background: color.gray.gray7
-
+    padding: '6px 8px',
+    zIndex: 2,
+    background: color.gray.gray7
   },
 ])
 
@@ -150,6 +150,7 @@ export const date = style([
     color:color.brand.primary,
     display:"flex",
     alignItems:"center",
+    gap:"4px"
   }
 ])
 
