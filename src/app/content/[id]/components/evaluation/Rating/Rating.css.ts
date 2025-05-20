@@ -42,7 +42,6 @@ export const overlayStarHalf = style({
   height: '100%',
   overflow: 'hidden',
   color: color.brand.primary,
-  transition: 'color 0.3s ease-in-out',
 })
 
 export const baseStar = recipe({
@@ -50,7 +49,6 @@ export const baseStar = recipe({
     all: 'unset',
     position: 'relative',
     display: 'inline-block',
-    transition: 'color 0.3s ease-in-out',
   },
   variants: {
     isFull: {
