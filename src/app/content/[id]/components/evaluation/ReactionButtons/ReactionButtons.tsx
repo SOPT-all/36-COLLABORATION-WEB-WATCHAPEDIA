@@ -12,14 +12,13 @@ interface ReactionButtonProps {
   active: boolean
   onClick: () => void
 }
+type ClickableName = '보고싶어요' | '보는중'
 
-const ButtonList = [
+const buttonList = [
   { svg: <SvgReIconWish />, name: '보고싶어요' },
   { svg: <SvgReIconEye />, name: '보는중' },
   { svg: <ReIconMore />, name: '더보기' },
 ] as const
-
-type ClickableName = '보고싶어요' | '보는중'
 
 const ReactionButtons = () => {
   const [clicked, setClicked] = useState<ClickableName>()
@@ -34,7 +33,7 @@ const ReactionButtons = () => {
 
   return (
     <div className={styles.reactionButtonsContainer}>
-      {ButtonList.map(({ svg, name }) => (
+      {buttonList.map(({ svg, name }) => (
         <ReactionButton
           key={name}
           svg={svg}
