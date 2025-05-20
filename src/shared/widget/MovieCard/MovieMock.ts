@@ -1,48 +1,39 @@
-import { IcWatchaWhite, IcWatchaBlack } from "@/assets/svg";
+import { MovieCardPreset } from './MovieCard.types';
 
-export const moviePresets = {
+export const moviePresets: Record<string, MovieCardPreset> = {
   dDay: {
-    poster: "/img/poster.png",
+    id: 1,
+    untilRelease: 3,
+    isWishedCount: 123,
+    imagePath: "/img/poster.png",
     title: "안드로 시즌 2",
-    badge: "D-1",
-    count: "27.1K",
-    date: "2025.04.23",
-    label: undefined,
-    star: undefined,
-    tags: undefined,
+    releaseYear: "2025-04-23",
     type: "dDay"
   },
-  rank: {
-    poster: "/img/poster.png",
-    title: "펀치 드링크 러브",
-    badge: "1",
-    count: undefined,
-    date: undefined,
-    label: IcWatchaWhite,
-    tags: ["사랑스러운", "로맨스"],
-    star: 4.8,
-    type: "rank"
-  },
   boxoffice: {
-    poster: "/img/poster.png",
-    title: "4월 이야기",
-    badge: undefined,
-    count: 42700,
-    date: undefined,
-    label: undefined,
-    star: undefined,
-    tags: undefined,
+    id: 2,
+    movieType: "MOVIE",
+    isWishedCount: 456,
+    imagePath: "/img/poster.png",
+    title: "극장 영화",
+    releaseYear: "2024-05-01",
     type: "boxoffice"
   },
   series: {
-    poster: "/img/poster.png",
-    title: "안드로 시즌 2",
-    badge: "D-1",
-    count: "271",
-    date: "2025.04.23", // date 추가!
-    label: undefined,
-    star: undefined,
-    tags: undefined,
+    id: 3,
+    movieType: "SERIES",
+    isWishedCount: 789,
+    imagePath: "/img/poster.png",
+    title: "인기 시리즈",
+    releaseYear: "2024-06-01",
     type: "series"
+  },
+  rank: {
+    id: 4,
+    imagePath: "/img/poster.png",
+    title: "펀치 드링크 러브",
+    score: 4.8,
+    tag: ["사랑스러운", "로맨스"],
+    type: "rank"
   }
-} as const;
+};

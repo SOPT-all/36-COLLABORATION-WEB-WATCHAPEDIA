@@ -1,20 +1,33 @@
 import * as styles from '../MovieCard.css';
 import { IcWatchaBlack } from "@/assets/svg";
 import { MovieCardPreset } from '../MovieCard.types';
+import Star from './Star';
 
-export default function SubInfo({ data }: { data: MovieCardPreset }) {
-  if (!data.date && typeof data.label !== "string") return null;
-  return (
-    <div>
-      {typeof data.label === "string" && data.label}
-      {data.date && (
+interface SubInfoProps {
+  data: MovieCardPreset;
+}
+
+export default function SubInfo({ data }: SubInfoProps) {
+  if (data.type === 'dDay' || data.type === 'boxoffice' || data.type === 'series') {
+    return (
+      <div>
         <span className={styles.date}>
-          {data.type === "dDay" && <IcWatchaBlack />}
-          {data.type === "series" && <IcWatchaBlack />}
-          {data.type === "boxoffice"}
-          {data.date}
+          {(data.type === "dDay" || data.type === "series") && <IcWatchaBlack />}
+          {data.releaseYear}
         </span>
-      )}
-    </div>
-  );
+      </div>
+    );
+  }
+
+  if (data.type === 'rank') {
+    return (
+      <div>
+        <span className={styles.date}>
+          <Star star={data.score} />
+        </span>
+      </div>
+    );
+  }
+
+  return null;
 } 

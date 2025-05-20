@@ -1,10 +1,42 @@
 import * as styles from '../MovieCard.css';
+import { MovieCardPreset } from '../MovieCard.types';
 
-export default function Badge({ type, badge, label }: { type: string; badge?: string; label?: any }) {
-  if (!badge) return null;
-  return (
-    <div className={(type === "dDay" || type === "series") ? styles.dDayBadge : styles.rankBadge}>
-      {badge}
-    </div>
-  );
+interface BadgeProps {
+  data: MovieCardPreset;
+}
+
+export default function Badge({ data }: BadgeProps) {
+  if (data.type === 'dDay') {
+    return (
+      <div className={styles.dDayBadge}>
+        D-{data.untilRelease}
+      </div>
+    );
+  }
+
+  if (data.type === 'boxoffice') {
+    return (
+      <div className={styles.rankBadge}>
+        극장
+      </div>
+    );
+  }
+
+  if (data.type === 'series') {
+    return (
+      <div className={styles.dDayBadge}>
+        D-1
+      </div>
+    );
+  }
+
+  if (data.type === 'rank') {
+    return (
+      <div className={styles.rankBadge}>
+        {data.id}
+      </div>
+    );
+  }
+
+  return null;
 } 

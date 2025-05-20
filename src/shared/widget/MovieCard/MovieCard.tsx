@@ -6,6 +6,7 @@ import Action from './_components/Action';
 import SubInfo from './_components/SubInfo';
 import Star from './_components/Star';
 import MovieCardTags from './_components/MovieCardTags';
+import { MovieCardPreset } from './MovieCard.types';
 
 interface MovieCardProps {
   type: keyof typeof moviePresets;
@@ -17,14 +18,21 @@ const MovieCard = ({ type }: MovieCardProps) => {
   return (
     <div className={styles.cardWrap}>
       <div className={styles.posterWrap}>
-        <img src={data.poster} alt={data.title} className={styles.posterImg} />
-        <Badge type={data.type} badge={data.badge} label={data.label} />
-        <Action count={data.count} />
+        <img 
+          src={data.imagePath} 
+          alt={data.title} 
+          className={styles.posterImg} 
+        />
+        <Badge data={data} />
+        {(data.type === 'dDay' || data.type === 'boxoffice' || data.type === 'series') && (
+          <Action isWishedCount={data.isWishedCount} />
+        )}
       </div>
       <div className={styles.title}>{data.title}</div>
       <SubInfo data={data} />
-      {data.star && <Star star={data.star} />}
-      {data.tags && <MovieCardTags tags={[...data.tags]} />}
+      {data.type === 'rank' && data.tag && (
+        <MovieCardTags tags={data.tag} />
+      )}
     </div>
   );
 };
