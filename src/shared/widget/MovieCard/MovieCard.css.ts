@@ -130,19 +130,6 @@ export const tags = style({
   gap: '4px',
 })
 
-export const subInfo = style({
-  display: 'flex',
-  alignItems: 'center',
-  gap: '6px',
-  marginTop: '2px',
-})
-
-export const label = style([
-  font.subtitle_m_13,{
-    fontWeight:"500",
-    whiteSpace:"nowrap"
-  }
-])
 
 export const date = style([
   font.subtitle_m_13,{

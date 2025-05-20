@@ -9,4 +9,4 @@ export interface MovieCardPreset {
   star?: number;
   tags?: string[];
   type: MovieCardType;
-} 
+}

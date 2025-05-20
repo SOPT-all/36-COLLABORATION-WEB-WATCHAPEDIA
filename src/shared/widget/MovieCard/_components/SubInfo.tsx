@@ -1,16 +1,17 @@
 import * as styles from '../MovieCard.css';
 import { IcWatchaBlack } from "@/assets/svg";
+import { MovieCardPreset } from '../MovieCard.types';
 
-export default function SubInfo({ data }: { data: any }) {
+export default function SubInfo({ data }: { data: MovieCardPreset }) {
   if (!data.date && typeof data.label !== "string") return null;
   return (
-    <div className={styles.subInfo}>
-      {typeof data.label === "string" && <span className={styles.label}>{data.label}</span>}
+    <div>
+      {typeof data.label === "string" && data.label}
       {data.date && (
         <span className={styles.date}>
           {data.type === "dDay" && <IcWatchaBlack />}
           {data.type === "series" && <IcWatchaBlack />}
-          {data.type === "boxoffice" && <span className={styles.label}></span>}
+          {data.type === "boxoffice"}
           {data.date}
         </span>
       )}

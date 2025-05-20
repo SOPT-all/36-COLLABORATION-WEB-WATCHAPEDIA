@@ -1,7 +1,6 @@
 "use client"
 import * as styles from './MovieCard.css'
 import { moviePresets } from "./MovieMock";
-import Poster from './_components/Poster';
 import Badge from './_components/Badge';
 import Action from './_components/Action';
 import SubInfo from './_components/SubInfo';
