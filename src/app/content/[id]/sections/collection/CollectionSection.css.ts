@@ -45,6 +45,7 @@ export const collectionTitle = style([
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     wordBreak: 'keep-all',
+    width: 150,
   },
 ])
 
@@ -52,5 +53,6 @@ export const collectionLike = style([
   font.label_m_12,
   {
     color: color.gray.gray5,
+    width: 150,
   },
 ])
