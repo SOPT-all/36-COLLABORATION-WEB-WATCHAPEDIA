@@ -3,7 +3,7 @@ import { MovieCardPreset } from './MovieCard.types';
 export const moviePresets: Record<string, MovieCardPreset> = {
   dDay: {
     id: 1,
-    untilRelease: 3,
+    untilRelease: 30,
     isWishedCount: 123,
     imagePath: "/img/poster.png",
     title: "안드로 시즌 2",
@@ -21,6 +21,7 @@ export const moviePresets: Record<string, MovieCardPreset> = {
   },
   series: {
     id: 3,
+    untilRelease: 3,
     movieType: "SERIES",
     isWishedCount: 789,
     imagePath: "/img/poster.png",

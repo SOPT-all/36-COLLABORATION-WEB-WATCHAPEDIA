@@ -13,6 +13,7 @@ export interface DDayCard {
 export interface BoxofficeOrSeriesCard {
   id: number;
   movieType: MovieType;
+  untilRelease?: number;
   isWishedCount: number;
   imagePath: string;
   title: string;

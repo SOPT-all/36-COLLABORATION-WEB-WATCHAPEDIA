@@ -25,7 +25,7 @@ export default function Badge({ data }: BadgeProps) {
   if (data.type === 'series') {
     return (
       <div className={styles.dDayBadge}>
-        D-1
+        <span>D-{data.untilRelease}</span>
       </div>
     );
   }
