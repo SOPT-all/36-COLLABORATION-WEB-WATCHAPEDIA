@@ -3,7 +3,7 @@
 import React, { createContext, useContext } from "react";
 import * as styles from './MovieCard.css'
 import { moviePresets, MovieCardType, MovieCardPreset } from "./MovieMock";
-import { IcPlus,  } from "@/assets/svg";
+import { IcPlus, IcWatchaBlack,  } from "@/assets/svg";
 
 interface MovieCardProps {
   type: MovieCardType;
@@ -41,9 +41,9 @@ const MovieCard = ({ type }: MovieCardProps) => {
           )}
           {data.date && (
             <span className={styles.date}>
-              <span className={styles.watchaCircle}>
-                <IcWatchaLight fill = {"#000"}/>
-              </span>
+              <div>
+                <IcWatchaBlack/>
+              </div>
               {data.date}
             </span>
           )}

@@ -1,4 +1,5 @@
-import { IcWatchaLight } from "@/assets/svg";
+import { IcWatchaWhite, IcWatchaBlack } from "@/assets/svg";
+
 export const moviePresets = {
   dDay: {
     poster: "/img/poster.png",
@@ -15,7 +16,7 @@ export const moviePresets = {
     badge: "1",
     count: undefined,
     date: undefined,
-    label: IcWatchaLight,
+    label: IcWatchaWhite,
     type: "rank"
   },
   boxoffice: {

@@ -1,7 +1,5 @@
 import { font, color } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
-import { recipe } from '@vanilla-extract/recipes'
-import { exportTraceState } from 'next/dist/trace'
 
 export const cardWrap = style({
   width: '110px',
@@ -155,11 +153,7 @@ export const date = style([
     fontWeight:"500",
     color:color.brand.primary,
     display:"flex",
+    alignItems:"center",
+    gap:"4px"
   }
 ])
-
-export const watcha = style({
-  color: "black"
-
-})
-
