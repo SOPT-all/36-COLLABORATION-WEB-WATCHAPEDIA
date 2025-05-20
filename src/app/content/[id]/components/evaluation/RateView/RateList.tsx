@@ -8,17 +8,13 @@ interface RateProps {
 
 const RateList = () => {
   return (
-    <LabelContent
-      label="평점"
-      gap="lg"
-      children={
-        <div className={styles.rateContainer}>
-          <Rate label="예상" rate="0.0" color="primary" />
-          <hr className={styles.rateSeparator} />
-          <Rate label="평균" rate="0.0" color="gray" />
-        </div>
-      }
-    />
+    <LabelContent label="평점" gap="lg">
+      <div className={styles.rateContainer}>
+        <Rate label="예상" rate="0.0" color="primary" />
+        <hr className={styles.rateSeparator} />
+        <Rate label="평균" rate="0.0" color="gray" />
+      </div>
+    </LabelContent>
   )
 }
 
