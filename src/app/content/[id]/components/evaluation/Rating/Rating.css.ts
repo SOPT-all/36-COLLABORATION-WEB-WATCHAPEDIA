@@ -47,6 +47,7 @@ export const overlayStarHalf = style({
 
 export const baseStar = recipe({
   base: {
+    all: 'unset',
     position: 'relative',
     display: 'inline-block',
     transition: 'color 0.3s ease-in-out',

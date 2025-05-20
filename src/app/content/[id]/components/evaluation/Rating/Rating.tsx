@@ -68,8 +68,9 @@ const Rating = () => {
           else if (rating >= starValue - 0.5) starType = STAR_RATE.HALF
 
           return (
-            <span
-              key={index}
+            <button
+              key={`${index}-별점`}
+              type="button"
               className={styles.baseStar({
                 isFull: starType === STAR_RATE.FULL,
               })}
@@ -80,7 +81,7 @@ const Rating = () => {
                   <SvgIconStarLGray />
                 </span>
               )}
-            </span>
+            </button>
           )
         })}
       </div>
