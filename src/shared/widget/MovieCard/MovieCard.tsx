@@ -3,7 +3,7 @@
 import React, { createContext, useContext } from "react";
 import * as styles from './MovieCard.css'
 import { moviePresets, MovieCardType, MovieCardPreset } from "./MovieMock";
-import { IcPlus, IcWatchaLight } from "@/assets/svg";
+import { IcPlus,  } from "@/assets/svg";
 
 interface MovieCardProps {
   type: MovieCardType;
