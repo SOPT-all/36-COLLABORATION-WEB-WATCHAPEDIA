@@ -15,7 +15,7 @@ export const posterWrap = style({
   justifyContent: 'center',
   alignItems: 'center',
   flexShrink: 0,
-  borderRadius: '10px',
+  borderRadius: '5px',
   overflow: 'hidden',
 })
 
@@ -65,7 +65,7 @@ export const rankBadge = style([
 export const actionWrap = style([
   font.title_sb_14,
   {
-    width:"110px",
+    width:"90%",
     position: 'absolute',
     bottom: 0,
     display: 'flex',
@@ -112,6 +112,8 @@ export const title = style([
   font.title_m_14,
   {
     color: '#000',
+    marginBottom:"4px",
+    marginTop:"4px"
   },
 ])
 
@@ -135,18 +137,12 @@ export const subInfo = style({
   marginTop: '2px',
 })
 
-export const label = style({
-  background: '#000',
-  color: color.brand.primary,
-  borderRadius: '50%',
-  width: '24px',
-  height: '24px',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  fontWeight: 700,
-  fontSize: '16px',
-})
+export const label = style([
+  font.subtitle_m_13,{
+    fontWeight:"500",
+    whiteSpace:"nowrap"
+  }
+])
 
 export const date = style([
   font.subtitle_m_13,{
@@ -154,6 +150,17 @@ export const date = style([
     color:color.brand.primary,
     display:"flex",
     alignItems:"center",
-    gap:"4px"
+  }
+])
+
+export const starWrap=style ({
+  display: "flex",
+  gap:"2px",
+  marginBottom :"4px"
+})
+
+export const starLabel= style([
+  font.label_r_12,{
+    color:color.brand.primary
   }
 ])

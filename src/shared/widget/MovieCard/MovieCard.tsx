@@ -3,7 +3,8 @@
 import React, { createContext, useContext } from "react";
 import * as styles from './MovieCard.css'
 import { moviePresets, MovieCardType, MovieCardPreset } from "./MovieMock";
-import { IcPlus, IcWatchaBlack,  } from "@/assets/svg";
+import { IcPlus, IcStar, IcWatchaBlack,  } from "@/assets/svg";
+import { Tag } from "@/shared/components/Tag/Tag";
 
 interface MovieCardProps {
   type: MovieCardType;
@@ -22,7 +23,7 @@ const MovieCard = ({ type }: MovieCardProps) => {
           </div>
         )}
         {data.badge && (
-          <div className={data.type === "dDay" ? styles.dDayBadge : styles.rankBadge}>
+          <div className={(data.type === "dDay" || data.type === "series") ? styles.dDayBadge : styles.rankBadge}>
             {data.badge}
           </div>
         )}
@@ -41,12 +42,25 @@ const MovieCard = ({ type }: MovieCardProps) => {
           )}
           {data.date && (
             <span className={styles.date}>
-              <div>
-                <IcWatchaBlack/>
-              </div>
+              {data.type === "dDay" && <IcWatchaBlack />}
+              {data.type === "series" && <IcWatchaBlack />}
+              {data.type === "boxoffice" && <span className={styles.label}></span>}
               {data.date}
             </span>
           )}
+        </div>
+      )}
+      {data.star && (
+        <div className={styles.starWrap}>
+          <span className={styles.starLabel}>예상</span>
+          <IcStar />
+          <span className={styles.starLabel}>{data.star}</span>
+        </div>
+      )}
+      {data.tags && (
+        <div className={styles.tags}>
+          {data.tags[0] && <Tag text={data.tags[0]} color="blue" size="sm" />}
+          {data.tags[1] && <Tag text={data.tags[1]} color="orange" size="sm" />}
         </div>
       )}
     </div>
@@ -97,7 +111,12 @@ MovieCard.Label = function Label({ children }: { children: React.ReactNode }) {
 MovieCard.Date = function Date({ children }: { children: React.ReactNode }) {
   return <span className={styles.date}>{children}</span>;
 };
-
+MovieCard.Star= function Star({children}: {children: React.ReactNode}){
+  return <div className={styles.starWrap}>
+    <div className={styles.star}>예상 <IcStar /> {}
+    </div>
+  </div>
+};
 // Tags
 MovieCard.Tags = function Tags({ children }: { children: React.ReactNode }) {
   return <div className={styles.tags}>{children}</div>;
