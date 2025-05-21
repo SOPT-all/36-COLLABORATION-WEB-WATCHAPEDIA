@@ -7,7 +7,6 @@ export const descriptionContainer = style({
   alignItems: 'center',
   gap: 21,
   alignSelf: 'stretch',
-  padding: '24px 15px',
 })
 
 export const descriptionText = style([
