@@ -1,5 +1,5 @@
-import { color, font } from "@/app/styles.css";
-import { style } from "@vanilla-extract/css";
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
 
 export const fieldWrapper = style({
   width: 345,
@@ -10,7 +10,7 @@ export const fieldWrapper = style({
 })
 
 export const profile = style({
-  borderRadius: '4px'
+  borderRadius: '4px',
 })
 
 export const rightWrapper = style({
@@ -19,7 +19,6 @@ export const rightWrapper = style({
   justifyContent: 'space-between',
 })
 
-
 export const textConentWrapper = style({
   width: 280,
   display: 'flex',
@@ -27,15 +26,13 @@ export const textConentWrapper = style({
   gap: '6px',
 })
 
-export const name = style([
-  font.title_m_14,
-])
+export const name = style([font.title_m_14])
 
 export const character = style([
   font.body_r_14,
   {
     color: color.gray.gray6,
-  }
+  },
 ])
 
 export const bottomLine = style({
