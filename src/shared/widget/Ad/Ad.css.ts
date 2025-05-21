@@ -7,6 +7,7 @@ export const adWrap = style([
     borderRadius: '6px',
     width: 'fit-content',
     border: `1px solid ${color.border.borderMedium}`,
+    backgroundColor: 'white',
   },
 ])
 

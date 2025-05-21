@@ -5,6 +5,7 @@ import Section from './components/Section'
 import Header from '@/shared/components/Header/Header'
 import TrendingComment from './components/TrendingComment/TrendingComment'
 import Event from './components/Event/Event'
+import MagazineCarousel from './components/Magazine/MagazineCarousel'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
             <div></div>
           </Section>
           <Section title="매거진" showRight>
-            <div></div>
+            <MagazineCarousel />
           </Section>
           <Section title="지금 뜨는 코멘트" showRight>
             <TrendingComment />
