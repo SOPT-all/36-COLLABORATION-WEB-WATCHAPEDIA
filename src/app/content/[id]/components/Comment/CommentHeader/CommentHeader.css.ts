@@ -1,5 +1,5 @@
-import { color, font } from "@/app/styles.css";
-import { style } from "@vanilla-extract/css";
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
 
 export const commentHeaderWrapper = style({
   width: '100%',
@@ -15,7 +15,7 @@ export const userInfoWrapper = style({
 })
 
 export const profile = style({
-  borderRadius: '999px'
+  borderRadius: '999px',
 })
 
 export const name = style([
@@ -24,7 +24,7 @@ export const name = style([
     color: color.gray.gray6,
     display: 'flex',
     alignItems: 'center',
-  }
+  },
 ])
 
 export const scoreWrapper = style({
@@ -42,5 +42,5 @@ export const score = style([
   font.body_r_14,
   {
     color: color.gray.gray6,
-  }
+  },
 ])

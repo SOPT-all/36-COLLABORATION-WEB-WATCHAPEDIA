@@ -1,5 +1,5 @@
-import { color, font } from "@/app/styles.css";
-import { style } from "@vanilla-extract/css";
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
 
 export const comentAllWrapper = style({
   backgroundColor: color.background.subtitle,
@@ -14,12 +14,12 @@ export const comentAllWrapper = style({
 
 export const grayLine = style({
   height: '1px',
-  backgroundColor: color.border.borderMedium
+  backgroundColor: color.border.borderMedium,
 })
 
 export const goodText = style([
   font.body_m_16,
   {
     color: color.brand.primary,
-  }
+  },
 ])
