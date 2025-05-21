@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Button from '@/shared/components/Button/Button'
 import { PATH } from '@/shared/constants/path'
@@ -22,7 +22,7 @@ const Rating = () => {
   const [dragging, setDragging] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const calcRating = (clientX: number) => {
+  const calcRating = useCallback((clientX: number) => {
     if (!containerRef.current) return 0
 
     const { left, width } = containerRef.current.getBoundingClientRect()
@@ -30,7 +30,7 @@ const Rating = () => {
     percent = Math.max(0, Math.min(1, percent))
 
     return Math.round(percent * STAR * 2) / 2
-  }
+  }, [])
 
   const handleMouseDown = (e: React.MouseEvent) => {
     setDragging(true)
