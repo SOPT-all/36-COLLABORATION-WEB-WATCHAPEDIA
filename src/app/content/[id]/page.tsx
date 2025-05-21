@@ -7,6 +7,7 @@ import InfoSection from './sections/info/InfoSection'
 import GraphSection from './sections/graph/GraphSection'
 import Ad from '@/shared/widget/Ad/Ad'
 import VideoSection from './sections/video/VideoSection'
+import SimilarSection from './sections/similar/SimilarSection'
 
 const Content = () => {
   return (
@@ -22,6 +23,7 @@ const Content = () => {
       <GallerySection />
       <VideoSection />
       <CollectionSection />
+      <SimilarSection />
     </div>
   )
 }
