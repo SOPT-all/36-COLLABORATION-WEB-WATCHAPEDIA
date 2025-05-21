@@ -24,28 +24,26 @@ const GraphBar = () => {
   const labelScores = [0.5, 5.0, maxScore]
 
   return (
-    <section>
-      <div className={styles.starGraphWrapper}>
-        {graphData.map(({ score, height }, index) => (
-          <div key={index} className={styles.graphBarWrapper}>
-            {labelScores.includes(score) && (
-              <span
-                className={styles.scoreLabel({
-                  highlight: maxHeight === height,
-                })}
-              >
-                {score}
-              </span>
-            )}
+    <div className={styles.starGraphWrapper}>
+      {graphData.map(({ score, height }, index) => (
+        <div key={index} className={styles.graphBarWrapper}>
+          {labelScores.includes(score) && (
+            <span
+              className={styles.scoreLabel({
+                highlight: maxHeight === height,
+              })}
+            >
+              {score}
+            </span>
+          )}
 
-            <div
-              className={styles.graphBar({ active: maxHeight === height })}
-              style={{ height: `${height}px` }}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+          <div
+            className={styles.graphBar({ active: maxHeight === height })}
+            style={{ height: `${height}px` }}
+          />
+        </div>
+      ))}
+    </div>
   )
 }
 

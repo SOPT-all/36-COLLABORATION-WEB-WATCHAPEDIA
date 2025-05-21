@@ -3,11 +3,16 @@ import * as styles from './Button.css'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string
+  fullWidth?: boolean
 }
 
-const Button = ({ text, ...props }: Props) => {
+const Button = ({ text, fullWidth = false, ...props }: Props) => {
   return (
-    <button type="button" className={styles.button} {...props}>
+    <button
+      type="button"
+      className={styles.button({ fullWidth })}
+      {...props}
+    >
       {text}
     </button>
   )

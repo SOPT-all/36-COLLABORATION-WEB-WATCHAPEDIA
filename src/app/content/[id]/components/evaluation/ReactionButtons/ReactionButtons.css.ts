@@ -8,6 +8,7 @@ export const reactionButtonsContainer = style({
   justifyContent: 'center',
   alignItems: 'center',
   gap: 52,
+  padding: '10px 0px',
 })
 
 export const reactionButton = style([

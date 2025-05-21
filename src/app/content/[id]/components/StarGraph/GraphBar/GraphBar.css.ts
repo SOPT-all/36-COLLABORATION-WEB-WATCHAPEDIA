@@ -1,12 +1,13 @@
-import { color, font } from "@/app/styles.css"
-import { style } from "@vanilla-extract/css"
-import { recipe } from "@vanilla-extract/recipes"
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
+import { recipe } from '@vanilla-extract/recipes'
 
 export const starGraphWrapper = style({
-  height: 81,
   display: 'flex',
+  justifyContent: 'center',
   alignItems: 'flex-end',
-  justifyContent: 'space-between',
+  gap: 2,
+  alignSelf: 'stretch',
 })
 
 export const graphBarWrapper = style({
@@ -16,16 +17,14 @@ export const graphBarWrapper = style({
 })
 
 export const scoreLabel = recipe({
-  base: [
-    font.body_sb_13,
-  ],
+  base: [font.body_sb_13],
   variants: {
     highlight: {
       true: {
-        color: color.brand.primary
+        color: color.brand.primary,
       },
       false: {
-        color: color.gray.gray4
+        color: color.gray.gray4,
       },
     },
   },
@@ -39,10 +38,10 @@ export const graphBar = recipe({
   variants: {
     active: {
       true: {
-        backgroundColor: color.brand.primary
+        backgroundColor: color.brand.primary,
       },
       false: {
-        backgroundColor: color.brand.primaryLight
+        backgroundColor: color.brand.primaryLight,
       },
     },
   },
