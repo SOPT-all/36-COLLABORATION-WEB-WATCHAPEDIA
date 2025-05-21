@@ -1,12 +1,14 @@
 "use client"
+import Image from 'next/image';
+
+import { IcWatchaWhite } from "@/assets/svg";
+
 import * as styles from './MovieCard.css'
 import { moviePresets } from "./MovieMock";
 import Badge from './_components/Badge';
 import Action from './_components/Action';
 import SubInfo from './_components/SubInfo';
 import MovieCardTags from './_components/MovieCardTags';
-import { IcWatchaWhite } from "@/assets/svg";
-import Image from 'next/image';
 
 
 interface MovieCardProps {

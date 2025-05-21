@@ -1,6 +1,7 @@
-import { color } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
 import { recipe } from '@vanilla-extract/recipes'
+
+import { color } from '@/app/styles.css'
 
 export const ratingContainer = style({
   display: 'flex',

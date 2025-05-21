@@ -1,6 +1,8 @@
 import Image from 'next/image'
-import * as styles from './MagazineField.css'
+
 import { IcMagazineLogo } from '@/assets/svg'
+
+import * as styles from './MagazineField.css'
 
 interface magazineProps {
   magazine: {

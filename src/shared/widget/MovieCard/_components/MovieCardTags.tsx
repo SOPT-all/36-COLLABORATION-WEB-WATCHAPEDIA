@@ -1,5 +1,6 @@
-import * as styles from '../MovieCard.css';
-import { Tag } from "@/shared/components/Tag/Tag";
+import { Tag } from '@/shared/components/Tag/Tag'
+
+import * as styles from '../MovieCard.css'
 
 export default function MovieCardTags({ tags }: { tags: string[] }) {
   return (
@@ -7,5 +8,5 @@ export default function MovieCardTags({ tags }: { tags: string[] }) {
       {tags[0] && <Tag text={tags[0]} color="blue" size="sm" />}
       {tags[1] && <Tag text={tags[1]} color="orange" size="sm" />}
     </div>
-  );
-} 
+  )
+}

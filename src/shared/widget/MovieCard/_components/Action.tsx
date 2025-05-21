@@ -1,5 +1,6 @@
-import * as styles from '../MovieCard.css';
 import { IcPlus } from "@/assets/svg";
+
+import * as styles from '../MovieCard.css';
 
 export default function Action({ isWishedCount }: { isWishedCount?: number | string }) {
   if (isWishedCount === undefined) return null;

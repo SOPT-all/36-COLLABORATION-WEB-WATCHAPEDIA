@@ -1,5 +1,6 @@
-import * as styles from '../MovieCard.css';
 import { IcStar } from "@/assets/svg";
+
+import * as styles from '../MovieCard.css';
 
 export default function Star({ star }: { star: number }) {
   return (

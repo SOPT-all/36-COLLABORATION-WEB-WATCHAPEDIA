@@ -1,9 +1,11 @@
 'use client'
 
-import * as styles from './BottomNav.css'
-import { IcHome, IcNotice, IcProfile, IcRate, IcSearch } from '@/assets/svg'
 import { useRouter } from 'next/navigation'
+
+import { IcHome, IcNotice, IcProfile, IcRate, IcSearch } from '@/assets/svg'
 import { PATH } from '@/shared/constants/path'
+
+import * as styles from './BottomNav.css'
 
 export default function Bottom() {
   const router = useRouter()

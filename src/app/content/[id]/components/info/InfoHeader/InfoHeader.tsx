@@ -1,9 +1,11 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
+
 import SvgBack from '@/assets/svg/Back'
 import SvgShare from '@/assets/svg/Share'
+
 import * as styles from './InfoHeader.css'
-import { useRouter } from 'next/navigation'
 
 const InfoHeader = () => {
   const router = useRouter()

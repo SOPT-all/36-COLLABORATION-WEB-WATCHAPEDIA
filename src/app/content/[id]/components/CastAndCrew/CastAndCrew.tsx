@@ -1,6 +1,7 @@
+import { detail } from '@/mocks'
+
 import * as styles from './CastAndCrew.css'
 import CastAndCrewField from './CastAndCrewField/CastAndCrewField'
-import { detail } from '@/mocks'
 
 const castImages = [
   '/images/view2/cast_1.png',

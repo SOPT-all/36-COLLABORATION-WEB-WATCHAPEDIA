@@ -1,5 +1,6 @@
-import { font, color } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
+
+import { font, color } from '@/app/styles.css'
 
 export const cardWrap = style({
   width: '110px',

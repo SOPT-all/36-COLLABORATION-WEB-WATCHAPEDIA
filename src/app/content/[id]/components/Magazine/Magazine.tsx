@@ -1,5 +1,5 @@
 import * as styles from './Magazine.css'
-import MagazineField from "./MagazineField/MagazineField"
+import MagazineField from './MagazineField/MagazineField'
 
 const magazineData = [
   {
@@ -19,14 +19,14 @@ const magazineData = [
 const Magazine = () => {
   return (
     <>
-      {magazineData.map((magazine, index)=> (
-        <div className={styles.magazineWrapper}>
-          <MagazineField key={index} magazine={magazine}/>
-          <div className={styles.grayLine}/>
+      {magazineData.map((magazine, index) => (
+        <div className={styles.magazineWrapper} key={index}>
+          <MagazineField key={index} magazine={magazine} />
+          <div className={styles.grayLine} />
         </div>
       ))}
     </>
   )
 }
 
-export default Magazine;
+export default Magazine

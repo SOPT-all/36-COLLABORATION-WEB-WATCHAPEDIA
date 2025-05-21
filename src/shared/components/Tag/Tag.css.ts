@@ -1,4 +1,5 @@
 import { recipe } from '@vanilla-extract/recipes'
+
 import { font } from '@/app/styles.css'
 
 export const tag = recipe({

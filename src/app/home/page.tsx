@@ -1,8 +1,9 @@
 import Carousel from '@/shared/components/Carousel/Carousel'
 import * as styles from '@/app/home/Home.css'
 import Bottom from '@/shared/components/Bottom/BottomNav'
-import Section from './components/Section'
 import Header from '@/shared/components/Header/Header'
+
+import Section from './components/Section'
 import TrendingComment from './components/TrendingComment/TrendingComment'
 import Event from './components/Event/Event'
 import MagazineCarousel from './components/Magazine/MagazineCarousel'

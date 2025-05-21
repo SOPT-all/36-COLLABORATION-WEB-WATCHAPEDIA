@@ -1,4 +1,5 @@
 import { comment } from '@/mocks'
+
 import * as styles from './Comment.css'
 import CommentBottom from './CommentBottom/CommentBottom'
 import CommentContent from './CommentContent/CommentContent'

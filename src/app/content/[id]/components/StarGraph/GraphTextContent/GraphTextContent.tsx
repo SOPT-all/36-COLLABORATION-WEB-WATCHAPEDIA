@@ -1,5 +1,6 @@
-import * as styles from './GraphTextContent.css'
 import { IcGraphStar } from '@/assets/svg'
+
+import * as styles from './GraphTextContent.css'
 
 const GraphTextContent = () => {
   return (

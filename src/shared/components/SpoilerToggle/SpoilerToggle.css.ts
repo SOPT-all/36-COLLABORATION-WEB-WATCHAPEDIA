@@ -1,6 +1,7 @@
 import { style } from '@vanilla-extract/css'
-import { color } from '@/app/styles.css'
 import { recipe } from '@vanilla-extract/recipes'
+
+import { color } from '@/app/styles.css'
 
 export const spoilerToggleWrapper = style({
   width: 42,
