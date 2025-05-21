@@ -6,6 +6,7 @@ import Action from './_components/Action';
 import SubInfo from './_components/SubInfo';
 import MovieCardTags from './_components/MovieCardTags';
 import { IcWatchaWhite } from "@/assets/svg";
+import Image from 'next/image';
 
 
 interface MovieCardProps {
@@ -18,7 +19,7 @@ const MovieCard = ({ type }: MovieCardProps) => {
   return (
     <div className={styles.cardWrap}>
       <div className={styles.posterWrap}>
-        <img 
+        <Image 
           src={data.imagePath} 
           alt={data.title} 
           className={styles.posterImg} 
