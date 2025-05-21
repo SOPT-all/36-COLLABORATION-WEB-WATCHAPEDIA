@@ -15,7 +15,7 @@ export const videoPlayerOverlay = style({
   height: 110,
   flexShrink: 0,
   borderRadius: 10,
-  background: 'rgba(0, 0, 0, 0.50)',
+  background: 'rgba(0, 0, 0, 0.20)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
