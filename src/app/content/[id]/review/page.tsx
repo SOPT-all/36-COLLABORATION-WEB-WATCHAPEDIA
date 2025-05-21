@@ -9,7 +9,7 @@ const Review = () => {
   const [selectedCount, setSelectedCount] = useState(0)
 
   return <>
-    <Header canSave={selectedCount >= 5} />
+    <Header canSave={selectedCount >= 1} />
     <Toggle />
     <ChipSelect onSelectedCountChange={setSelectedCount} />
   </>
