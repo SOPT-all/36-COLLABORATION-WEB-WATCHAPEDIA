@@ -4,12 +4,12 @@ import { recipe } from '@vanilla-extract/recipes'
 
 export const ratingContainer = style({
   display: 'flex',
+  padding: '20px 0px',
   flexDirection: 'column',
-  gap: 20,
-  padding: '20px 0 0 0',
-  alignSelf: 'stretch',
   justifyContent: 'center',
   alignItems: 'center',
+  gap: 20,
+  alignSelf: 'stretch',
 })
 
 export const ratingStarContainer = style({

@@ -6,14 +6,14 @@ import * as styles from './EvaluationSection.css'
 
 const EvaluationSection = () => {
   return (
-    <section>
-      <div className={styles.evaluationContainer}>
-        <Rating />
+    <section className={styles.evaluationContainer}>
+      <Rating />
+      <div className={styles.evaluationLabelWrapper}>
         <RateList />
         <PreferTag />
-        <hr className={styles.evaluationSeparator} />
-        <ReactionButtons />
       </div>
+      <hr className={styles.evaluationSeparator} />
+      <ReactionButtons />
     </section>
   )
 }
