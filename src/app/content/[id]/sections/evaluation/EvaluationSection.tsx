@@ -1,7 +1,7 @@
-import PreferTag from '../../components/evaluation/PreferTag/PreferTag'
-import RateList from '../../components/evaluation/RateView/RateList'
-import ReactionButtons from '../../components/evaluation/ReactionButtons/ReactionButtons'
-import Rating from '../../components/evaluation/Rating/Rating'
+import PreferTag from '../../components/Evaluation/PreferTag/PreferTag'
+import RateList from '../../components/Evaluation/RateView/RateList'
+import ReactionButtons from '../../components/Evaluation/ReactionButtons/ReactionButtons'
+import Rating from '../../components/Evaluation/Rating/Rating'
 import * as styles from './EvaluationSection.css'
 
 const EvaluationSection = () => {
