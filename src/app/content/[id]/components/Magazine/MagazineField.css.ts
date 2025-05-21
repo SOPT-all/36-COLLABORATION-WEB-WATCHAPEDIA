@@ -1,26 +1,25 @@
-import { color, font } from "@/app/styles.css"
-import { style } from "@vanilla-extract/css"
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
 
 export const magazineFieldWrapper = style({
-  height: 87,
-  width: 345,
   display: 'flex',
   flexDirection: 'column',
-  gap: '10px',
+  alignItems: 'flex-start',
+  gap: 10,
+  alignSelf: 'stretch',
 })
 
 export const categoryWrapper = style({
-  width: 90,
-  height: 16,
   display: 'flex',
-  gap: '4px',
+  alignItems: 'center',
+  gap: 4,
 })
 
 export const category = style([
   font.label_m_12,
   {
     color: color.gray.gray5,
-  }
+  },
 ])
 
 export const bottomWrapper = style({
@@ -38,9 +37,7 @@ export const titleContentWrapper = style({
   gap: '6px',
 })
 
-export const title = style([
-  font.title_sb_14
-])
+export const title = style([font.title_sb_14])
 
 export const content = style([
   font.label_r_12,
@@ -49,7 +46,7 @@ export const content = style([
     overflow: 'hidden',
     whiteSpace: 'nowrap',
     textOverflow: 'ellipsis',
-  }
+  },
 ])
 
 export const imageWrapper = style({
