@@ -17,7 +17,7 @@ const InfoSection = () => {
   } = detail
 
   return (
-    <section>
+    <section className={styles.infoContainer}>
       <Image
         src={mainImage}
         alt={`${title} 사진`}
