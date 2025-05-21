@@ -2,7 +2,6 @@ import { color, font } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
 
 export const toggleWrap = style({
-    width: "375px",
     padding: "10px 15px",
     display: "flex",
     alignItems: "center",
