@@ -1,4 +1,4 @@
-import { color, font } from '@/app/styles.css'
+import { font } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
 
 export const headerWrap = style({
