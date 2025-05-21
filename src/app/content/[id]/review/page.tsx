@@ -1,5 +1,9 @@
+import Header from "./_components/header/Header"
+
 const Review = () => {
-  return <div>view 3 review</div>
+  return <div>
+    <Header />
+  </div>
 }
 
 export default Review

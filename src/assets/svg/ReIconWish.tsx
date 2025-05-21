@@ -9,7 +9,7 @@ const SvgReIconWish = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="currentColor"
+      fill="#818181"
       d="M6 25V6.333q0-.961.686-1.647A2.25 2.25 0 0 1 8.333 4H20q.963 0 1.648.686.687.685.685 1.647V25l-8.166-3.5z"
     />
   </svg>
