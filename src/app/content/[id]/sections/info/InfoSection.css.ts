@@ -5,7 +5,7 @@ export const overlay = style({
   top: 0,
   left: 0,
   height: 530,
-  width: '100%',
+  width: 375,
   display: 'flex',
   flexDirection: 'column',
   color: 'white',
@@ -15,4 +15,12 @@ export const overlay = style({
   background:
     'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%)',
   boxSizing: 'border-box',
+})
+
+export const infoContainer = style({
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'relative',
+  width: '375px',
+  height: '530px',
 })
