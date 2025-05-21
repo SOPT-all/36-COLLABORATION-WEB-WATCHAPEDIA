@@ -32,7 +32,7 @@ const CastAndCrewField = ({artist, castImage}: Props) => {
           {character ? ` | ${character}` : ""}
           </p>
         </div>
-        <div className={styles.bottomLine}/>
+        <hr className={styles.bottomLine}/>
       </div>
     </section>
   );
