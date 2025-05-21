@@ -1,4 +1,5 @@
 export { default as Back } from './Back'
+export { default as IcGraphStar } from './IcGraphStar'
 export { default as IcComment } from './IcComment'
 export { default as IcHome } from './IcHome'
 export { default as IcHomeDefault } from './IcHomeDefault'
