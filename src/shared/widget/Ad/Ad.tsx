@@ -42,7 +42,7 @@ const Ad = ({ type }: AdProps) => {
           <p className={styles.adCaption}>{caption}</p>
           <div className={styles.bottomCaptionWrap}>
             <Image
-              src="/images/ad/img-watchapedia-sm.png"
+              src="/images/ad/img_watchapedia_sm.png"
               alt="왓챠 로고"
               width={17}
               height={17}
