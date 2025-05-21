@@ -25,7 +25,6 @@ const MagazineCard = ({ image, tag, title, subtitle }: MagazineCardProps) => {
             alt="watcha 원형 아이콘"
             width={18}
             height={18}
-            unoptimized
             className={styles.magazinelabelIcon}
           />
           <p>{tag}</p>
