@@ -11,6 +11,7 @@ export const button = style([
     color: 'white',
     cursor: 'pointer',
     whiteSpace: 'nowrap',
+    width: '100%',
     transition:
       'background-color 0.3s ease, opacity 0.3s ease, cursor 0.3s ease',
 
