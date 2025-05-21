@@ -1,5 +1,9 @@
+"use client"
+
+import Header from "./_components/header/Header"
+
 const Recommend = () => {
-  return <div>view 4 recommend</div>
+  return <Header />
 }
 
 export default Recommend
