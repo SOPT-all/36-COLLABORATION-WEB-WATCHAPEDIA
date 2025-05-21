@@ -1,7 +1,7 @@
 import { color, font } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
 
-export const comentAllWrapper = style({
+export const commentSectionWrapper = style({
   backgroundColor: color.background.subtitle,
   width: '321px',
   height: '253px',
@@ -13,8 +13,9 @@ export const comentAllWrapper = style({
 })
 
 export const grayLine = style({
-  height: '1px',
-  backgroundColor: color.border.borderMedium,
+  border: `0.5px solid ${color.gray.gray2}`,
+  width: 314,
+  margin: 0,
 })
 
 export const goodText = style([
