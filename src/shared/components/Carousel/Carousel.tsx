@@ -57,7 +57,7 @@ const Carousel = () => {
               <div className={styles.overlay}>
                 <div className={styles.tag}>
                   <Image
-                    src="/images/banner/img-watcha-circle.png"
+                    src="/images/banner/img_watcha_circle.png"
                     alt="watcha 원형 아이콘"
                     width={18}
                     height={18}
