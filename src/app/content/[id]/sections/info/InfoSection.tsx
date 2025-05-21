@@ -13,13 +13,13 @@ const InfoSection = () => {
     genres,
     ageLimit,
     country,
-    posterImage,
+    mainImage,
   } = detail
 
   return (
-    <section>
+    <section className={styles.infoContainer}>
       <Image
-        src={posterImage}
+        src={mainImage}
         alt={`${title} 사진`}
         width={375}
         height={530}

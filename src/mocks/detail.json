@@ -1,4 +1,3 @@
-
 {
   "id": 1,
   "title": "펀치 드렁크 러브",
@@ -8,9 +7,9 @@
   "runningTime": 95,
   "ageLimit": 15,
   "score": 3.7,
-  "detail": "행 마일리지를...",
-  "posterImage": "/images/info_top.png",
-  "mainImage":   "/images/info_top.png",
+  "detail": "7명이나 되는 누나들한테 들들 볶이며 자란 배리(아담 샌들러). 비행 마일리지를 경품으로 준다는 푸딩을 사 모으는 것이 유일한 낙인 그는 어느 날 아침 거리에 내동댕이쳐진 낡은 풍금을 발견하곤 사무실에 가져다 놓는다. 그리고 바로 그날, 뜻하지 않게 신비로운 여인 레나(에밀리 왓슨 분)를 만나게 된다. 그는 그녀에게 자신의 행운담을 들려주는데...",
+  "posterImage": "/images/poster.png",
+  "mainImage": "/images/info_top.png",
   "country": "미국",
   "artists": [
     {

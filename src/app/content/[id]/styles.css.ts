@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css'
 
-export const layoutWrapper = style({
+export const contentContainer = style({
   display: 'flex',
   flexDirection: 'column',
 })
