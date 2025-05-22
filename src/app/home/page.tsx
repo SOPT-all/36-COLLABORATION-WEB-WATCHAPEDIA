@@ -11,6 +11,7 @@ import TopRankingCarousel from './components/TopRanking/TopRankingCarousel'
 import DdayCarousel from './components/Dday/DdayCarousel'
 import SeriesCarousel from './components/Series/SeriesCarousel'
 import BoxOfficeCarousel from './components/BoxOffice/BoxOfficeCarousel'
+import Ad from '@/shared/widget/Ad/Ad'
 
 const Home = () => {
   return (
@@ -37,6 +38,9 @@ const Home = () => {
           <Section title="시리즈 공개 예정작" showRight>
             <SeriesCarousel />
           </Section>
+          <div className={styles.adWrapper}>
+            <Ad type="conclave" />
+          </div>
           <Section title="박스 오피스 순위">
             <BoxOfficeCarousel />
           </Section>
