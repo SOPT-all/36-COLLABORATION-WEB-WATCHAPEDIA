@@ -1,7 +1,5 @@
 import Ad from '@/shared/widget/Ad/Ad'
 
-import EvaluationSection from './sections/evaluation/EvaluationSection'
-import * as styles from './styles.css'
 import DescriptionSection from './sections/descriptionSection/DescriptionSection'
 import CollectionSection from './sections/collection/CollectionSection'
 import GallerySection from './sections/gallery/GallerySection'
@@ -11,7 +9,9 @@ import VideoSection from './sections/video/VideoSection'
 import SimilarSection from './sections/similar/SimilarSection'
 import CastAndCrewSection from './sections/castAndCrew/CastAndCrewSection'
 import CommentSection from './sections/comment/CommentSection'
+import EvaluationSection from './sections/evaluation/EvaluationSection'
 import MagazineSection from './sections/magazine/MagazineSection'
+import * as styles from './styles.css'
 
 const Content = () => {
   return (
