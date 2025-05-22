@@ -10,6 +10,7 @@ import MagazineCarousel from './components/Magazine/MagazineCarousel'
 import TopRankingCarousel from './components/TopRanking/TopRankingCarousel'
 import DdayCarousel from './components/Dday/DdayCarousel'
 import SeriesCarousel from './components/Series/SeriesCarousel'
+import BoxOfficeCarousel from './components/BoxOffice/BoxOfficeCarousel'
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
             <SeriesCarousel />
           </Section>
           <Section title="박스 오피스 순위">
-            <div></div>
+            <BoxOfficeCarousel />
           </Section>
         </div>
         <Bottom />
