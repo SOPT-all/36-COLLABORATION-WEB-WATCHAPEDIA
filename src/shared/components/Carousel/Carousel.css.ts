@@ -1,4 +1,4 @@
-import { globalStyle, style } from '@vanilla-extract/css'
+import { style, globalStyle } from '@vanilla-extract/css'
 
 import { font } from '@/app/styles.css'
 
@@ -8,6 +8,12 @@ export const container = style({
   position: 'relative',
   marginTop: '18px',
   marginBottom: '25px',
+})
+
+export const navButton = style({
+  color: 'white',
+  opacity: 0,
+  transition: 'opacity 0.3s ease',
 })
 
 export const card = style({
@@ -67,13 +73,7 @@ export const subtitle = style([
   },
 ])
 
-export const navButton = style({
-  color: 'white',
-  opacity: 0,
-  transition: 'opacity 0.3s ease',
-})
-
-// hover 시에만 나타나도록
+// 화살표 hover 시 나타나기
 globalStyle(`${container}:hover .swiper-button-prev`, {
   opacity: 1,
 })
@@ -82,7 +82,7 @@ globalStyle(`${container}:hover .swiper-button-next`, {
   opacity: 1,
 })
 
-// 화살표 아이콘 스타일 덮어쓰기
+// 화살표 아이콘 덮어쓰기
 globalStyle('.swiper-button-prev::after, .swiper-button-next::after', {
   fontSize: '16px',
   color: 'gray',
@@ -92,7 +92,7 @@ globalStyle('.swiper-button-disabled', {
   display: 'none',
 })
 
-globalStyle('.swiper-slide ', {
+globalStyle('.swiper-slide', {
   width: '345px',
   display: 'flex',
   justifyContent: 'center',
