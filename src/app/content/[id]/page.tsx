@@ -1,5 +1,5 @@
 import Ad from '@/shared/widget/Ad/Ad'
-import { getContent } from '@/api/content'
+import { getContent } from '@/services/content/api'
 
 import DescriptionSection from './sections/descriptionSection/DescriptionSection'
 import CollectionSection from './sections/collection/CollectionSection'
