@@ -1,5 +1,6 @@
-import * as styles from './GraphBar.css'
 import React from 'react'
+
+import * as styles from './GraphBar.css'
 interface GraphBarData {
   score: number
   height: number

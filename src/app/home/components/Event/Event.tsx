@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import * as styles from '@/app/home/components/Event/Event.css'
 import { IcRight } from '@/assets/svg'
 const Event = () => {

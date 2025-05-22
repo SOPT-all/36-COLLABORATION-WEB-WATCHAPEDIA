@@ -1,5 +1,6 @@
-import { color } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
+
+import { color } from '@/app/styles.css'
 
 export const contentContainer = style({
   display: 'flex',

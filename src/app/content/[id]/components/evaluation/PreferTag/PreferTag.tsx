@@ -1,5 +1,7 @@
 import { Tag } from '@/shared/components/Tag/Tag'
+
 import LabelContent from '../LabelContainer/LabelContent'
+
 import * as styles from './PreferTag.css'
 
 const PreferTag = () => {

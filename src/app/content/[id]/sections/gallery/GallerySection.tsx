@@ -1,5 +1,7 @@
 import Image from 'next/image'
+
 import HeaderSection from '../../components/HeaderSection/HeaderSection'
+
 import * as styles from './GallerySection.css'
 
 const GallerySection = () => {

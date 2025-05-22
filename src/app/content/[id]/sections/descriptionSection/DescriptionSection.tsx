@@ -1,6 +1,8 @@
 import Image from 'next/image'
-import * as styles from './DescriptionSection.css'
+
 import { detail } from '@/mocks'
+
+import * as styles from './DescriptionSection.css'
 
 const DescriptionSection = () => {
   const { detail: describe, posterImage } = detail

@@ -2,9 +2,11 @@
 
 import { useState, useRef, useEffect, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
+
 import Button from '@/shared/components/Button/Button'
 import { PATH } from '@/shared/constants/path'
 import SvgIconStarLGray from '@/assets/svg/IconStarLGray'
+
 import * as styles from './Rating.css'
 
 const STAR = 5
@@ -52,7 +54,7 @@ const Rating = () => {
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('mouseup', handleMouseUp)
     }
-  }, [dragging])
+  }, [dragging, calcRating])
 
   return (
     <div className={styles.ratingContainer}>

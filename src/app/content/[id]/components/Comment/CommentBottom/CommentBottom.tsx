@@ -1,6 +1,8 @@
-import * as styles from './CommentBottom.css'
 import React from 'react';
+
 import { IconLike, IconComment } from '@/assets/svg';
+
+import * as styles from './CommentBottom.css'
 
 interface Props {
   likeCount: number,
