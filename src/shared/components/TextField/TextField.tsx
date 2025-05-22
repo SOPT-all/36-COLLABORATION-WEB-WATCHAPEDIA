@@ -7,13 +7,7 @@ interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 }
 
 const TextField = ({ value, ...props }: Props) => {
-  return (
-    <textarea
-      value={value}
-      className={styles.textField}
-      {...props}
-    />
-  )
+  return <textarea value={value} className={styles.textField} {...props} />
 }
 
 export default TextField

@@ -1,12 +1,12 @@
-"use client"
+'use client'
 
-import { useRouter, useParams } from "next/navigation"
+import { useRouter, useParams } from 'next/navigation'
 
-import { IcXicon } from "@/assets/svg"
-import { PATH } from "@/shared/constants/path"
-import { moviePresets } from "@/shared/widget/MovieCard/MovieMock"
+import { IcXicon } from '@/assets/svg'
+import { PATH } from '@/shared/constants/path'
+import { moviePresets } from '@/shared/widget/MovieCard/MovieMock'
 
-import * as styles from "./Header.css"
+import * as styles from './Header.css'
 
 interface HeaderProps {
   canSave: boolean
@@ -19,7 +19,7 @@ const Header = ({ canSave, onSave }: HeaderProps) => {
   const movieId = params.id as string
 
   const movieData = Object.values(moviePresets).find(
-    movie => movie.id === Number(movieId)
+    (movie) => movie.id === Number(movieId),
   )
 
   return (
@@ -42,7 +42,7 @@ const Header = ({ canSave, onSave }: HeaderProps) => {
         onClick={() => {
           if (canSave) onSave()
         }}
-        onKeyDown={e => {
+        onKeyDown={(e) => {
           if (canSave && (e.key === ' ' || e.key === 'Enter')) {
             onSave()
           }

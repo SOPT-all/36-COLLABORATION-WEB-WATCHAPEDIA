@@ -1,25 +1,24 @@
-"use client"
-import Image from 'next/image';
+'use client'
+import Image from 'next/image'
 
-import { IcWatchaWhite } from "@/assets/svg";
+import { IcWatchaWhite } from '@/assets/svg'
 
 import * as styles from './MovieCard.css'
-import { moviePresets } from "./MovieMock";
-import Badge from './_components/Badge';
-import Action from './_components/Action';
-import SubInfo from './_components/SubInfo';
-import MovieCardTags from './_components/MovieCardTags';
-
+import { moviePresets } from './MovieMock'
+import Badge from './_components/Badge'
+import Action from './_components/Action'
+import SubInfo from './_components/SubInfo'
+import MovieCardTags from './_components/MovieCardTags'
 
 interface MovieCardProps {
-  type?: keyof typeof moviePresets;
-  data?: any; 
+  type?: keyof typeof moviePresets
+  data?: any
 }
 
 const MovieCard = ({ type, data }: MovieCardProps) => {
-  const cardData = data ?? (type ? moviePresets[type] : undefined);
+  const cardData = data ?? (type ? moviePresets[type] : undefined)
 
-  if (!cardData) return null;
+  if (!cardData) return null
 
   return (
     <div className={styles.cardWrap}>
@@ -37,7 +36,9 @@ const MovieCard = ({ type, data }: MovieCardProps) => {
           </div>
         )}
         <Badge data={cardData} />
-        {(cardData.type === 'dDay' || cardData.type === 'boxoffice' || cardData.type === 'series') && (
+        {(cardData.type === 'dDay' ||
+          cardData.type === 'boxoffice' ||
+          cardData.type === 'series') && (
           <Action isWishedCount={cardData.isWishedCount} />
         )}
       </div>
@@ -47,7 +48,7 @@ const MovieCard = ({ type, data }: MovieCardProps) => {
         <MovieCardTags tags={cardData.tag} />
       )}
     </div>
-  );
-};
+  )
+}
 
-export default MovieCard;
+export default MovieCard

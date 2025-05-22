@@ -1,14 +1,14 @@
-"use client"
+'use client'
 
-import { useRouter } from "next/navigation"
+import { useRouter } from 'next/navigation'
 
-import { IcLeft } from "@/assets/svg"
-import { PATH } from "@/shared/constants/path"
+import { IcLeft } from '@/assets/svg'
+import { PATH } from '@/shared/constants/path'
 
-import * as styles from "./Header.css"
+import * as styles from './Header.css'
 
 const Header = () => {
-    const router = useRouter()
+  const router = useRouter()
 
   return (
     <div className={styles.HeaderWrapper}>
@@ -21,9 +21,7 @@ const Header = () => {
         <IcLeft style={{ verticalAlign: 'middle' }} />
         <span className={styles.back}>뒤로</span>
       </span>
-      <span className={styles.title}>
-        취향 저격 작품추천
-      </span>
+      <span className={styles.title}>취향 저격 작품추천</span>
     </div>
   )
 }
