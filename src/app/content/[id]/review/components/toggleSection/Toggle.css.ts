@@ -1,5 +1,6 @@
-import { color, font } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
+
+import { color, font } from '@/app/styles.css'
 
 export const toggleWrap = style({
     padding: "10px 15px",

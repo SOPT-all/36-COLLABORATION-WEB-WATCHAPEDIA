@@ -1,4 +1,5 @@
 import { detail } from '@/mocks'
+
 import HeaderSection from '../../components/HeaderSection/HeaderSection'
 import CastAndCrewField from '../../components/CastAndCrew/CastAndCrewField'
 
