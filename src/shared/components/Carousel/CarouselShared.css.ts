@@ -2,7 +2,7 @@ import { globalStyle, style } from '@vanilla-extract/css'
 
 export const swiperContainer = style({
   width: '100%',
-  maxWidth: '375px',
+  maxWidth: '345px',
   position: 'relative',
 })
 

@@ -9,6 +9,7 @@ export const container = style({
   position: 'relative',
   marginTop: '18px',
   marginBottom: '25px',
+  marginLeft: '15px',
 })
 
 export const card = style({
