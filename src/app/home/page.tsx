@@ -2,16 +2,14 @@ import Carousel from '@/shared/components/Carousel/Carousel'
 import * as styles from '@/app/home/Home.css'
 import Bottom from '@/shared/components/Bottom/BottomNav'
 import Header from '@/shared/components/Header/Header'
-
 import Section from './components/Section'
 import TrendingComment from './components/TrendingComment/TrendingComment'
 import Event from './components/Event/Event'
 import MagazineCarousel from './components/Magazine/MagazineCarousel'
-import TopRankingCarousel from './components/TopRanking/TopRankingCarousel'
-import DdayCarousel from './components/Dday/DdayCarousel'
-import SeriesCarousel from './components/Series/SeriesCarousel'
-import BoxOfficeCarousel from './components/BoxOffice/BoxOfficeCarousel'
 import Ad from '@/shared/widget/Ad/Ad'
+import BoxOfficeCarousel from './components/MovieCarousel/movie/BoxOfficeCarousel'
+import DdayCarousel from './components/MovieCarousel/movie/DdayCarousel'
+import SeriesCarousel from './components/MovieCarousel/movie/SeriesCarousel'
 
 const Home = () => {
   return (
@@ -21,7 +19,7 @@ const Home = () => {
         <Carousel />
         <div className={styles.sectionContainer}>
           <Section title="내 취향 저격, 오늘의 TOP 랭킹" showNotice showRight>
-            <TopRankingCarousel />
+            <BoxOfficeCarousel />
           </Section>
           <Section title="영화 공개 예정작" showRight>
             <DdayCarousel />

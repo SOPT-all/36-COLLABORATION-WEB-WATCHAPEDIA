@@ -2,15 +2,24 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
-
 import 'swiper/css'
 import 'swiper/css/navigation'
-import * as styles from '@/app/home/components/BoxOffice/BoxOfficeCarousel.css'
+import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
 import MovieCard from '@/shared/widget/MovieCard'
 
-const BoxOfficeCarousel = () => {
+interface MovieCarouselProps {
+  type: 'boxoffice' | 'dDay' | 'series' | 'rank'
+  className?: string
+  slideContainerClassName?: string
+}
+
+const MovieCarousel = ({
+  type,
+  className = '',
+  slideContainerClassName = '',
+}: MovieCarouselProps) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className}`}>
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation={{
@@ -25,27 +34,21 @@ const BoxOfficeCarousel = () => {
           disableOnInteraction: false,
         }}
       >
-        <SwiperSlide>
-          <div className={styles.slideContainer}>
-            <MovieCard type="boxoffice" />
-            <MovieCard type="boxoffice" />
-            <MovieCard type="boxoffice" />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className={styles.slideContainer}>
-            <MovieCard type="boxoffice" />
-            <MovieCard type="boxoffice" />
-            <MovieCard type="boxoffice" />
-          </div>
-        </SwiperSlide>
+        {[0, 1].map((_, idx) => (
+          <SwiperSlide key={idx}>
+            <div className={slideContainerClassName}>
+              <MovieCard type={type} />
+              <MovieCard type={type} />
+              <MovieCard type={type} />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
-      {/* 화살표 (hover 시 표시) */}
       <div className={`swiper-button-prev ${styles.navButton}`} />
       <div className={`swiper-button-next ${styles.navButton}`} />
     </div>
   )
 }
 
-export default BoxOfficeCarousel
+export default MovieCarousel
