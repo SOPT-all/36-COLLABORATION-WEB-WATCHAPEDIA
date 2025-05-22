@@ -20,7 +20,7 @@ const Header = () => {
         <span className={styles.back}>뒤로</span>
       </span>
       <span className={styles.title}>
-        취향저격 작품추천
+        취향 저격 작품추천
       </span>
     </div>
   )

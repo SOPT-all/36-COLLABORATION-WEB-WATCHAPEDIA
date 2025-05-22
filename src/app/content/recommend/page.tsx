@@ -1,9 +1,12 @@
 "use client"
 
-import Header from "./_components/header/Header"
+import Bottom from "@/shared/components/Bottom/BottomNav"
+import Header from "./components/header/Header"
 
 const Recommend = () => {
-  return <Header />
+  return <><Header />
+  
+  <Bottom /></>
 }
 
 export default Recommend
