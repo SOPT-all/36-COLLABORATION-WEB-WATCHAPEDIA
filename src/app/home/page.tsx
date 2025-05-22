@@ -1,15 +1,16 @@
-import Carousel from '@/shared/components/Carousel/Carousel'
 import * as styles from '@/app/home/Home.css'
-import Bottom from '@/shared/components/Bottom/BottomNav'
-import Header from '@/shared/components/Header/Header'
-import Section from './components/Section'
-import TrendingComment from './components/TrendingComment/TrendingComment'
-import Event from './components/Event/Event'
-import MagazineCarousel from './components/Magazine/MagazineCarousel'
 import Ad from '@/shared/widget/Ad/Ad'
+import Bottom from '@/shared/components/Bottom/BottomNav'
+import Carousel from '@/shared/components/Carousel/Carousel'
+import Header from '@/shared/components/Header/Header'
+
 import BoxOfficeCarousel from './components/MovieCarousel/movie/BoxOfficeCarousel'
 import DdayCarousel from './components/MovieCarousel/movie/DdayCarousel'
 import SeriesCarousel from './components/MovieCarousel/movie/SeriesCarousel'
+import Event from './components/Event/Event'
+import MagazineCarousel from './components/Magazine/MagazineCarousel'
+import Section from './components/Section'
+import TrendingComment from './components/TrendingComment/TrendingComment'
 
 const Home = () => {
   return (
