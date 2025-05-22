@@ -50,7 +50,7 @@ const MovieCarousel = ({
       >
         {isDataAvailable
           ? chunkedData.map((group, idx) => (
-              <SwiperSlide key={idx} className={styles.swiperSlide}>
+              <SwiperSlide key={idx}>
                 <div className={slideContainerClassName}>
                   {group.map((item, i) => (
                     <MovieCard key={i} type={type} data={item} />
