@@ -4,8 +4,6 @@ export const swiperContainer = style({
   width: '100%',
   maxWidth: '375px',
   position: 'relative',
-  marginTop: '18px',
-  marginBottom: '25px',
 })
 
 export const swiperNavButton = style({

@@ -1,12 +1,15 @@
 import { style } from '@vanilla-extract/css'
 import { font } from '@/app/styles.css'
-import {
-  swiperContainer,
-  swiperNavButton,
-} from '@/shared/components/Carousel/CarouselShared.css'
-
-export const container = swiperContainer
+import { swiperNavButton } from '@/shared/components/Carousel/CarouselShared.css'
 export const navButton = swiperNavButton
+
+export const container = style({
+  width: '100%',
+  maxWidth: '375px',
+  position: 'relative',
+  marginTop: '18px',
+  marginBottom: '25px',
+})
 
 export const card = style({
   position: 'relative',
