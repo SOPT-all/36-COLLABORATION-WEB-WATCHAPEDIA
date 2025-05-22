@@ -1,5 +1,4 @@
 import * as styles from '@/app/home/components/Section.css'
-
 import SectionHeader from './SectionHeader'
 
 interface SectionProps {

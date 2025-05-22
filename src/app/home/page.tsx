@@ -8,6 +8,7 @@ import TrendingComment from './components/TrendingComment/TrendingComment'
 import Event from './components/Event/Event'
 import MagazineCarousel from './components/Magazine/MagazineCarousel'
 import TopRankingCarousel from './components/TopRanking/TopRankingCarousel'
+import DdayCarousel from './components/Dday/DdayCarousel'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
             <TopRankingCarousel />
           </Section>
           <Section title="영화 공개 예정작" showRight>
-            <div></div>
+            <DdayCarousel />
           </Section>
           <Section title="매거진" showRight>
             <MagazineCarousel />
