@@ -7,6 +7,7 @@ import Section from './components/Section'
 import TrendingComment from './components/TrendingComment/TrendingComment'
 import Event from './components/Event/Event'
 import MagazineCarousel from './components/Magazine/MagazineCarousel'
+import TopRankingCarousel from './components/TopRanking/TopRankingCarousel'
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
         <Carousel />
         <div className={styles.sectionContainer}>
           <Section title="내 취향 저격, 오늘의 TOP 랭킹" showNotice showRight>
-            <div></div>
+            <TopRankingCarousel />
           </Section>
           <Section title="영화 공개 예정작" showRight>
             <div></div>
