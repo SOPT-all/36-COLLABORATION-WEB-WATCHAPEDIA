@@ -17,7 +17,7 @@ export const firstInfoWrapper = style({
   backgroundColor: color.background.subtitle,
 })
 
-export const castAndCrewWrapper = style({
+export const secondInfoWrapper = style({
   display: 'flex',
   padding: '10px 15px',
   flexDirection: 'column',
