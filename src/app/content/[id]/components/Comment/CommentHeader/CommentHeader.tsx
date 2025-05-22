@@ -12,8 +12,6 @@ const userData = {
 }
 
 const CommentHeader = ({ score }: Props) => {
-  //API로 넘어오지 않는 값 상수로 정의
-
   return (
     <div className={styles.commentHeaderWrapper}>
       <div className={styles.userInfoWrapper}>
