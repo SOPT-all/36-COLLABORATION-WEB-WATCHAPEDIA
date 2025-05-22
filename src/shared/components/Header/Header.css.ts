@@ -71,7 +71,7 @@ export const tab = recipe({
       cursor: 'pointer',
       position: 'relative',
       transition: 'color 0.2s',
-    }
+    },
   ],
   variants: {
     active: {
@@ -89,13 +89,13 @@ export const tab = recipe({
       },
       false: {
         color: color.gray.gray5,
-      }
-    }
+      },
+    },
   },
   defaultVariants: {
     active: false,
-  }
-});
+  },
+})
 
 export const tabActive = style([
   font.subtitle_m_17,

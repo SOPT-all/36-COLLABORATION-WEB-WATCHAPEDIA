@@ -1,25 +1,17 @@
-import * as styles from '../MovieCard.css';
-import { MovieCardPreset } from '../MovieCard.types';
+import * as styles from '../MovieCard.css'
+import { MovieCardPreset } from '../MovieCard.types'
 
 interface BadgeProps {
-  data: MovieCardPreset;
+  data: MovieCardPreset
 }
 
 export default function Badge({ data }: BadgeProps) {
   if (data.type === 'dDay') {
-    return (
-      <div className={styles.dDayBadge}>
-        D-{data.untilRelease}
-      </div>
-    );
+    return <div className={styles.dDayBadge}>D-{data.untilRelease}</div>
   }
 
   if (data.type === 'boxoffice') {
-    return (
-      <div className={styles.rankBadge}>
-        극장
-      </div>
-    );
+    return <div className={styles.rankBadge}>극장</div>
   }
 
   if (data.type === 'series') {
@@ -27,16 +19,12 @@ export default function Badge({ data }: BadgeProps) {
       <div className={styles.dDayBadge}>
         <span>D-{data.untilRelease}</span>
       </div>
-    );
+    )
   }
 
   if (data.type === 'rank') {
-    return (
-      <div className={styles.rankBadge}>
-        {data.id}
-      </div>
-    );
+    return <div className={styles.rankBadge}>{data.id}</div>
   }
 
-  return null;
-} 
+  return null
+}

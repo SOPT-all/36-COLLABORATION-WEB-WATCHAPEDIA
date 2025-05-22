@@ -1,3 +1,5 @@
+import { style } from '@vanilla-extract/css'
+
 import {
   swiperContainer,
   swiperNavButton,
@@ -5,3 +7,8 @@ import {
 
 export const container = swiperContainer
 export const navButton = swiperNavButton
+
+export const slideContainer = style({
+  display: 'flex',
+  gap: '8px',
+})
