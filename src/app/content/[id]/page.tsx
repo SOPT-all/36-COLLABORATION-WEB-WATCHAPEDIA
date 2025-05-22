@@ -14,7 +14,7 @@ import EvaluationSection from './sections/evaluation/EvaluationSection'
 import MagazineSection from './sections/magazine/MagazineSection'
 import * as styles from './styles.css'
 
-const Content = async ({ params }: { params: { id: string } }) => {
+const Content = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params
   const content = await getContent(Number(id))
 
