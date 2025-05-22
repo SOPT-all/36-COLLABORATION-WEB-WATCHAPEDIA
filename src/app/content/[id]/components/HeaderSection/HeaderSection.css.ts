@@ -4,7 +4,12 @@ import { recipe } from '@vanilla-extract/recipes'
 import { color, font } from '@/app/styles.css'
 
 export const HeaderSectionContainer = recipe({
-  base: { display: 'flex', flexDirection: 'column' },
+  base: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    alignSelf: 'stretch',
+  },
   variants: {
     gap: {
       sm: { gap: '12px' },
@@ -15,8 +20,10 @@ export const HeaderSectionContainer = recipe({
 
 export const HeaderSectionHeaderContainer = style({
   display: 'flex',
+  height: 36,
   justifyContent: 'space-between',
   alignItems: 'center',
+  alignSelf: 'stretch',
 })
 
 export const HeaderSectionTitle = style([

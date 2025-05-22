@@ -17,3 +17,12 @@ export const firstInfoWrapper = style({
   alignSelf: 'stretch',
   backgroundColor: color.background.subtitle,
 })
+
+export const secondInfoWrapper = style({
+  display: 'flex',
+  padding: '10px 15px',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  gap: 49,
+  alignSelf: 'stretch',
+})

@@ -8,6 +8,10 @@ import GallerySection from './sections/gallery/GallerySection'
 import InfoSection from './sections/info/InfoSection'
 import GraphSection from './sections/graph/GraphSection'
 import VideoSection from './sections/video/VideoSection'
+import SimilarSection from './sections/similar/SimilarSection'
+import CastAndCrewSection from './sections/castAndCrew/CastAndCrewSection'
+import CommentSection from './sections/comment/CommentSection'
+import MagazineSection from './sections/magazine/MagazineSection'
 
 const Content = () => {
   return (
@@ -19,10 +23,15 @@ const Content = () => {
         <GraphSection />
         <Ad type="callenge" />
       </div>
-      <DescriptionSection />
-      <GallerySection />
-      <VideoSection />
-      <CollectionSection />
+      <div className={styles.secondInfoWrapper}>
+        <CastAndCrewSection />
+        <CommentSection />
+        <MagazineSection />
+        <GallerySection />
+        <VideoSection />
+        <CollectionSection />
+        <SimilarSection />
+      </div>
     </div>
   )
 }

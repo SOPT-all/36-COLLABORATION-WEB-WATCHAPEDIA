@@ -9,7 +9,7 @@ const SvgIconStarLGray = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      fill="currentColor"
+      fill="#E7E7E7"
       d="m20 1 5.249 11.776 12.821 1.353-9.577 8.63 2.675 12.612L20 28.93 8.832 35.371l2.675-12.612-9.577-8.63 12.821-1.354z"
     />
   </svg>

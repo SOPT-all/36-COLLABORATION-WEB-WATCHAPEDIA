@@ -6,7 +6,8 @@ export const commentContentWrapper = style([
   font.body_r_14,
   {
     color: color.gray.gray6,
-    width: '100%',
-    height: '117px',
-  }
+    height: 117,
+    alignSelf: 'stretch',
+    whiteSpace: 'pre-wrap',
+  },
 ])
