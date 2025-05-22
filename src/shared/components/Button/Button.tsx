@@ -9,11 +9,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ text, fullWidth = false, ...props }: Props) => {
   return (
-    <button
-      type="button"
-      className={styles.button({ fullWidth })}
-      {...props}
-    >
+    <button type="button" className={styles.button({ fullWidth })} {...props}>
       {text}
     </button>
   )

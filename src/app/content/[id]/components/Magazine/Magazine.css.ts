@@ -1,6 +1,6 @@
-import { style } from "@vanilla-extract/css"
+import { style } from '@vanilla-extract/css'
 
-import { color } from "@/app/styles.css"
+import { color } from '@/app/styles.css'
 
 export const magazineWrapper = style({
   display: 'flex',

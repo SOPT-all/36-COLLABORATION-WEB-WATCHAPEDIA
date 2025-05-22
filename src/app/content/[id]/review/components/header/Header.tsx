@@ -1,24 +1,25 @@
-"use client"
+'use client'
 
-import { useRouter, useParams } from "next/navigation"
+import { useRouter, useParams } from 'next/navigation'
 
-import { IcXicon } from "@/assets/svg"
-import { PATH } from "@/shared/constants/path"
-import { moviePresets } from "@/shared/widget/MovieCard/MovieMock"
+import { IcXicon } from '@/assets/svg'
+import { PATH } from '@/shared/constants/path'
+import { moviePresets } from '@/shared/widget/MovieCard/MovieMock'
 
-import * as styles from "./Header.css"
+import * as styles from './Header.css'
 
 interface HeaderProps {
-  canSave?: boolean
+  canSave: boolean
+  onSave: () => void
 }
 
-const Header = ({ canSave = false }: HeaderProps) => {
+const Header = ({ canSave, onSave }: HeaderProps) => {
   const router = useRouter()
   const params = useParams()
   const movieId = params.id as string
 
   const movieData = Object.values(moviePresets).find(
-    movie => movie.id === Number(movieId)
+    (movie) => movie.id === Number(movieId),
   )
 
   return (
@@ -39,11 +40,11 @@ const Header = ({ canSave = false }: HeaderProps) => {
         tabIndex={canSave ? 0 : -1}
         aria-disabled={!canSave}
         onClick={() => {
-          if (canSave) router.push(PATH.RECOMMEND)
+          if (canSave) onSave()
         }}
-        onKeyDown={e => {
-          if (canSave && (e.key === ' ')) {
-            router.push(PATH.RECOMMEND)
+        onKeyDown={(e) => {
+          if (canSave && (e.key === ' ' || e.key === 'Enter')) {
+            onSave()
           }
         }}
       >

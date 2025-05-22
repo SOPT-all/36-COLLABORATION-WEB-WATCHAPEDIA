@@ -1,4 +1,4 @@
-import { globalStyle } from "@vanilla-extract/css";
+import { globalStyle } from '@vanilla-extract/css'
 
 globalStyle(
   `html, body, div, span, applet, object, iframe,
@@ -17,38 +17,37 @@ globalStyle(
     margin: 0,
     padding: 0,
     border: 0,
-    fontSize: "100%",
-    font: "inherit",
-    verticalAlign: "baseline",
-  }
-);
+    fontSize: '100%',
+    font: 'inherit',
+    verticalAlign: 'baseline',
+  },
+)
 
 globalStyle(
   `article, aside, details, figcaption, figure,
   footer, header, hgroup, menu, nav, section`,
   {
-    display: "block",
-  }
-);
+    display: 'block',
+  },
+)
 
-globalStyle("body", {
+globalStyle('body', {
   lineHeight: 1,
-});
+})
 
+globalStyle('ol, ul', {
+  listStyle: 'none',
+})
 
-globalStyle("ol, ul", {
-  listStyle: "none",
-});
+globalStyle('blockquote, q', {
+  quotes: 'none',
+})
 
-globalStyle("blockquote, q", {
-  quotes: "none",
-});
-
-globalStyle("blockquote::before, blockquote::after, q::before, q::after", {
+globalStyle('blockquote::before, blockquote::after, q::before, q::after', {
   content: '""',
-});
+})
 
-globalStyle("table", {
-  borderCollapse: "collapse",
+globalStyle('table', {
+  borderCollapse: 'collapse',
   borderSpacing: 0,
-});
+})

@@ -9,7 +9,6 @@ import watchapediaLogo from '@/assets/img/watchapedia.png'
 import * as styles from './Header.css'
 import { HEADER_TABS, TOGGLE_OPTIONS, type ToggleType } from './Tab'
 
-
 const Header = () => {
   const [selectedToggle, setSelectedToggle] = useState<ToggleType>(
     TOGGLE_OPTIONS.WATCHA_HOME,

@@ -12,13 +12,11 @@ const SpoilerToggle = () => {
 
   return (
     <div className={style.spoilerToggleWrapper}>
-      <button 
+      <button
         className={style.spoilerToggleBar({ active: isSelected })}
         onClick={handleSpoilerToggleClick}
       >
-        <div
-          className={style.spoilerToggleButton({ active: isSelected })}
-        />
+        <div className={style.spoilerToggleButton({ active: isSelected })} />
       </button>
     </div>
   )

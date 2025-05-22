@@ -1,7 +1,7 @@
-import type { NextConfig } from 'next';
-import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin';
+import type { NextConfig } from 'next'
+import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
 
-const withVanillaExtract = createVanillaExtractPlugin();
+const withVanillaExtract = createVanillaExtractPlugin()
 
 const nextConfig: NextConfig = {
   webpack(config) {
@@ -10,10 +10,10 @@ const nextConfig: NextConfig = {
       test: /\.svg$/,
       issuer: /\.[jt]sx?$/,
       use: ['@svgr/webpack'],
-    });
+    })
 
-    return config;
+    return config
   },
-};
+}
 
-export default withVanillaExtract(nextConfig);
+export default withVanillaExtract(nextConfig)
