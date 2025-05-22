@@ -1,7 +1,5 @@
-import { style } from '@vanilla-extract/css'
+import { style, globalStyle } from '@vanilla-extract/css'
 import { font } from '@/app/styles.css'
-import { swiperNavButton } from '@/shared/components/Carousel/CarouselShared.css'
-export const navButton = swiperNavButton
 
 export const container = style({
   width: '100%',
@@ -9,7 +7,12 @@ export const container = style({
   position: 'relative',
   marginTop: '18px',
   marginBottom: '25px',
-  marginLeft: '15px',
+})
+
+export const navButton = style({
+  color: 'white',
+  opacity: 0,
+  transition: 'opacity 0.3s ease',
 })
 
 export const card = style({
@@ -68,3 +71,30 @@ export const subtitle = style([
     marginTop: '4px',
   },
 ])
+
+// 화살표 hover 시 나타나기
+globalStyle(`${container}:hover .swiper-button-prev`, {
+  opacity: 1,
+})
+
+globalStyle(`${container}:hover .swiper-button-next`, {
+  opacity: 1,
+})
+
+// 화살표 아이콘 덮어쓰기
+globalStyle('.swiper-button-prev::after, .swiper-button-next::after', {
+  fontSize: '16px',
+  color: 'gray',
+})
+
+globalStyle('.swiper-button-disabled', {
+  display: 'none',
+})
+
+globalStyle('.swiper-slide', {
+  width: '345px',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  marginRight: '0px',
+})
