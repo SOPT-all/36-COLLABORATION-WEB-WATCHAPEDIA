@@ -1,8 +1,9 @@
 'use client'
-import * as styles from './RecommendOtt.css'
 import MovieCard from '@/shared/widget/MovieCard'
 import { IcInfo } from '@/assets/svg'
 import ReviewChip from '@/shared/components/ReviewChip/ReviewChip'
+
+import * as styles from './RecommendOtt.css'
 
 const uxDescriptions = [
   '하은님의 힐링을 위한 작품',
