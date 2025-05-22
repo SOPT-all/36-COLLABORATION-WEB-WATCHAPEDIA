@@ -1,4 +1,5 @@
 import LabelContent from '../LabelContainer/LabelContent'
+
 import * as styles from './RateList.css'
 interface RateProps {
   label: '예상' | '평균'

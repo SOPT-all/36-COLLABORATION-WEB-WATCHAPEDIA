@@ -1,6 +1,7 @@
 import { style } from '@vanilla-extract/css'
-import { color, font } from '@/app/styles.css'
 import { recipe } from '@vanilla-extract/recipes'
+
+import { color, font } from '@/app/styles.css'
 
 export const headerWrap = style({
   maxWidth: '375px',

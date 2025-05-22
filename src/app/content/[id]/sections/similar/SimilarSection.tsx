@@ -1,5 +1,6 @@
 import HeaderSection from '../../components/HeaderSection/HeaderSection'
 import SimilarContentCard from '../../components/Similar/SimilarContentCard'
+
 import * as styles from './SimilarSection.css'
 const similarList = [
   {

@@ -1,6 +1,8 @@
-import * as styles from './CommentHeader.css'
 import Image from 'next/image'
+
 import { IcCommentStar } from '@/assets/svg'
+
+import * as styles from './CommentHeader.css'
 
 interface Props {
   score: number

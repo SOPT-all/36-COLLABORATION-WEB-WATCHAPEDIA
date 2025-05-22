@@ -1,5 +1,6 @@
 import HeaderSection from '../../components/HeaderSection/HeaderSection'
 import MagazineField from '../../components/Magazine/MagazineField'
+
 import * as styles from './MagazineSection.css'
 
 const magazineData = [
@@ -21,8 +22,14 @@ const MagazineSection = () => {
   return (
     <HeaderSection title="매거진" count={2}>
       {magazineData.map((magazine, index) => (
-        <div className={styles.magazineWrapper}>
-          <MagazineField key={index} magazine={magazine} />
+        <div
+          className={styles.magazineWrapper}
+          key={`${index}-${magazine.title}`}
+        >
+          <MagazineField
+            key={`${index}-${magazine.title}`}
+            magazine={magazine}
+          />
           <hr className={styles.grayLine} />
         </div>
       ))}

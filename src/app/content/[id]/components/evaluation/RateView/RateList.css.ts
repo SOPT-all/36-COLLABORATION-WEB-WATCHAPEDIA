@@ -1,6 +1,7 @@
-import { color, font } from '@/app/styles.css'
 import { style } from '@vanilla-extract/css'
 import { recipe } from '@vanilla-extract/recipes'
+
+import { color, font } from '@/app/styles.css'
 
 export const rateWrapper = recipe({
   base: {

@@ -2,11 +2,13 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import * as styles from '@/app/home/components/Magazine/MagazineCarousel.css'
-import MagazineCard from './MagazineCard'
 import { magazine } from '@/mocks'
+
+import MagazineCard from './MagazineCard'
 
 const MagazineCarousel = () => {
   return (

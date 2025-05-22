@@ -1,20 +1,19 @@
 import * as styles from './InfoContent.css'
-import { DetailItem } from '@/shared/types/detail'
+
 import Image from 'next/image'
+
 import watchaImg from '/public/images/watcha.png'
 import wavveImg from '/public/images/wavve.png'
 
-interface Props
-  extends Pick<
-    DetailItem,
-    | 'title'
-    | 'engTitle'
-    | 'releaseYear'
-    | 'runningTime'
-    | 'genres'
-    | 'ageLimit'
-    | 'country'
-  > {}
+interface Props {
+  title: string
+  engTitle: string
+  releaseYear: number
+  runningTime: number
+  genres: string[]
+  ageLimit: number
+  country: string
+}
 
 const InfoContent = ({
   title,

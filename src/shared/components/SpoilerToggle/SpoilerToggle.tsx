@@ -1,6 +1,7 @@
 'use client'
-import * as style from './SpoilerToggle.css'
 import { useState } from 'react'
+
+import * as style from './SpoilerToggle.css'
 
 const SpoilerToggle = () => {
   const [isSelected, setIsSelected] = useState(false)

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import * as styles from '@/app/home/components/Magazine/MagazineCard.css'
 
 interface MagazineCardProps {

@@ -1,6 +1,8 @@
-import * as styles from './SimilarContentCard.css'
 import Image from 'next/image'
+
 import SvgIcStar from '../../../../../assets/svg/IcStar'
+
+import * as styles from './SimilarContentCard.css'
 
 interface SimilarContentCardProps {
   title: string

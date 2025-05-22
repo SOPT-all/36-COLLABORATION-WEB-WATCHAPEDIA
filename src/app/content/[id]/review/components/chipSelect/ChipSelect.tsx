@@ -1,9 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
+
+import ReviewChip from "@/shared/components/ReviewChip/ReviewChip"
+
 import * as styles from "./ChipSelect.css"
 import { chipCategories } from './chipSelectmock'
-import ReviewChip from "@/shared/components/ReviewChip/ReviewChip"
 
 const MAX_SELECTED = 5
 
