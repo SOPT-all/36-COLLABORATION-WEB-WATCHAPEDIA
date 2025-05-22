@@ -1,21 +1,16 @@
 import Image from 'next/image'
 
+import { Artist } from '@/shared/types/detail'
+
 import * as styles from './CastAndCrewField.css'
 
-interface Props {
-  role: string
-  name: string
-  character?: string
-  castImage: string
-}
-
-const CastAndCrewField = ({ role, name, character, castImage }: Props) => {
-  const roleText = role === 'DIRECTOR' ? '감독' : '주연'
+const CastAndCrewField = ({ role, name, character, imagePath }: Artist) => {
+  const roleText = role === 'DIRECTOR' ? '감독' : '배우'
 
   return (
     <section className={styles.fieldWrapper}>
       <Image
-        src={castImage}
+        src={imagePath}
         alt={`${name} 사진`}
         width={55}
         height={55}

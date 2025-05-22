@@ -2,6 +2,7 @@ export type Artist = {
   role: 'DIRECTOR' | 'ACTOR'
   name: string
   character?: string
+  imagePath: string
 }
 
 export interface DetailItem {
@@ -15,7 +16,8 @@ export interface DetailItem {
   score: number
   detail: string
   posterImage: string
-  mainImage: string
+  detailImage: string
   country: string
   artists: Array<Artist>
+  keywords: Array<string>
 }
