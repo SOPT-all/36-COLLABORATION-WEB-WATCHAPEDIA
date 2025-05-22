@@ -12,34 +12,39 @@ import MovieCardTags from './_components/MovieCardTags';
 
 
 interface MovieCardProps {
-  type: keyof typeof moviePresets;
+  type?: keyof typeof moviePresets;
+  data?: any; 
 }
 
-const MovieCard = ({ type }: MovieCardProps) => {
-  const data = moviePresets[type];
+const MovieCard = ({ type, data }: MovieCardProps) => {
+  const cardData = data ?? (type ? moviePresets[type] : undefined);
+
+  if (!cardData) return null;
 
   return (
     <div className={styles.cardWrap}>
       <div className={styles.posterWrap}>
-        <Image 
-          src={data.imagePath} 
-          alt={data.title} 
-          className={styles.posterImg} 
+        <Image
+          src={cardData.imagePath}
+          alt={cardData.title}
+          className={styles.posterImg}
+          width={110}
+          height={158}
         />
-        {data.type === 'rank' && (
+        {cardData.type === 'rank' && (
           <div className={styles.watchaIcon}>
             <IcWatchaWhite />
           </div>
         )}
-        <Badge data={data} />
-        {(data.type === 'dDay' || data.type === 'boxoffice' || data.type === 'series') && (
-          <Action isWishedCount={data.isWishedCount} />
+        <Badge data={cardData} />
+        {(cardData.type === 'dDay' || cardData.type === 'boxoffice' || cardData.type === 'series') && (
+          <Action isWishedCount={cardData.isWishedCount} />
         )}
       </div>
-      <div className={styles.title}>{data.title}</div>
-      <SubInfo data={data} />
-      {data.type === 'rank' && data.tag && (
-        <MovieCardTags tags={data.tag} />
+      <div className={styles.title}>{cardData.title}</div>
+      <SubInfo data={cardData} />
+      {cardData.type === 'rank' && cardData.tag && (
+        <MovieCardTags tags={cardData.tag} />
       )}
     </div>
   );

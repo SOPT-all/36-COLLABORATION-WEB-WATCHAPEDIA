@@ -158,5 +158,6 @@ export const watchaIcon = style({
   position: 'absolute',
   top: '8px',
   right: '8px',
-  zIndex: 1
+  zIndex: 1,
+  borderRadius:"999"
 })
