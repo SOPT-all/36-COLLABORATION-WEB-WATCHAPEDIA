@@ -11,7 +11,6 @@ export const toggleWrap = style({
 
 export const spoiler = style([
     font.body_r_11,{
-        fontWeight:"400",
         color:color.gray.gray4
     }
 ])

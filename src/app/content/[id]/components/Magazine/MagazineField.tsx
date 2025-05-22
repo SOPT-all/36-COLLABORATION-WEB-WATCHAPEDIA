@@ -4,18 +4,18 @@ import { IcMagazineLogo } from '@/assets/svg'
 
 interface magazineProps {
   magazine: {
-    category: string,
-    title: string,
-    content: string,
-    image: string,
+    category: string
+    title: string
+    content: string
+    image: string
   }
 }
 
-const MagazineField = ({magazine}: magazineProps) => {
+const MagazineField = ({ magazine }: magazineProps) => {
   return (
-    <section className={styles.magazineFieldWrapper}>
+    <div className={styles.magazineFieldWrapper}>
       <div className={styles.categoryWrapper}>
-        <IcMagazineLogo/>
+        <IcMagazineLogo />
         <p className={styles.category}>#{magazine.category}</p>
       </div>
       <div className={styles.bottomWrapper}>
@@ -23,17 +23,16 @@ const MagazineField = ({magazine}: magazineProps) => {
           <p className={styles.title}>{magazine.title}</p>
           <p className={styles.content}>{magazine.content}</p>
         </div>
-        <div className={styles.imageWrapper}>
-          <Image
+        <Image
+          className={styles.imageWrapper}
           src={magazine.image}
           alt={`${magazine.category} 기사 사진`}
           width={105}
           height={61}
-          />
-        </div>
+        />
       </div>
-    </section>
-  );
-};
+    </div>
+  )
+}
 
-export default MagazineField;
+export default MagazineField

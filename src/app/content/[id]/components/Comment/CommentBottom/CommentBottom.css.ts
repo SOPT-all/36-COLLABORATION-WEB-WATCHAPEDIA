@@ -1,22 +1,22 @@
-import { color, font } from "@/app/styles.css";
-import { style } from "@vanilla-extract/css";
+import { color, font } from '@/app/styles.css'
+import { style } from '@vanilla-extract/css'
 
 export const commentBottomWrapper = style({
-  width: '100%',
-  height: '27px',
   display: 'flex',
-  gap: '10px',
-  alignItems: 'center'
+  height: 27,
+  alignItems: 'center',
+  gap: 10,
 })
 
 export const iconTextWrapper = style({
   display: 'flex',
-  gap: '2px',
+  alignItems: 'center',
+  gap: 2,
 })
 
 export const text = style([
   font.body_r_14,
   {
     color: color.gray.gray6,
-  }
+  },
 ])

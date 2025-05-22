@@ -1,9 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import ChipSelect from "./_components/chipSelect/ChipSelect"
-import Header from "./_components/header/Header"
-import Toggle from "./_components/toggleSection/Toggle"
+import Header from "./components/header/Header"
+import Toggle from "./components/toggleSection/Toggle"
+import ChipSelect from "./components/chipSelect/ChipSelect"
+import ReviewText from "./components/reviewTextField/ReviewText"
+
 
 const Review = () => {
   const [selectedCount, setSelectedCount] = useState(0)
@@ -12,6 +14,7 @@ const Review = () => {
     <Header canSave={selectedCount >= 1} />
     <Toggle />
     <ChipSelect onSelectedCountChange={setSelectedCount} />
+    <ReviewText />
   </>
 }
 
