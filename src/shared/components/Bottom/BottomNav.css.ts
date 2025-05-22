@@ -8,6 +8,10 @@ export const tabBar = style({
   justifyContent: 'space-between',
   padding: '8px 0',
   color: color.gray.gray4,
+  width: '375px',
+  position: 'fixed',
+  bottom: 0,
+  backgroundColor: 'white',
 })
 
 export const tabItem = style([
