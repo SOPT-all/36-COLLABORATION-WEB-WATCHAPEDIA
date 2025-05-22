@@ -10,15 +10,15 @@ import { chipCategories } from './chipSelectmock'
 const MAX_SELECTED = 5
 
 interface ChipSelectProps {
-  onSelectedCountChange?: (count: number) => void
+  onSelectedChange?: (chips: string[]) => void
 }
 
-const ChipSelect = ({ onSelectedCountChange }: ChipSelectProps) => {
+const ChipSelect = ({ onSelectedChange }: ChipSelectProps) => {
   const [selected, setSelected] = useState<string[]>([])
 
   useEffect(() => {
-    onSelectedCountChange?.(selected.length)
-  }, [selected.length, onSelectedCountChange])
+    onSelectedChange?.(selected)
+  }, [selected, onSelectedChange])
 
   const handleChipClick = (text: string) => {
     if (selected.includes(text)) {

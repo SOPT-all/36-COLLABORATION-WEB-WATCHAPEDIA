@@ -1,6 +1,8 @@
 "use client"
 import * as styles from "./RecommendOtt.css"
 import MovieCard from '@/shared/widget/MovieCard'
+import { IcInfo } from "@/assets/svg"
+import ReviewChip from "@/shared/components/ReviewChip/ReviewChip"
 
 const uxDescriptions = [
   "하은님의 힐링을 위한 작품",
@@ -50,15 +52,39 @@ const categoryMovies = [
       ]
     }
   ]
-
 ]
 
-const RecommendOtt = () => {
+interface RecommendOttProps {
+  selectedChips: string[]
+}
+
+const RecommendOtt = ({ selectedChips }: RecommendOttProps) => {
   return (
     <div className={styles.recommendWrapper}>
       {uxDescriptions.map((desc, idx) => (
         <div key={desc} className={styles.block}>
-          <div className={styles.blockTitle}>{desc}</div>
+          <div className={styles.blockTitle}>
+            {desc}
+            <IcInfo />
+          </div>
+          <div className={styles.selectedChip}>
+            {desc === "하은님의 힐링을 위한 작품" && selectedChips.map(chip => (
+              <ReviewChip
+                key={chip}
+                text={chip}
+                isSelected={false}
+                disabled={false}
+              />
+            ))}
+            {desc === "혼자만의 시간을 위한 추천작" && (
+              <ReviewChip
+                key="혼자"
+                text="🙋‍♀️혼자"
+                isSelected={false}
+                disabled={false}
+              />
+            )}
+          </div>
           <div className={styles.cardList}>
             {categoryMovies[idx].map(movie => (
               <MovieCard

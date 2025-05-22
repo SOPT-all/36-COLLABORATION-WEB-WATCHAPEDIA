@@ -14,9 +14,12 @@ export const block = style({
     padding: "0px 15px 0px 15px"
 })
 
-export const blockTitle = style([
-    font.headline_sb_16
-])
+export const blockTitle = style({
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: "5px",
+    gap:"6px"
+})
 
 export const cardList = style({
     display: "flex",
@@ -24,4 +27,7 @@ export const cardList = style({
     flexWrap: "wrap",
 })
 
-
+export const selectedChip = style({
+    display:"flex",
+    marginBottom:"12px"
+})
