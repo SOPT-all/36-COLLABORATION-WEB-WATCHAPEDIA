@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "movieType": "MOVIE",
+    "untilRelease": 1,
+    "imagePath": "/images/view1/boxoffice/img_box office_1.png",
+    "title": "거룩한 밤: 데몬 헌터스",
+    "type": "boxoffice"
+  },
+  {
+    "id": 2,
+    "movieType": "MOVIE",
+    "untilRelease": 1,
+    "imagePath": "/images/view1/boxoffice/img_box office_2.png",
+    "title": "야당",
+    "type": "boxoffice"
+  },
+  {
+    "id": 3,
+    "movieType": "MOVIE",
+    "untilRelease": 2,
+    "imagePath": "/images/view1/boxoffice/img_box office_3.png",
+    "title": "파과",
+    "type": "boxoffice"
+  },
+  {
+    "id": 4,
+    "movieType": "MOVIE",
+    "untilRelease": 1,
+    "imagePath": "/images/view1/boxoffice/img_box office_1.png",
+    "title": "거룩한 밤: 데몬 헌터스",
+    "type": "boxoffice"
+  },
+  {
+    "id": 5,
+    "movieType": "MOVIE",
+    "untilRelease": 1,
+    "imagePath": "/images/view1/boxoffice/img_box office_2.png",
+    "title": "야당",
+    "type": "boxoffice"
+  },
+  {
+    "id": 6,
+    "movieType": "MOVIE",
+    "untilRelease": 2,
+    "imagePath": "/images/view1/boxoffice/img_box office_3.png",
+    "title": "파과",
+    "type": "boxoffice"
+  }
+]
