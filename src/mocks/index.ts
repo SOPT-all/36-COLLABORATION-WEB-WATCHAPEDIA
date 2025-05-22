@@ -2,5 +2,6 @@ import detail from './detail.json'
 import trendingComment from './trendingComment.json'
 import comment from './comment.json'
 import magazine from './magazine.json'
+import series from './series.json'
 
-export { detail, trendingComment, comment, magazine }
+export { detail, trendingComment, comment, magazine, series }

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "movieType": "SERIES",
+    "untilRelease": 1,
+    "isWishedCount": 271,
+    "imagePath": "/images/view1/series/img_upcoming_series_1.png",
+    "title": "안도르 시즌2",
+    "releaseYear": "2025.04.23",
+    "type": "series"
+  },
+  {
+    "id": 2,
+    "movieType": "SERIES",
+    "untilRelease": 1,
+    "isWishedCount": 9,
+    "imagePath": "/images/view1/series/img_upcoming_series_2.png",
+    "title": "스파이디 그리고 놀라운 친구들",
+    "releaseYear": "2025.04.23",
+    "type": "series"
+  },
+  {
+    "id": 3,
+    "movieType": "SERIES",
+    "untilRelease": 2,
+    "isWishedCount": 390,
+    "imagePath": "/images/view1/series/img_upcoming_series_3.png",
+    "title": "마조도사 3기",
+    "releaseYear": "2024.04.24",
+    "type": "series"
+  },
+  {
+    "id": 4,
+    "movieType": "SERIES",
+    "untilRelease": 1,
+    "isWishedCount": 271,
+    "imagePath": "/images/view1/series/img_upcoming_series_1.png",
+    "title": "안도르 시즌2",
+    "releaseYear": "2025.04.23",
+    "type": "series"
+  },
+  {
+    "id": 5,
+    "movieType": "SERIES",
+    "untilRelease": 1,
+    "isWishedCount": 9,
+    "imagePath": "/images/view1/series/img_upcoming_series_2.png",
+    "title": "스파이디 그리고 놀라운 친구들",
+    "releaseYear": "2025.04.23",
+    "type": "series"
+  },
+  {
+    "id": 6,
+    "movieType": "SERIES",
+    "untilRelease": 2,
+    "isWishedCount": 390,
+    "imagePath": "/images/view1/series/img_upcoming_series_3.png",
+    "title": "마조도사 3기",
+    "releaseYear": "2024.04.24",
+    "type": "series"
+  }
+]
