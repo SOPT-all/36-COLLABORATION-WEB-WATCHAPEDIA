@@ -1,6 +1,6 @@
-import { style } from "@vanilla-extract/css";
+import { style } from '@vanilla-extract/css'
 
-import { color, font } from "@/app/styles.css";
+import { color, font } from '@/app/styles.css'
 
 export const commentContentWrapper = style([
   font.body_r_14,

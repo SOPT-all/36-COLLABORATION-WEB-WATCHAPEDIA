@@ -24,8 +24,8 @@ export const rateWrapper = recipe({
 export const rateLabel = recipe({
   variants: {
     label: {
-      '예상': [font.title_m_14],
-      '평균': [font.body_r_14],
+      예상: [font.title_m_14],
+      평균: [font.body_r_14],
     },
   },
 })

@@ -12,9 +12,7 @@ export const headerWrap = style({
   alignSelf: 'stretch',
 })
 
-export const headerTitle = style([
-  font.headline_sb_16
-])
+export const headerTitle = style([font.headline_sb_16])
 
 export const saveBtn = style([
   font.body_r_15,
