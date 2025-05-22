@@ -1,10 +1,12 @@
 'use client'
 
+import { useState } from 'react'
+
 import SvgReIconWish from '@/assets/svg/ReIconWish'
-import * as styles from './ReactionButtons.css'
 import SvgReIconEye from '@/assets/svg/ReIconEye'
 import { ReIconMore } from '@/assets/svg'
-import { useState } from 'react'
+
+import * as styles from './ReactionButtons.css'
 
 interface ReactionButtonProps {
   svg: React.ReactNode

@@ -1,7 +1,8 @@
 "use client"
 import { IcSeparator, IcTwitterIcon } from "@/assets/svg"
-import * as styles from "./Toggle.css"
 import SpoilerToggle from "@/shared/components/SpoilerToggle/SpoilerToggle"
+
+import * as styles from "./Toggle.css"
 
 const Toggle = () => {
   return (

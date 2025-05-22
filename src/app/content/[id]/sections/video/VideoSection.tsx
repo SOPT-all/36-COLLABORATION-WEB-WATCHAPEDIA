@@ -1,7 +1,10 @@
-import SvgIconPlay from '@/assets/svg/IconPlay'
-import HeaderSection from '../../components/HeaderSection/HeaderSection'
-import * as styles from './VideoSection.css'
 import Image from 'next/image'
+
+import SvgIconPlay from '@/assets/svg/IconPlay'
+
+import HeaderSection from '../../components/HeaderSection/HeaderSection'
+
+import * as styles from './VideoSection.css'
 
 const VideoSection = () => {
   return (

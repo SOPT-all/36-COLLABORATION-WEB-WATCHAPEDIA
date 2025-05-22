@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import * as styles from '@/app/home/components/TrendingComment/TrendingComment.css'
 import {
   IcComment,
@@ -7,7 +9,6 @@ import {
   IcStarEmpty,
 } from '@/assets/svg'
 import { trendingComment } from '@/mocks'
-import Image from 'next/image'
 
 const TrendingComment = () => {
   const stars = Array.from({ length: 5 }, (_, index) =>

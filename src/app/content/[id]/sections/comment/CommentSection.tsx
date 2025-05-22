@@ -1,9 +1,11 @@
 import { comment } from '@/mocks'
+
 import CommentHeader from '../../components/Comment/CommentHeader/CommentHeader'
 import CommentContent from '../../components/Comment/CommentContent/CommentContent'
 import CommentBottom from '../../components/Comment/CommentBottom/CommentBottom'
-import * as styles from './CommentSection.css'
 import HeaderSection from '../../components/HeaderSection/HeaderSection'
+
+import * as styles from './CommentSection.css'
 
 const CommentSection = () => {
   const { content, score, likeCount, replyCount } = comment

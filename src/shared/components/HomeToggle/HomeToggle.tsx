@@ -1,7 +1,9 @@
 'use client'
-import { useState, MouseEvent } from 'react'
-import * as style from './HomeToggle.css'
+import { MouseEvent } from 'react'
+
 import { TOGGLE_OPTIONS, type ToggleType } from '@/shared/components/Header/Tab'
+
+import * as style from './HomeToggle.css'
 
 interface HomeToggleProps {
   selected: ToggleType

@@ -1,6 +1,8 @@
-import * as styles from '../MovieCard.css';
 import { IcWatchaBlack } from "@/assets/svg";
+
+import * as styles from '../MovieCard.css';
 import { MovieCardPreset } from '../MovieCard.types';
+
 import Star from './Star';
 
 interface SubInfoProps {
