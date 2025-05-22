@@ -20,7 +20,6 @@ export const chipWrapper= style({
 export const chipLetter = style([
     font.title_sb_14,{
         color:color.gray.gray6,
-        fontWeight:"600",
         marginBottom:"8px"
     }
 ])

@@ -12,16 +12,12 @@ export const headerWrap = style({
 })
 
 export const headerTitle = style([
-  font.headline_sb_16,
-  {
-    fontWeight: '600',
-  },
+  font.headline_sb_16
 ])
 
 export const saveBtn = style([
   font.body_r_15,
   {
-    fontWeight: '400',
     marginRight: '15px',
     cursor: 'pointer',
     transition: 'opacity 0.2s',
