@@ -9,10 +9,11 @@ import Badge from './_components/Badge'
 import Action from './_components/Action'
 import SubInfo from './_components/SubInfo'
 import MovieCardTags from './_components/MovieCardTags'
+import { MovieCardPreset } from './MovieCard.types'
 
 interface MovieCardProps {
   type?: keyof typeof moviePresets
-  data?: any
+  data?: MovieCardPreset
 }
 
 const MovieCard = ({ type, data }: MovieCardProps) => {

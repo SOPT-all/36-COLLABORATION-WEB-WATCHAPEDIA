@@ -22,11 +22,11 @@ export interface BoxofficeOrSeriesCard {
 }
 
 export interface RankCard {
-  id: number
+  id?: number
   imagePath: string
   title: string
   score: number
-  tag: string[]
+  tag?: string[]
   type: 'rank'
 }
 
