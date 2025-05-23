@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 
 import { IcLeft } from '@/assets/svg'
 import { PATH } from '@/shared/constants/path'
@@ -9,12 +9,13 @@ import * as styles from './Header.css'
 
 const Header = () => {
   const router = useRouter()
+  const { id } = useParams()
 
   return (
     <div className={styles.HeaderWrapper}>
       <span
         className={styles.backBtn}
-        onClick={() => router.push(PATH.CONTENT_DETAIL)}
+        onClick={() => router.push(PATH.CONTENT_DETAIL(Number(id)))}
         role="button"
         tabIndex={0}
       >

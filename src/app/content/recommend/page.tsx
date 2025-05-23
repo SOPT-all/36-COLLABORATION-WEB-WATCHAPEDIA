@@ -1,29 +1,22 @@
-'use client'
 import { Suspense } from 'react'
-import { useSearchParams } from 'next/navigation'
 
 import Bottom from '@/shared/components/Bottom/BottomNav'
 
 import Header from './components/header/Header'
 import RecommendOtt from './components/recommendOtt/RecommendOtt'
 
-const RecommendContent = () => {
-  const searchParams = useSearchParams()
-  const selectedChips = searchParams.get('chips')?.split(',') || []
+export default async function RecommendPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ commentId: number }>
+}) {
+  const { commentId } = await searchParams
 
-  return (
-    <>
-      <Header />
-      <RecommendOtt selectedChips={selectedChips} />
-      <Bottom />
-    </>
-  )
-}
-
-export default function RecommendPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <RecommendContent />
+      <Header />
+      <RecommendOtt commentId={commentId} />
+      <Bottom />
     </Suspense>
   )
 }
