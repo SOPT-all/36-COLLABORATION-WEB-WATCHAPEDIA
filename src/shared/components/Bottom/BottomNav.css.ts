@@ -12,6 +12,7 @@ export const tabBar = style({
   position: 'fixed',
   bottom: 0,
   backgroundColor: 'white',
+  zIndex: 5,
 })
 
 export const tabItem = style([
