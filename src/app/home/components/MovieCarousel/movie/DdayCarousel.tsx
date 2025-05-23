@@ -1,8 +1,8 @@
 import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
-
-import MovieCarousel from '../MovieCarousel'
 import { getdDay } from '@/app/services/getDday'
 import { DDayCard } from '@/shared/widget/MovieCard/MovieCard.types'
+
+import MovieCarousel from '../MovieCarousel'
 
 const DdayCarousel = async () => {
   const result = await getdDay()

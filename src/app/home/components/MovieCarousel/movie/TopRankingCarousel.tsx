@@ -1,7 +1,8 @@
 import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
-import MovieCarousel from '../MovieCarousel'
 import { getTopRanking } from '@/app/services/getTopRanking'
 import { RankCard } from '@/shared/widget/MovieCard/MovieCard.types'
+
+import MovieCarousel from '../MovieCarousel'
 
 const TopRankingCarousel = async () => {
   const result = await getTopRanking()

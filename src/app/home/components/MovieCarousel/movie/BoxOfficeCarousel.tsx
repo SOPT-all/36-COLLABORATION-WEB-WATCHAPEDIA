@@ -1,14 +1,17 @@
 import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
-
-import MovieCarousel from '../MovieCarousel'
 import { boxoffice } from '@/mocks'
 import { BoxofficeOrSeriesCard } from '@/shared/widget/MovieCard/MovieCard.types'
 
-export const boxofficeData: BoxofficeOrSeriesCard[] = boxoffice.map((item) => ({
-  ...item,
-  movieType: item.movieType as 'MOVIE',
-  type: item.type as 'boxoffice',
-}))
+import MovieCarousel from '../MovieCarousel'
+
+export const boxofficeData: BoxofficeOrSeriesCard[] = boxoffice.map(
+  (item) =>
+    ({
+      ...item,
+      movieType: item.movieType as 'MOVIE',
+      type: item.type as 'boxoffice',
+    }) as BoxofficeOrSeriesCard,
+)
 
 const BoxOfficeCarousel = () => {
   return (
