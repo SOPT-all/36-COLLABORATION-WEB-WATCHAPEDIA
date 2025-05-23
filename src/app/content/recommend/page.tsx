@@ -1,5 +1,3 @@
-import { Suspense } from 'react'
-
 import Bottom from '@/shared/components/Bottom/BottomNav'
 
 import Header from './components/header/Header'
@@ -13,10 +11,10 @@ export default async function RecommendPage({
   const { commentId } = await searchParams
 
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <>
       <Header />
       <RecommendOtt commentId={commentId} />
       <Bottom />
-    </Suspense>
+    </>
   )
 }

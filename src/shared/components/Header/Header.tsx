@@ -18,8 +18,30 @@ const Header = () => {
 
   const handleToggle = (toggle: ToggleType) => {
     setSelectedToggle(toggle)
-    const newTabs = HEADER_TABS[toggle]
-    setSelectedTab(newTabs[0])
+    if (toggle === TOGGLE_OPTIONS.WATCHA_HOME) {
+      setSelectedTab('영화')
+    } else if (toggle === TOGGLE_OPTIONS.MAGAZINE) {
+      setSelectedTab('아티클')
+      const magazineSection = document.getElementById('magazine-section')
+      if (magazineSection) {
+        magazineSection.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
+
+  const handleTabClick = (tab: string) => {
+    if (
+      (selectedToggle === TOGGLE_OPTIONS.WATCHA_HOME && tab === '영화') ||
+      (selectedToggle === TOGGLE_OPTIONS.MAGAZINE && tab === '아티클')
+    ) {
+      setSelectedTab(tab)
+      if (tab === '아티클') {
+        const magazineSection = document.getElementById('magazine-section')
+        if (magazineSection) {
+          magazineSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
+    }
   }
 
   return (
@@ -37,8 +59,18 @@ const Header = () => {
         {tabs.map((tab) => (
           <button
             key={tab}
-            className={styles.tab({ active: selectedTab === tab })}
-            onClick={() => setSelectedTab(tab)}
+            className={styles.tab({
+              active: selectedTab === tab,
+            })}
+            onClick={() => handleTabClick(tab)}
+            style={{
+              opacity:
+                (selectedToggle === TOGGLE_OPTIONS.WATCHA_HOME &&
+                  tab !== '영화') ||
+                (selectedToggle === TOGGLE_OPTIONS.MAGAZINE && tab !== '아티클')
+                  ? 0.5
+                  : 1,
+            }}
           >
             {tab}
           </button>

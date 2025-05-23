@@ -20,13 +20,13 @@ const Home = () => {
         <Header />
         <Carousel />
         <div className={styles.sectionContainer}>
-          <Section title="내 취향 저격, 오늘의 TOP 랭킹" showNotice showRight>
+          <Section title="내가 좋아할 만한 작품 랭킹" showNotice showRight>
             <TopRankingCarousel />
           </Section>
           <Section title="영화 공개 예정작" showRight>
             <DdayCarousel />
           </Section>
-          <Section title="매거진" showRight>
+          <Section title="매거진" showRight id="magazine-section">
             <MagazineCarousel />
           </Section>
           <Section title="지금 뜨는 코멘트" showRight>

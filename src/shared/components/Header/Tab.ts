@@ -1,11 +1,11 @@
 export const WATCHA_HOME_TABS = ['영화', '시리즈', '책', '웹툰'] as const
 
 export const MAGAZINE_TABS = [
-  '기획전',
   '아티클',
   '인터뷰',
   '큐레이션',
   '콘텐츠소식',
+  '기획전',
 ] as const
 
 export const TOGGLE_OPTIONS = {
