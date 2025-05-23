@@ -1,10 +1,5 @@
 import { createGlobalTheme, globalStyle, style } from '@vanilla-extract/css'
 
-export const container = style({
-  padding: 10,
-  color: 'blue',
-})
-
 export const fontFamily = createGlobalTheme(':root', {
   font: {
     body: 'Pretendard, sans-serif',

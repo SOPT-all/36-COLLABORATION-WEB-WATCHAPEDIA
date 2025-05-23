@@ -28,7 +28,7 @@ const Review = ({ params }: { params: Promise<{ id: string }> }) => {
       },
     })
 
-    router.push(`${PATH.RECOMMEND}?commentId=${commentId}`)
+    router.push(`${PATH.RECOMMEND}?commentId=${commentId}`, { scroll: true })
   }
 
   return (
