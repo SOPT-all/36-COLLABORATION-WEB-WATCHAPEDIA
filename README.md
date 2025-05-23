@@ -90,6 +90,7 @@ SOPT 36기 합동 세미나 - 왓챠피디아 프로젝트
 - 시맨틱 태그, Wrapper는 `container` 명명
 - 불필요한 `<div>` 지양
 <br/>
+
 ## 🌱 Git 작업 Flow
 
 1. 이슈 넘버로 브랜치 생성 → `feature/#issue/기능명`
