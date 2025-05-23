@@ -3,13 +3,37 @@ SOPT 36기 합동 세미나 - 왓챠피디아 프로젝트
 <br/>
 ## 👨‍💻 WEB Developers
 
-| 이름   | GitHub 링크 |
-|--------|-------------|
-| 곽서연 | [곽서연](https://github.com/yeonilil)  |
-| 김정은 | [김정은](https://github.com/Jeong-Ag)  |
-| 이윤지 | [이윤지](https://github.com/Leeyoonji23)  |
-| 조혜린 | [조혜린](https://github.com/jogpfls)  |
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/yeonilil">
+        <img src="https://github.com/yeonilil.png" width="100px;" alt="곽서연" /><br />
+        <sub><b>곽서연</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Jeong-Ag">
+        <img src="https://github.com/Jeong-Ag.png" width="100px;" alt="김정은" /><br />
+        <sub><b>김정은</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Leeyoonji23">
+        <img src="https://github.com/Leeyoonji23.png" width="100px;" alt="이윤지" /><br />
+        <sub><b>이윤지</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/jogpfls">
+        <img src="https://github.com/jogpfls.png" width="100px;" alt="조혜린" /><br />
+        <sub><b>조혜린</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 <br/>
+
 ## 🔧 역할 분담
 
 ### 곽서연
@@ -33,14 +57,17 @@ SOPT 36기 합동 세미나 - 왓챠피디아 프로젝트
 - 홈 토글/ 스포일러 토글 구현
 - 영화 코멘트 조회(GET) API 연동
 <br/>
+
 ## 🛠️ Tech Stack
 
-- **Languages/Tools**: TypeScript, Vite, pnpm
-- **FRAMEWORK**: Next.js 15  
-- **Styling**: Vanilla Extract
-- **UI COMPONENTS**: Swiper
-- **LINT / FORMAT**: ESLint, Prettier, Biome
+![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=Yarn&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=white)
+![Vanilla Extract](https://img.shields.io/badge/Vanilla--Extract-FFCB47?style=for-the-badge&logo=css3&logoColor=black)
+
   <br/>
+  
 ## 🧭 Convention Guide
 
 ### 📁 폴더/파일
