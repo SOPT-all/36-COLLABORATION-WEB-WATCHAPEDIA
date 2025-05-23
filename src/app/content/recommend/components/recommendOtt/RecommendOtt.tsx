@@ -15,8 +15,8 @@ const RecommendOtt = async ({ commentId }: RecommendOttProps) => {
   return (
     <div className={styles.recommendWrapper}>
       {preferenceMovies.map(
-        ({ description, keyword, movies }: PreferenceCategory) => (
-          <div key={description} className={styles.block}>
+        ({ description, keyword, movies }: PreferenceCategory, index) => (
+          <div key={`${index} ${description}`} className={styles.block}>
             <div className={styles.blockHeader}>
               <div className={styles.blockTitle}>
                 {description}
