@@ -32,26 +32,26 @@ export const watchaBadge = style({
   borderRadius: 999,
   position: 'absolute',
   top: '3px',
-  right: '3px'
+  right: '3px',
 })
 
 export const dDayBadge = style([
-  font.body_sb_13,{
+  font.body_sb_13,
+  {
     position: 'absolute',
     top: '8px',
     left: '8px',
-    backgroundColor:color.gray.gray8,
+    backgroundColor: color.gray.gray8,
     color: color.gray.gray1,
     borderRadius: '6px',
     padding: '2px 8px',
     zIndex: 2,
-  }
-]
-  
-)
+  },
+])
 
 export const rankBadge = style([
-  font.body_sb_13,{
+  font.body_sb_13,
+  {
     position: 'absolute',
     bottom: '8px',
     left: '8px',
@@ -59,15 +59,15 @@ export const rankBadge = style([
     borderRadius: '6px',
     padding: '3px 8px',
     zIndex: 2,
-    backgroundColor:color.gray.gray8
-  } 
-]);
+    backgroundColor: color.gray.gray8,
+  },
+])
 
 export const actionWrap = style([
   font.title_sb_14,
   {
     position: 'absolute',
-    width:"85%",
+    width: '85%',
     left: 0,
     bottom: 0,
     display: 'flex',
@@ -75,7 +75,7 @@ export const actionWrap = style([
     justifyContent: 'space-between',
     padding: '6px 8px',
     zIndex: 2,
-    background: color.gray.gray7
+    background: color.gray.gray7,
   },
 ])
 
@@ -113,8 +113,11 @@ export const title = style([
   font.title_m_14,
   {
     color: '#000',
-    marginBottom:"4px",
-    marginTop:"4px"
+    marginBottom: '4px',
+    marginTop: '4px',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
   },
 ])
 
@@ -131,32 +134,34 @@ export const tags = style({
   gap: '4px',
 })
 
-
 export const date = style([
-  font.subtitle_m_13,{
-    fontWeight:"500",
-    color:color.brand.primary,
-    display:"flex",
-    alignItems:"center",
-    gap:"4px"
-  }
+  font.subtitle_m_13,
+  {
+    fontWeight: '500',
+    color: color.brand.primary,
+    display: 'flex',
+    alignItems: 'center',
+    gap: '4px',
+  },
 ])
 
-export const starWrap=style ({
-  display: "flex",
-  gap:"2px",
-  marginBottom :"4px"
+export const starWrap = style({
+  display: 'flex',
+  gap: '2px',
+  marginBottom: '4px',
 })
 
-export const starLabel= style([
-  font.label_r_12,{
-    color:color.brand.primary
-  }
+export const starLabel = style([
+  font.label_r_12,
+  {
+    color: color.brand.primary,
+  },
 ])
 
 export const watchaIcon = style({
   position: 'absolute',
   top: '8px',
   right: '8px',
-  zIndex: 1
+  zIndex: 1,
+  borderRadius: '999',
 })

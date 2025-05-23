@@ -1,27 +1,27 @@
-import React from 'react';
+import React from 'react'
 
-import { IconLike, IconComment } from '@/assets/svg';
+import { IconLike, IconComment } from '@/assets/svg'
 
 import * as styles from './CommentBottom.css'
 
 interface Props {
-  likeCount: number,
-  replyCount: number,
+  likeCount: number
+  replyCount: number
 }
 
-const CommentBottom = ({likeCount, replyCount}: Props) => {
+const CommentBottom = ({ likeCount, replyCount }: Props) => {
   return (
     <div className={styles.commentBottomWrapper}>
       <div className={styles.iconTextWrapper}>
-        <IconLike/>
+        <IconLike />
         <p className={styles.text}>{likeCount}</p>
       </div>
       <div className={styles.iconTextWrapper}>
-        <IconComment/>
+        <IconComment />
         <p className={styles.text}>{replyCount}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CommentBottom;
+export default CommentBottom

@@ -1,8 +1,10 @@
 import * as styles from './Tag.css'
 
+export const TAG_COLORS = ['blue', 'orange', 'gray', 'black'] as const
+
 interface TagProps {
   text: string
-  color?: 'blue' | 'orange' | 'gray' | 'black'
+  color?: (typeof TAG_COLORS)[number]
   size?: 'sm' | 'lg'
 }
 

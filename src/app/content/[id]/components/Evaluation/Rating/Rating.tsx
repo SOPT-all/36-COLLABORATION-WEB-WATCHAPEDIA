@@ -91,7 +91,7 @@ const Rating = () => {
         text="코멘트 쓰기"
         fullWidth
         disabled={rating === 0}
-        onClick={() => router.push(PATH.REVIEW)}
+        onClick={() => router.push(PATH.REVIEW(1))}
       />
     </div>
   )

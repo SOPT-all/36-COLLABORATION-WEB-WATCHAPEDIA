@@ -5,3 +5,8 @@ export const sectionContainer = style({
   flexDirection: 'column',
   gap: '25px',
 })
+
+export const adWrapper = style({
+  display: 'flex',
+  justifyContent: 'center',
+})

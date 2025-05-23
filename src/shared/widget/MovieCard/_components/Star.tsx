@@ -1,6 +1,6 @@
-import { IcStar } from "@/assets/svg";
+import { IcStar } from '@/assets/svg'
 
-import * as styles from '../MovieCard.css';
+import * as styles from '../MovieCard.css'
 
 export default function Star({ star }: { star: number }) {
   return (
@@ -9,5 +9,5 @@ export default function Star({ star }: { star: number }) {
       <IcStar />
       <span className={styles.starLabel}>{star}</span>
     </div>
-  );
-} 
+  )
+}
