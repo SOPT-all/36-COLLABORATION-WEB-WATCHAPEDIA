@@ -1,5 +1,5 @@
 import Ad from '@/shared/widget/Ad/Ad'
-import { getContent } from '@/services/content/api'
+import { getContent, getContentList } from '@/services/content/api'
 
 import DescriptionSection from './sections/descriptionSection/DescriptionSection'
 import CollectionSection from './sections/collection/CollectionSection'
@@ -17,6 +17,7 @@ import * as styles from './styles.css'
 const Content = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params
   const content = await getContent(Number(id))
+  const comment = await getContentList(Number(id))
 
   return (
     <div className={styles.contentContainer}>
@@ -32,7 +33,7 @@ const Content = async ({ params }: { params: Promise<{ id: string }> }) => {
       </div>
       <div className={styles.secondInfoWrapper}>
         <CastAndCrewSection castAndCrewList={content.artists} />
-        <CommentSection />
+        <CommentSection {...comment} />
         <MagazineSection />
         <GallerySection />
         <VideoSection />

@@ -1,4 +1,4 @@
-import { comment } from '@/mocks'
+import { CommentItem } from '@/shared/types/detail'
 
 import CommentHeader from '../../components/Comment/CommentHeader/CommentHeader'
 import CommentContent from '../../components/Comment/CommentContent/CommentContent'
@@ -7,9 +7,12 @@ import HeaderSection from '../../components/HeaderSection/HeaderSection'
 
 import * as styles from './CommentSection.css'
 
-const CommentSection = () => {
-  const { content, score, likeCount, replyCount } = comment
-
+const CommentSection = ({
+  content,
+  score,
+  likeCount,
+  replyCount,
+}: CommentItem) => {
   return (
     <HeaderSection title="코멘트" count="6500+" moreButton>
       <div className={styles.commentSectionWrapper}>
