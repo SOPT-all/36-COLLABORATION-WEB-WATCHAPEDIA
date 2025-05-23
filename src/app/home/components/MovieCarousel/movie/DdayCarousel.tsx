@@ -1,6 +1,6 @@
 import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
-import { getdDay } from '@/app/services/getDday'
 import { DDayCard } from '@/shared/widget/MovieCard/MovieCard.types'
+import { getdDay } from '@/services/home/api'
 
 import MovieCarousel from '../MovieCarousel'
 
