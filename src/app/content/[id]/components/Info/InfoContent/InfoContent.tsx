@@ -34,8 +34,7 @@ const InfoContent = ({
         </p>
         <p>
           <span>
-            {`${Math.floor(runningTime / 60)}시간 ${runningTime % 60}분`} •{' '}
-            {ageLimit}세
+            {runningTime} • {ageLimit}세
           </span>
         </p>
       </div>

@@ -11,6 +11,7 @@ export const fieldWrapper = style({
 
 export const profile = style({
   borderRadius: '4px',
+  objectFit: 'cover',
 })
 
 export const rightWrapper = style({
@@ -54,7 +55,6 @@ export const character = style([
   font.body_r_14,
   {
     display: 'flex',
-    width: '25px',
     height: '14px',
     flexDirection: 'column',
     justifyContent: 'center',

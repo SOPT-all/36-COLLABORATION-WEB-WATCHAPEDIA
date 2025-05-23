@@ -1,4 +1,5 @@
 import Ad from '@/shared/widget/Ad/Ad'
+import { getContent } from '@/services/content/api'
 
 import DescriptionSection from './sections/descriptionSection/DescriptionSection'
 import CollectionSection from './sections/collection/CollectionSection'
@@ -13,18 +14,24 @@ import EvaluationSection from './sections/evaluation/EvaluationSection'
 import MagazineSection from './sections/magazine/MagazineSection'
 import * as styles from './styles.css'
 
-const Content = () => {
+const Content = async ({ params }: { params: Promise<{ id: string }> }) => {
+  const { id } = await params
+  const content = await getContent(Number(id))
+
   return (
     <div className={styles.contentContainer}>
-      <InfoSection />
-      <EvaluationSection />
+      <InfoSection {...content} />
+      <EvaluationSection keywords={content.keywords} />
       <div className={styles.firstInfoWrapper}>
-        <DescriptionSection />
+        <DescriptionSection
+          posterImage={content.posterImage}
+          detail={content.detail}
+        />
         <GraphSection />
         <Ad type="callenge" />
       </div>
       <div className={styles.secondInfoWrapper}>
-        <CastAndCrewSection />
+        <CastAndCrewSection castAndCrewList={content.artists} />
         <CommentSection />
         <MagazineSection />
         <GallerySection />

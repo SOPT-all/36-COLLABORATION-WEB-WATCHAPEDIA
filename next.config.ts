@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
 
     return config
   },
+  images: {
+    domains: ['an2-img.amz.wtchn.net'],
+  },
 }
 
 export default withVanillaExtract(nextConfig)
