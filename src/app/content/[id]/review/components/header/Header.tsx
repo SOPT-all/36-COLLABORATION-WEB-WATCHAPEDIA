@@ -3,7 +3,6 @@
 import { useRouter, useParams } from 'next/navigation'
 
 import { IcXicon } from '@/assets/svg'
-import { PATH } from '@/shared/constants/path'
 import { moviePresets } from '@/shared/widget/MovieCard/MovieMock'
 
 import * as styles from './Header.css'
@@ -26,7 +25,7 @@ const Header = ({ canSave, onSave }: HeaderProps) => {
     <div className={styles.headerWrap}>
       <div style={{ marginLeft: '14px' }}>
         <IcXicon
-          onClick={() => router.push(PATH.HOME)}
+          onClick={() => router.back()}
           role="button"
           tabIndex={0}
         />

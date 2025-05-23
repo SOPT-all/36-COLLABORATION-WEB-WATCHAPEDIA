@@ -14,15 +14,16 @@ import { MovieCardPreset } from './MovieCard.types'
 interface MovieCardProps {
   type?: keyof typeof moviePresets
   data?: MovieCardPreset
+  onClick?: () => void
 }
 
-const MovieCard = ({ type, data }: MovieCardProps) => {
+const MovieCard = ({ type, data, onClick }: MovieCardProps) => {
   const cardData = data ?? (type ? moviePresets[type] : undefined)
 
   if (!cardData) return null
 
   return (
-    <div className={styles.cardWrap}>
+    <div className={styles.cardWrap} onClick={onClick}>
       <div className={styles.posterWrap}>
         <Image
           src={cardData.imagePath}

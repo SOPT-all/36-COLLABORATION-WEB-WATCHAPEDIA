@@ -1,21 +1,22 @@
 'use client'
 
-import { useParams, useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 
 import { IcLeft } from '@/assets/svg'
-import { PATH } from '@/shared/constants/path'
 
 import * as styles from './Header.css'
 
 const Header = () => {
   const router = useRouter()
-  const { id } = useParams()
 
   return (
     <div className={styles.HeaderWrapper}>
       <span
         className={styles.backBtn}
-        onClick={() => router.push(PATH.CONTENT_DETAIL(Number(id)))}
+        onClick={() => {
+          router.back()
+          router.back()
+        }}
         role="button"
         tabIndex={0}
       >
