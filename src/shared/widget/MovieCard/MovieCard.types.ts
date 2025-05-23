@@ -16,6 +16,9 @@ export interface BoxofficeOrSeriesCard {
   imagePath: string
   title: string
   type: 'boxoffice' | 'series'
+  isWishedCount: number
+  releaseYear: string
+  untilRelease?: number
 }
 
 export interface RankCard {
