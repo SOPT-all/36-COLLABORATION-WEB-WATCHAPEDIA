@@ -1,4 +1,4 @@
-import { DetailItem } from '@/shared/types/detail'
+import { CommentItem, DetailItem } from '@/shared/types/detail'
 
 export const getContent = async (postId: number): Promise<DetailItem> => {
   const url = `${process.env.NEXT_PUBLIC_API_URL}/posts/${postId}`
