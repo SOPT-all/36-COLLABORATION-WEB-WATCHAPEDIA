@@ -4,8 +4,10 @@ import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
 const withVanillaExtract = createVanillaExtractPlugin()
 
 const nextConfig: NextConfig = {
+  images: {
+    domains: ['an2-img.amz.wtchn.net'], // 외부 이미지 도메인 추가
+  },
   webpack(config) {
-    // SVG 파일을 React 컴포넌트로 import 가능하게 함
     config.module.rules.push({
       test: /\.svg$/,
       issuer: /\.[jt]sx?$/,

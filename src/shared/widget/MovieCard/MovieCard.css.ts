@@ -115,6 +115,9 @@ export const title = style([
     color: '#000',
     marginBottom: '4px',
     marginTop: '4px',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    textOverflow: 'ellipsis',
   },
 ])
 
