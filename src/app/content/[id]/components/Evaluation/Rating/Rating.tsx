@@ -39,6 +39,13 @@ const Rating = () => {
     setRating(calcRating(e.clientX))
   }
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (e.touches.length > 0) {
+      setDragging(true)
+      setRating(calcRating(e.touches[0].clientX))
+    }
+  }
+
   useEffect(() => {
     if (!dragging) return
 
@@ -47,12 +54,23 @@ const Rating = () => {
     }
     const handleMouseUp = () => setDragging(false)
 
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        setRating(calcRating(e.touches[0].clientX))
+      }
+    }
+    const handleTouchEnd = () => setDragging(false)
+
     window.addEventListener('mousemove', handleMouseMove)
     window.addEventListener('mouseup', handleMouseUp)
+    window.addEventListener('touchmove', handleTouchMove)
+    window.addEventListener('touchend', handleTouchEnd)
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('mouseup', handleMouseUp)
+      window.removeEventListener('touchmove', handleTouchMove)
+      window.removeEventListener('touchend', handleTouchEnd)
     }
   }, [dragging, calcRating])
 
@@ -62,6 +80,7 @@ const Rating = () => {
         ref={containerRef}
         className={styles.ratingStarContainer}
         onMouseDown={handleMouseDown}
+        onTouchStart={handleTouchStart}
       >
         {[...Array(STAR)].map((_, index) => {
           const starValue = index + 1
