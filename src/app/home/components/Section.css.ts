@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css'
 
 export const section = style({
-  marginBottom: '24px',
+  padding: '0px 15px',
 })
 
 export const sectionContent = style([
