@@ -14,7 +14,7 @@ const Header = () => {
     <div className={styles.HeaderWrapper}>
       <span
         className={styles.backBtn}
-        onClick={() => router.push(PATH.CONTENT_DETAIL)}
+        onClick={() => router.push(PATH.CONTENT_DETAIL(1))}
         role="button"
         tabIndex={0}
       >
