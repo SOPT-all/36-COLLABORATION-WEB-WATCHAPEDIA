@@ -61,7 +61,9 @@ const MovieCarousel = ({
                       key={i}
                       type={type}
                       data={item}
-                      onClick={() => router.push(PATH.CONTENT_DETAIL(1))}
+                      onClick={() =>
+                        router.push(PATH.CONTENT_DETAIL(1), { scroll: true })
+                      }
                     />
                   ))}
                 </div>

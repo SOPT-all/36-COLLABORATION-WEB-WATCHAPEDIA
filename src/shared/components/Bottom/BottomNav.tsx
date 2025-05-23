@@ -12,7 +12,10 @@ export default function Bottom() {
 
   return (
     <nav className={styles.tabBar}>
-      <div className={styles.tabItem} onClick={() => router.push(PATH.HOME)}>
+      <div
+        className={styles.tabItem}
+        onClick={() => router.push(PATH.HOME, { scroll: true })}
+      >
         <span className={styles.tabIcon}>
           <IcHome />
         </span>
