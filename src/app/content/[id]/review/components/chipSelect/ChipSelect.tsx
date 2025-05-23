@@ -10,21 +10,21 @@ import { chipCategories } from './chipSelectmock'
 const MAX_SELECTED = 5
 
 interface ChipSelectProps {
-  onSelectedChange?: (chips: string[]) => void
+  onSelectedChange?: (chips: number[]) => void
 }
 
 const ChipSelect = ({ onSelectedChange }: ChipSelectProps) => {
-  const [selected, setSelected] = useState<string[]>([])
+  const [selected, setSelected] = useState<number[]>([])
 
   useEffect(() => {
     onSelectedChange?.(selected)
   }, [selected, onSelectedChange])
 
-  const handleChipClick = (text: string) => {
-    if (selected.includes(text)) {
-      setSelected(selected.filter((t) => t !== text))
+  const handleChipClick = (index: number) => {
+    if (selected.includes(index)) {
+      setSelected(selected.filter((t) => t !== index))
     } else if (selected.length < MAX_SELECTED) {
-      setSelected([...selected, text])
+      setSelected([...selected, index])
     }
   }
   return (
@@ -33,16 +33,16 @@ const ChipSelect = ({ onSelectedChange }: ChipSelectProps) => {
         <div key={category.label} style={{ marginBottom: 24 }}>
           <div className={styles.chipLetter}>{category.label}</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-            {category.chips.map((chip) => {
-              const isSelected = selected.includes(chip.text)
+            {category.chips.map(({ id, text }) => {
+              const isSelected = selected.includes(id)
               const isDisabled = !isSelected && selected.length >= MAX_SELECTED
               return (
                 <ReviewChip
-                  key={chip.text}
-                  text={chip.text}
+                  key={text}
+                  text={text}
                   isSelected={isSelected}
                   disabled={isDisabled}
-                  onClick={() => handleChipClick(chip.text)}
+                  onClick={() => handleChipClick(id)}
                 />
               )
             })}

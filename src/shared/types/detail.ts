@@ -21,3 +21,19 @@ export interface DetailItem {
   artists: Array<Artist>
   keywords: Array<string>
 }
+
+export interface CommentItem {
+  id: number
+  score: number
+  content: string
+  likeCount: number
+  replyCount: number
+}
+
+export interface CreateCommentItem {
+  id: number
+  movieId: number
+  review: string
+  createdAt: string
+  keywords: Array<string>
+}

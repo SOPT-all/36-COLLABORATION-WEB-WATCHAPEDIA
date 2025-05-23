@@ -1,5 +1,4 @@
 'use client'
-import { useState } from 'react'
 
 import TextField from '@/shared/components/TextField/TextField'
 
@@ -7,9 +6,12 @@ import * as styles from './ReviewText.css'
 
 const MAX_LENGTH = 500
 
-const ReviewText = () => {
-  const [value, setValue] = useState('')
+interface ReviewTextProps {
+  value: string
+  setValue: (value: string) => void
+}
 
+const ReviewText = ({ value, setValue }: ReviewTextProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     if (e.target.value.length <= MAX_LENGTH) {
       setValue(e.target.value)
