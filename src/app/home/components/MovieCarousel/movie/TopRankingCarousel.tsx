@@ -1,5 +1,5 @@
 import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
-import { getTopRanking } from '@/app/services/getTopRanking'
+import { getTopRanking } from '@/services/home/api'
 import { RankCard } from '@/shared/widget/MovieCard/MovieCard.types'
 
 import MovieCarousel from '../MovieCarousel'
