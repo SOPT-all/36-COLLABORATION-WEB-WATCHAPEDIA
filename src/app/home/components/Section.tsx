@@ -1,29 +1,32 @@
-import * as styles from '@/app/home/components/Section.css'
+import { ReactNode } from 'react'
 
+import * as styles from './Section.css'
 import SectionHeader from './SectionHeader'
 
 interface SectionProps {
   title: string
-  children: React.ReactNode
+  children: ReactNode
   showRight?: boolean
   showNotice?: boolean
+  id?: string
 }
 
 const Section = ({
   title,
   children,
-  showRight = false,
-  showNotice = false,
+  showRight,
+  showNotice,
+  id,
 }: SectionProps) => {
   return (
-    <div>
+    <section className={styles.section} id={id}>
       <SectionHeader
         text={title}
         showRight={showRight}
         showNotice={showNotice}
       />
-      <div className={styles.sectionContent}>{children}</div>
-    </div>
+      {children}
+    </section>
   )
 }
 

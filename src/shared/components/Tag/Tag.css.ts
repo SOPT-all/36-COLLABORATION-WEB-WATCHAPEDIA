@@ -17,6 +17,7 @@ export const tag = recipe({
         {
           backgroundColor: '#EEF7FF',
           color: '#003A4E',
+          whiteSpace: 'nowrap',
         },
       ],
       orange: [
@@ -24,6 +25,7 @@ export const tag = recipe({
         {
           color: '#9B3800',
           backgroundColor: '#FFF1E9',
+          whiteSpace: 'nowrap',
         },
       ],
       gray: [
@@ -31,6 +33,7 @@ export const tag = recipe({
         {
           backgroundColor: '#F8F8F8',
           color: '#5F5F5F',
+          whiteSpace: 'nowrap',
         },
       ],
       black: [
@@ -39,6 +42,7 @@ export const tag = recipe({
           backgroundColor: 'black',
           color: 'white',
           opacity: '0.8',
+          whiteSpace: 'nowrap',
         },
       ],
     },

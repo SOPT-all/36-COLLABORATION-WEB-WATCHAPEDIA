@@ -22,6 +22,10 @@ const Header = () => {
       setSelectedTab('영화')
     } else if (toggle === TOGGLE_OPTIONS.MAGAZINE) {
       setSelectedTab('아티클')
+      const magazineSection = document.getElementById('magazine-section')
+      if (magazineSection) {
+        magazineSection.scrollIntoView({ behavior: 'smooth' })
+      }
     }
   }
 
@@ -31,6 +35,12 @@ const Header = () => {
       (selectedToggle === TOGGLE_OPTIONS.MAGAZINE && tab === '아티클')
     ) {
       setSelectedTab(tab)
+      if (tab === '아티클') {
+        const magazineSection = document.getElementById('magazine-section')
+        if (magazineSection) {
+          magazineSection.scrollIntoView({ behavior: 'smooth' })
+        }
+      }
     }
   }
 
