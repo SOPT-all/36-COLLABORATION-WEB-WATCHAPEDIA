@@ -37,3 +37,11 @@ export interface CreateCommentItem {
   createdAt: string
   keywords: Array<string>
 }
+
+export interface CommentItem {
+  id: number
+  score: number
+  content: string
+  likeCount: number
+  replyCount: number
+}
