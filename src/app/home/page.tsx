@@ -26,7 +26,7 @@ const Home = () => {
           <Section title="영화 공개 예정작" showRight>
             <DdayCarousel />
           </Section>
-          <Section title="매거진" showRight>
+          <Section title="매거진" showRight id="magazine-section">
             <MagazineCarousel />
           </Section>
           <Section title="지금 뜨는 코멘트" showRight>
