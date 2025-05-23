@@ -1,12 +1,15 @@
 'use client'
 
+import { useRouter } from 'next/navigation'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Autoplay } from 'swiper/modules'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 import * as styles from '@/app/home/components/MovieCarousel/MovieCarousel.css'
 import MovieCard from '@/shared/widget/MovieCard'
 import { MovieCardPreset } from '@/shared/widget/MovieCard/MovieCard.types'
+import { PATH } from '@/shared/constants/path'
 
 interface MovieCarouselProps {
   type: 'boxoffice' | 'dDay' | 'series' | 'rank'
@@ -29,6 +32,7 @@ const MovieCarousel = ({
   slideContainerClassName = '',
   data = [],
 }: MovieCarouselProps) => {
+  const router = useRouter()
   const isDataAvailable = data.length > 0
   const chunkedData = isDataAvailable ? chunkArray(data, 3) : []
 
@@ -53,7 +57,12 @@ const MovieCarousel = ({
               <SwiperSlide key={idx}>
                 <div className={slideContainerClassName}>
                   {group.map((item, i) => (
-                    <MovieCard key={i} type={type} data={item} />
+                    <MovieCard
+                      key={i}
+                      type={type}
+                      data={item}
+                      onClick={() => router.push(PATH.CONTENT_DETAIL(1))}
+                    />
                   ))}
                 </div>
               </SwiperSlide>
